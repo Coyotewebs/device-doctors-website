@@ -1,0 +1,135 @@
+@use '../abstracts' as *;
+
+.nav {
+  // border: 2px solid black;
+  display: grid;
+  grid-column: full-start / -1;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  // background-color: rgba(0, 0, 0, 0.017);
+  background-image: linear-gradient(rgba($color-black, 0.1), rgba(#ccc, 0.1));
+  background-color: $color-primary;
+  // margin-top: 0.1rem;
+
+  // padding: 1rem;
+  // border-radius: 3px;
+  box-shadow: 0 2rem 5rem rgba(#000, 0.1);
+
+  //Start of  announcement
+  &__message {
+    display: flex;
+  }
+
+  &__message--title {
+    border: 3px solid $color-primary;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 5rem;
+    // background-color: $color-yellow-light;
+    background-image: linear-gradient(
+      rgba($color-yellow, 0.1),
+      rgba($color-yellow, 0.9)
+    );
+    // text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
+    color: $color-black;
+    font-size: 2rem;
+
+    width: 100%;
+
+    // border-radius: 50px;
+    // margin-top: 1rem;
+  }
+
+  //End of Announcement
+
+  &__bar {
+    // border: 2px solid black;
+    display: flex;
+    position: absolute;
+    top: 3rem;
+    right: 3%;
+    justify-content: center;
+
+    // padding: -1.5rem 1rem;
+  }
+
+  &__list {
+    // border: 2px solid red;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    font-size: 2rem;
+  }
+
+  &__item {
+    // border: 2px solid blue;
+    margin: 5.5rem 0rem;
+  }
+
+  &__link {
+    // border: 2px solid green;
+    color: $color-white;
+    text-decoration: none;
+    font-family: $font-display;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-content: center;
+    cursor: pointer;
+    // display: inline-block;
+    padding: 1rem;
+    transition: transform 0.5s;
+  }
+
+  &__link:hover {
+    color: $color-yellow-light;
+    transition: all 0.3s ease;
+  }
+
+  &__active {
+    color: $color-yellow;
+  }
+
+  &__list--secondary {
+    margin-left: 5rem;
+  }
+  &__logo {
+    color: $color-white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 5rem;
+    display: flex;
+    margin-left: 24px;
+    padding-top: 1rem;
+    cursor: pointer;
+
+    // padding: 15px 15px;
+    // width: 25%;
+  }
+
+  &__button {
+    background-color: $color-black;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2rem 5rem rgba(#000, 0);
+
+    &:hover {
+      background-color: $color-yellow;
+      color: $color-black;
+    }
+  }
+}

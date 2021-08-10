@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 60.5%; //1 rem = 10px; 10px/16px = 62.5%
+  scroll-behavior: smooth;
+}
+.container {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.103);
+
+  grid-template-columns:
+    [full-start] 1fr [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] 1fr [full-end];
+
+  grid-template-rows: 5rem 12vh min-content 75vh min-content 40vw repeat(
+      4,
+      min-content
+    );
+}
+
+// justify-content: center;
+// align-content: center;
+
+//90%
+//grid-template-rows: repeat(2, minmax(15rem, min-content));
+// grid-template-columns: minmax(20rem, 30rem) repeat(3, 1fr);
+
+/* for explesive (like for a photo al)  
+  grid-auto-rows: 80px;
+  grid-auto-flow: row dense;
+  grid-auto-columns: .5fr; */
+
+/* this is another was to lay out your grid, empty box add .
+
+grid-template-areas: "nav nav nav nav nav nav nav nav" (can you nav repeat(7)?)
+                      header same as above
+                      map map map map map about about 
+                      etc etc; 
+
+  in css - .nav {
+    grid-area: nav;
+  }*/

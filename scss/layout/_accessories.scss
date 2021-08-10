@@ -1,0 +1,368 @@
+@use '../abstracts' as *;
+
+.retail {
+  grid-column: full-start / full-end;
+  background-color: $color-primary;
+  background-image: linear-gradient(rgba($color-black, 0.2), rgba(#ccc, 0.1));
+
+  // outline: 0.5rem solid #fff;
+  // outline-offset: -2rem;
+  // border-radius: 10px;
+  // margin-right: 2rem;
+  // margin-left: 2rem;
+  // margin-bottom: 2rem;
+
+  display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  // grid-gap: 1rem;
+
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 5rem;
+
+  // gap: 1.5rem;
+
+  &__heading {
+    font-size: 6rem;
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__wrapper {
+    // border: 10px solid blue;
+    display: flex;
+
+    // // gap: 1rem;
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
+  &__cards {
+    // border: 10px solid yellow;
+    display: flex;
+  }
+
+  &__cards--left {
+    // border: 10px solid green;
+    flex: 3;
+    position: relative;
+  }
+
+  &__cards--right {
+    // border: 10px solid yellowgreen;
+    flex: 2;
+    position: relative;
+  }
+
+  &__card--1 {
+    // border: 10px solid palevioletred;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    // background-image: url(../img/phonecases.jpg);
+
+    // background-repeat: no-repeat;
+    // background-size: cover;
+  }
+
+  &__img--1 {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 45vw;
+    padding-right: 3rem;
+    // border-radius: 5px;
+  }
+
+  &__card--1 h4 {
+    display: flex;
+    position: absolute;
+    margin-bottom: 41rem;
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: $color-black;
+    text-transform: uppercase;
+
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
+  }
+
+  &__card--1 p {
+    display: flex;
+    position: absolute;
+    margin-bottom: 35rem;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.1)
+    );
+  }
+
+  &__card--2 {
+    // border: 10px solid palevioletred;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__img--2 {
+    display: flex;
+
+    // border: 10px solid palevioletred;
+    padding-right: 3rem;
+    padding-top: 2.5rem;
+
+    width: 48vw;
+  }
+
+  &__card--2 h4 {
+    display: flex;
+    position: absolute;
+    margin-bottom: 42rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: $color-black;
+    text-transform: uppercase;
+    margin-top: 12rem;
+
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
+  }
+
+  &__card--2 p {
+    display: flex;
+    position: absolute;
+    margin-bottom: 24rem;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.1)
+    );
+  }
+
+  .cta--2 {
+    display: flex;
+    position: absolute;
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    padding: 5rem 1rem;
+    border-radius: 50%;
+    margin-top: 20rem;
+    // cursor: pointer;
+    // transition: all 0.2s;
+
+    // &:hover {
+    //   background-color: $color-black;
+    // }
+  }
+
+  &__card--3 {
+    // border: 10px solid palevioletred;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__img--3 {
+    display: flex;
+    margin-bottom: 1rem;
+    // border: 10px solid palevioletred;
+    height: auto;
+    width: 35vw;
+  }
+
+  &__card--3 h4 {
+    display: flex;
+    position: absolute;
+    margin-bottom: 45rem;
+    font-size: 3rem;
+    font-weight: 800;
+    color: $color-black;
+    text-transform: uppercase;
+    margin-bottom: 26rem;
+
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
+  }
+
+  .retail__card--3 p {
+    display: flex;
+    position: absolute;
+    margin-bottom: 24rem;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 21rem;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.3)
+    );
+  }
+
+  .cta--3 {
+    display: flex;
+    position: absolute;
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.2rem;
+    padding: 4rem 1rem;
+    border-radius: 50%;
+    margin-top: 14rem;
+    // cursor: pointer;
+    // transition: all 0.2s;
+
+    // &:hover {
+    //   background-color: $color-black;
+    // }
+  }
+
+  &__card--4 {
+    // border: 10px solid palevioletred;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__img--4 {
+    display: flex;
+    margin-bottom: 1rem;
+    // border: 10px solid palevioletred;
+    height: auto;
+    width: 35vw;
+  }
+
+  &__card--4 h4 {
+    display: flex;
+    position: absolute;
+    margin-bottom: 26rem;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: $color-black;
+    text-transform: uppercase;
+
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
+  }
+
+  &__card--4 p {
+    display: flex;
+    position: absolute;
+
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 20rem;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    );
+  }
+
+  .cta--4 {
+    display: flex;
+    position: absolute;
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.2rem;
+    padding: 4rem 1rem;
+    margin-top: 10rem;
+    border-radius: 50%;
+
+    // cursor: pointer;
+    // transition: all 0.2s;
+
+    // &:hover {
+    //   background-color: $color-black;
+    // }
+  }
+
+  &__card--5 {
+    // border: 10px solid palevioletred;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__img--5 {
+    display: flex;
+
+    // border: 10px solid palevioletred;
+
+    height: 100%;
+    width: 35vw;
+
+    opacity: 98%;
+  }
+
+  &__card--5 h4 {
+    display: flex;
+    position: absolute;
+    margin-bottom: 40rem;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: $color-black;
+    text-transform: uppercase;
+    margin-top: 19rem;
+
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.119);
+  }
+
+  &__card--5 p {
+    display: flex;
+    position: absolute;
+    margin-bottom: 16rem;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.1)
+    );
+  }
+
+  .cta--5 {
+    display: flex;
+    position: absolute;
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.2rem;
+    padding: 4rem 1rem;
+    border-radius: 50%;
+    margin-top: 10rem;
+    // cursor: pointer;
+    // transition: all 0.2s;
+
+    // &:hover {
+    //   background-color: $color-black;
+    // }
+  }
+}

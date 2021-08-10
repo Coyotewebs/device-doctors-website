@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.services {
+  // background-color: gray;
+  grid-column: center-start / center-end;
+
+  margin: 12rem 0;
+
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1.2rem;
+
+  &__icon {
+    color: $color-primary;
+    // width: 4.5rem;
+    // height: 4.5rem;
+    font-size: 3.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.083);
+  }
+
+  &__text {
+    font-size: 1.9rem;
+    color: $color-grey-dark-2;
+  }
+}

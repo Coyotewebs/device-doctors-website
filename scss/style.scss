@@ -1,0 +1,22 @@
+// This page is like main.scss. @import is depercated repace wtih @use
+
+//abstracts
+
+//base
+@use 'base/base';
+@use 'base/typography';
+
+//components
+@use 'components/map';
+
+//layout
+@use 'layout/nav';
+@use 'layout/header';
+@use 'layout/services';
+@use 'layout/stars';
+@use 'layout/about';
+@use 'layout/trade-up';
+@use 'layout/urgent-care';
+@use 'layout/accessories';
+@use 'layout/contact';
+@use 'layout/footer';

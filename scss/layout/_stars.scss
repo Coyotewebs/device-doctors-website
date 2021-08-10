@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.stars {
+  // background-color: $color-map;
+  grid-column: full-start / full-end;
+  // border-radius: 10px;
+
+  background-image: url(../img/repair-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 100%;
+  // margin: 20px 20px;
+
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.urgent {
+  // background-color: $color-primary;
+  grid-column: col-start 5 / full-end;
+
+  padding: 6rem 8vw;
+
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; */
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  // margin-top: 3rem;
+  // // margin-right: 2rem;
+  // border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary, 0.2),
+    rgba($color-primary, 0.4)
+  );
+
+  &__text {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 4rem;
+    color: $color-black;
+  }
+}
