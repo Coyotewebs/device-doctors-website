@@ -84,25 +84,27 @@
     margin-bottom: 41rem;
     font-size: 3.3rem;
     font-weight: 800;
-    color: $color-black;
+    color: $color-yellow;
     text-transform: uppercase;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
   }
 
   &__card--1 p {
     display: flex;
     position: absolute;
     margin-bottom: 35rem;
-    color: #000;
+    color: $color-black;
     text-transform: uppercase;
+    font-weight: 500;
     font-size: 1.5rem;
 
     background: linear-gradient(
       to right bottom,
-      rgba(255, 255, 255, 0.2),
+      rgba(170, 108, 108, 0.1),
       rgba(255, 255, 255, 0.1)
     );
+    // text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.647);
   }
 
   &__card--2 {
@@ -129,20 +131,21 @@
     margin-bottom: 42rem;
     font-size: 3.5rem;
     font-weight: 800;
-    color: $color-black;
+    color: $color-yellow;
     text-transform: uppercase;
     margin-top: 12rem;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
   }
 
   &__card--2 p {
     display: flex;
     position: absolute;
     margin-bottom: 24rem;
-    color: #000;
+    color: $color-black;
     text-transform: uppercase;
     font-size: 1.5rem;
+    font-weight: 500;
 
     background: linear-gradient(
       to right bottom,
@@ -193,25 +196,26 @@
     margin-bottom: 45rem;
     font-size: 3rem;
     font-weight: 800;
-    color: $color-black;
+    color: $color-yellow;
     text-transform: uppercase;
     margin-bottom: 26rem;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
   }
 
   .retail__card--3 p {
     display: flex;
     position: absolute;
     margin-bottom: 24rem;
-    color: #000;
+    color: $color-black;
     text-transform: uppercase;
     font-size: 1.4rem;
+    font-weight: 500;
     margin-bottom: 21rem;
     background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.3)
+      rgba(255, 255, 255, 0.2)
     );
   }
 
@@ -257,25 +261,27 @@
     margin-bottom: 26rem;
     font-size: 3.2rem;
     font-weight: 800;
-    color: $color-black;
+    color: $color-yellow;
     text-transform: uppercase;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.38);
   }
 
   &__card--4 p {
     display: flex;
     position: absolute;
 
-    color: #000;
+    color: $color-black;
     text-transform: uppercase;
     font-size: 1.4rem;
+    font-weight: 500;
     margin-bottom: 20rem;
     background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.2)
     );
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.16);
   }
 
   .cta--4 {
@@ -324,18 +330,18 @@
     margin-bottom: 40rem;
     font-size: 3.2rem;
     font-weight: 800;
-    color: $color-black;
+    color: $color-yellow;
     text-transform: uppercase;
     margin-top: 19rem;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.119);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
   }
 
   &__card--5 p {
     display: flex;
     position: absolute;
     margin-bottom: 16rem;
-    color: #000;
+    color: $color-black;
     text-transform: uppercase;
     font-size: 1.4rem;
 
@@ -344,6 +350,7 @@
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.1)
     );
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.29);
   }
 
   .cta--5 {
