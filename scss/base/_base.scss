@@ -14,6 +14,8 @@ html {
 .container {
   display: grid;
   background-color: rgba(255, 255, 255, 0.103);
+  background-blend-mode: multiply;
+  background-size: cover;
 
   grid-template-columns:
     [full-start] 1fr [center-start] repeat(
@@ -22,8 +24,8 @@ html {
     )
     [center-end] 1fr [full-end];
 
-  grid-template-rows: 5rem 12vh min-content 75vh min-content 40vw repeat(
-      4,
+  grid-template-rows: 25vh min-content min-content 35vw min-content min-content min-content repeat(
+      6,
       min-content
     );
 }

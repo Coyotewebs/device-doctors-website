@@ -1,48 +1,40 @@
-//About Button
 
-document.querySelectorAll('.about-us__btn').forEach(btn =>{
-  btn.addEventListener('click',() => {
-      btn.classList.toggle('change')
-      btn.nextElementSibling.classList.toggle('change')
-  })  
+
+const nextBtn = document.querySelector(".next-btn")
+const prevBtn = document.querySelector(".prev-btn")
+const slides  = document.querySelectorAll(".about-us__slide")
+const slideIcons = document.querySelectorAll(".slide-icon")
+const numberOfSlides = slides.length
+var slideNumber = 0 
+
+//image slider next button
+
+nextBtn.addEventListener("click", () => {
+  slides.forEach((slide) => {
+    slide.classList.remove('active')
+  })
+  slideIcons.forEach((slideIcon) => {
+    slideIcon.classList.remove('active')
+  })
+
+  slideNumber++
+
+  if(slideNumber > (numberOfSlides - 1)) {
+    slideNumber = 0
+  }
+  
+  slides[slideNumber].classList.add("active")
+  slideIcons[slideNumber].classList.add("active")
 })
 
 
-//Map
-
-function initMap(){
-
-  // Map option
-
-  var options = {
-    center: {lat: 39.889037, lng: -105.9586201},
-    zoom:10
-     
-  }
 
 
-  //New Map
-  map = new google.maps.Map(document.getElementById("map"),options)
 
 
-  // Marker 
-  
-  const marker = new google.maps.Marker({
-    position: {lat: 39.917643679340934, lng: -105.7855048490357},
-    map:map,
-    icon: "https://img.icons8.com/ios-filled/50/000000/google-maps-new.png"
-  });
 
-  //InfoWindow
-  const detailWindow = new google.maps.InfoWindow({
-    content: ` <img src="img/map-hover.png">`
-  });
 
-  marker.addListener("click", () =>{
-    detailWindow.open(map, marker);
-  });
 
-}
 
 
 

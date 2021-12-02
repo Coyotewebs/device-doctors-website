@@ -37,11 +37,15 @@ body {
   &--red {
     color: $color-primary;
   }
+
+  &--yellow {
+    color: $color-yellow;
+  }
 }
 .heading-3 {
   @extend %heading;
   font-size: 2.3rem;
-  color: $color-primary;
+  color: $color-primary2;
   text-transform: uppercase;
 
   &--light {
@@ -58,14 +62,8 @@ body {
   @extend %heading;
   font-size: 2.8rem;
 
-  &--light {
-    color: $color-grey-light-1;
-  }
-  &--dark {
-    color: $color-primary;
-  }
   &--black {
-    color: $color-black;
+    color: #060606;
   }
 }
 .heading-5 {
@@ -86,7 +84,7 @@ body {
 
 //move button to new file
 .btn {
-  background-color: $color-primary;
+  background-color: $color-primary2;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -103,7 +101,7 @@ body {
 }
 
 .gmap__btn {
-  background-color: $color-primary;
+  background-color: $color-black;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -116,14 +114,15 @@ body {
   transition: all 0.2s;
 
   &:hover {
-    background-color: $color-black;
+    background-color: $color-yellow-light;
+    color: $color-black;
   }
 }
 
 .cta--1 {
   display: flex;
   position: absolute;
-  background-color: $color-primary;
+  background-color: $color-primary2;
   color: #fff;
   border: none;
   border-radius: 0;

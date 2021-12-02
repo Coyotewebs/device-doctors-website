@@ -1,162 +1,138 @@
 @use '../abstracts' as *;
 
 .about-us {
+  // border: 2px solid blue;
   // display: flex;
-  // border: 3px solid blue;
-  grid-column: col-start 6 / full-end;
-  width: 100%;
-  position: relative;
+  //   border: 1px solid $color-black;
+  grid-column: full-start / col-end 7;
+  // box-shadow: 0px 2px 8px 0px rgba(34, 34, 34, 0.489);
+  border-radius: 0;
 
-  // justify-content: space-between;
-  // padding: 5rem;
+  // width: 100%;
+  // position: relative;
+  // background-color: #ccc;
 
-  // &__heading {
-  //   font-size: 2rem;
-  //   font-weight: bold;
-  //   text-transform: uppercase;
-  //   color: #999;
-  //   text-align: center;
-  //   opacity: 0.8;
-  //   text-shadow: 2rem 2rem 4rem #aaa;
-  // }
+  // background-image: url(../img/brokephone.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // position: relative;
+  // opacity: 8%;
 
-  &__wrapper {
-    // border: 10px solid green;
-    display: flex;
-    position: absolute;
-    // justify-content: space-evenly;
-    // align-items: center;
-    height: 100%;
-    width: 100%;
-  }
-
-  &__steve {
-    // border: 10px solid yellow;
+  .about-us__slider {
+    // border: 2px solid blue;
     position: relative;
-    // width: 100%;
+    background-color: #e6e6ebc8;
+    width: auto;
+    height: 75vh;
+    overflow: hidden;
+    border-radius: 0px;
   }
 
-  &__img {
-    // border: 3px solid blue;
-    display: flex;
+  .about-us__slider .about-us__slide {
     position: absolute;
-    height: 100%;
-
-    // desktop
-    border-radius: 20px;
-    // Ipad pro
-    margin-left: 1rem;
-    // margin-left: 10rem;
-    box-shadow: 0 2rem 5rem rgba(#000, 0.1);
-  }
-
-  // &__cta {
-  //   background-color: $color-yellow;
-  //   color: $color-black;
-  //   padding: 0.5rem 1, 5rem;
-  //   border-radius: 5rem;
-  //   font-size: 1.5rem;
-  //   letter-spacing: 0.2rem;
-  // }
-
-  &__btn {
-    width: 4rem;
-    height: 4rem;
-    background-color: $color-yellow;
-    position: absolute;
-    top: -2rem;
-
-    //desktop
-    // left: 8rem;
-    //ipad pro
-    right: -3.5rem;
-
-    border-radius: 5rem;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    cursor: pointer;
-    z-index: 50;
-    transition: transform 0.5s;
-  }
-
-  .change.about-us__btn {
-    transform: rotate(405deg);
-  }
-
-  &__btn--line {
     width: 100%;
-    height: 0.2rem;
-    background-color: $color-black;
-  }
-
-  &__story {
-    background-color: rgba(0, 0, 0, 0.791);
-    // display: flex;
-    position: absolute;
-
     height: 100%;
-    width: 30vw;
-
-    //desktop
-    // margin-left: 10rem;
-    //ipad pro
-    margin-left: 1rem;
-
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    padding: 24rem;
-    // margin: 1rem;
-    border-radius: 10px;
-    transform: scale(0);
-    transition: all 0.5s;
+    clip-path: circle(0% at 100%);
   }
 
-  .change.about-us__story {
-    transform: scale(1);
+  .about-us__slider .about-us__slide.active {
+    clip-path: circle(130% at 0 50%);
+    transition: 2s;
   }
 
-  &__story--heading {
-    font-size: 4rem;
-    font-weight: 700;
-    color: $color-yellow-light;
+  .about-us__slider .about-us__slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-us__slider .about-us__slide .about-us__info {
+    position: absolute;
+    color: #222;
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    padding: 20px;
+    // border-radius: 50px;
+    // border: solid 0.5px $color-grey-light-2, 0.5;
+    // margin-top: 1rem;
+    // margin-left: 2rem;
+    // box-shadow: 0 5px 25px rga(1 1 1 /8%);
+    // grid-template-columns: minmax(300px, 1fr);
+  }
+
+  .about-us__slider .about-us__slide .about-us__info i {
+    font-size: 2.8rem;
+    // font-weight: 800;
     display: flex;
-
     position: absolute;
-    top: 1%;
-    left: 30%;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+
+    color: $color-primary2;
   }
 
-  &__paragraph--1 {
-    // border: 3px solid blue;
-    font-size: 2rem;
+  .about-us__slider .about-us__slide .about-us__info p {
+    font-size: 2.6rem;
+    letter-spacing: 0.6px;
+    font-family: $font-display;
+    font-weight: 100;
+    position: relative;
+    justify-self: center;
+    margin-left: 6rem;
     color: white;
+  }
 
-    display: flexbox;
-    position: absolute;
-    top: 11%;
-    right: 10%;
-    margin-left: 3rem;
-
-    justify-items: center;
+  .navigation {
+    height: 100%;
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
   }
 
-  &__paragraph--3 {
-    // border: 3px solid blue;
+  .about-us__slider:hover .navigation {
+    opacity: 1;
+  }
+
+  .prev-btn,
+  .next-btn {
+    z-index: 999;
     font-size: 2rem;
-    color: white;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+  }
 
-    display: flexbox;
-    position: absolute;
-    bottom: 11%;
-    right: 10%;
-    margin-left: 3rem;
+  .prev-btn {
+    border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
 
-    // justify-items: center;
-    // align-items: center;
-    text-align: center;
+  .next-btn {
+    border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .navigation-visibility {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation-visibility .slide-icon {
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 10px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rga(1 1 1 / 20%);
+  }
+  .navigation-visibility .slide-icon.active {
+    // background: $color-yellow-light;
+    background: #ff16167e;
   }
 }

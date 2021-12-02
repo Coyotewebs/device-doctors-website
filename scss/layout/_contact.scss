@@ -13,11 +13,11 @@
   display: flex;
   align-items: center;
 
-  background-image: url(../img/contact.jpg);
+  background-image: url(../img/contact21.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  opacity: 95%;
+  opacity: 100%;
 
   &__wrapper {
     // border: solid green;
@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 13rem;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(186, 177, 177, 0);
     margin-bottom: 0rem;
   }
 
@@ -46,7 +46,7 @@
 
   &__details i {
     font-size: 5rem;
-    color: $color-primary;
+    color: $color-primary2;
   }
 
   &__details h4 {
@@ -58,12 +58,12 @@
 
   &__details p {
     font-size: 1.6rem;
-    color: #aaa;
+    color: $color-white;
   }
 
   &__wrapper h1 {
     font-size: 4rem;
-    color: rgba(255, 255, 255, 0.886);
+    color: rgba(255, 255, 255, 0.941);
     text-transform: uppercase;
     margin-bottom: 3rem;
     margin-right: 4rem;
@@ -97,7 +97,7 @@
   }
 
   &__form input[type='submit'] {
-    background-color: $color-primary;
+    background-color: $color-primary2;
     text-transform: uppercase;
     margin-bottom: 10rem;
     cursor: pointer;

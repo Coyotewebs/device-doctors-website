@@ -2,7 +2,7 @@
 
 .retail {
   grid-column: full-start / full-end;
-  background-color: $color-primary;
+  background-color: $color-primary2;
   background-image: linear-gradient(rgba($color-black, 0.2), rgba(#ccc, 0.1));
 
   // outline: 0.5rem solid #fff;
@@ -26,7 +26,7 @@
 
   &__heading {
     font-size: 6rem;
-    color: $color-white;
+    color: #fff;
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
@@ -157,7 +157,7 @@
   .cta--2 {
     display: flex;
     position: absolute;
-    background-color: $color-primary;
+    background-color: $color-primary2;
     color: #fff;
     border: none;
     border-radius: 0;
@@ -222,7 +222,7 @@
   .cta--3 {
     display: flex;
     position: absolute;
-    background-color: $color-primary;
+    background-color: $color-primary2;
     color: #fff;
     border: none;
     border-radius: 0;
@@ -287,7 +287,7 @@
   .cta--4 {
     display: flex;
     position: absolute;
-    background-color: $color-primary;
+    background-color: $color-primary2;
     color: #fff;
     border: none;
     border-radius: 0;
@@ -356,7 +356,7 @@
   .cta--5 {
     display: flex;
     position: absolute;
-    background-color: $color-primary;
+    background-color: $color-primary2;
     color: #fff;
     border: none;
     border-radius: 0;
