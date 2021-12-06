@@ -207,7 +207,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .owner {
@@ -261,6 +261,7 @@ body {
 
 .card__number {
   font-size: 1.8em;
+  text-decoration: none;
 }
 
 .phone-icon {
@@ -331,15 +332,15 @@ body {
   }
 
   .card__number {
-    font-size: 1.7em;
+    font-size: 2em;
   }
 
   .card__time--hours {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .owner {
