@@ -196,12 +196,10 @@ body {
   cursor: pointer;
 }
 .about-map .profile-img {
-  display: flex;
   position: relative;
-  justify-content: center;
-  align-self: end;
-  margin-top: 9rem;
-  width: 24rem;
+  align-self: center;
+  margin-top: 12rem;
+  width: 22rem;
   clip-path: circle(55px at center);
 }
 
@@ -220,11 +218,11 @@ body {
 }
 
 .description {
-  display: flex;
+  display: grid;
   align-self: flex-start;
   justify-self: center;
   text-align: start;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.3px;
   color: #222323;
   font-size: 1.8em;
