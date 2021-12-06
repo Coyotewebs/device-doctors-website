@@ -313,11 +313,36 @@ body {
 
   .description {
     font-size: 1.8rem;
+    width: 85%;
+  }
+
+  .card__number {
+    font-size: 1.8em;
+  }
+
+  .card__time--hours {
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 1275px) {
   .description {
     font-size: 1.6rem;
+  }
+
+  .card__number {
+    font-size: 1.7em;
+  }
+
+  .card__time--hours {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .owner {
+    font-size: 1.3rem;
   }
 }
 header {
