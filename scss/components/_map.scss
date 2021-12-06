@@ -37,7 +37,7 @@
   .profile-img {
     display: flex;
     position: relative;
-    margin-top: 11rem;
+    margin-top: 12rem;
 
     align-self: center;
 
@@ -49,12 +49,13 @@
   display: flex;
   align-items: start;
   justify-content: center;
+  font-size: 2rem;
 }
 .owner {
   display: flex;
   align-items: start;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 .description {
   display: flex;
@@ -62,15 +63,10 @@
   justify-self: center;
   text-align: start;
   font-weight: 400;
-
   letter-spacing: 0.3px;
   color: #222323;
-
   padding: 1rem 1rem;
-
   font-size: 1.8em;
-  // background-color: rgba(255, 255, 255, 0.462);
-
   width: 90%;
 }
 
@@ -82,7 +78,7 @@
 }
 .card__number {
   // margin-left: 10rem;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .phone-icon {
@@ -109,16 +105,59 @@
   position: relative;
   align-items: center;
 
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
+}
 
-  // align-self: flex-end;
-  // justify-self: center;
-  // color: #222323;
-  // text-transform: uppercase;
+@media screen and (max-width: 1786px) {
+  .description {
+    letter-spacing: 0.2px;
+    font-size: 1.6em;
+  }
+}
+.description {
+  letter-spacing: 0.2px;
+  font-size: 1.7em;
+}
 
-  // margin-left: 0rem;
-  // margin-bottom: 3rem;
-  // letter-spacing: 0.5px;
-  // // background-color: rgba(255, 255, 255, 0.517);
+@media screen and (max-width: 1700px) {
+  .about-map {
+    display: grid;
+    grid-column: col-start 7 / full-end;
+  }
+  .description {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .description {
+    letter-spacing: 0.2px;
+    font-size: 1.7em;
+  }
+
+  .card__number {
+    // margin-left: 10rem;
+    font-size: 1.6em;
+  }
+
+  .card__time--hours {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .about-map {
+    display: grid;
+    grid-column: col-start 6 / full-end;
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .description {
+    font-size: 1.6rem;
+  }
 }

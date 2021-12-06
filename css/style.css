@@ -198,7 +198,7 @@ body {
 .about-map .profile-img {
   display: flex;
   position: relative;
-  margin-top: 11rem;
+  margin-top: 12rem;
   align-self: center;
   width: 24rem;
   clip-path: circle(55px at center);
@@ -208,13 +208,14 @@ body {
   display: flex;
   align-items: start;
   justify-content: center;
+  font-size: 2rem;
 }
 
 .owner {
   display: flex;
   align-items: start;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .description {
@@ -238,7 +239,7 @@ body {
 }
 
 .card__number {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .phone-icon {
@@ -265,10 +266,60 @@ body {
   display: flex;
   position: relative;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
+@media screen and (max-width: 1786px) {
+  .description {
+    letter-spacing: 0.2px;
+    font-size: 1.6em;
+  }
+}
+.description {
+  letter-spacing: 0.2px;
+  font-size: 1.7em;
+}
+
+@media screen and (max-width: 1700px) {
+  .about-map {
+    display: grid;
+    grid-column: col-start 7/full-end;
+  }
+
+  .description {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .description {
+    letter-spacing: 0.2px;
+    font-size: 1.7em;
+  }
+
+  .card__number {
+    font-size: 1.6em;
+  }
+
+  .card__time--hours {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .about-map {
+    display: grid;
+    grid-column: col-start 6/full-end;
+  }
+
+  .description {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1275px) {
+  .description {
+    font-size: 1.6rem;
+  }
+}
 header {
   background: #f5fc1fbf;
   display: flex;
@@ -637,6 +688,24 @@ nav a:hover {
   background: #ff16167e;
 }
 
+@media screen and (max-width: 1700px) {
+  .about-us {
+    display: grid;
+    grid-column: full-start/col-end 6;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .about-us {
+    display: grid;
+    grid-column: full-start/col-end 6;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .about-us {
+    display: grid;
+    grid-column: full-start/col-end 5;
+  }
+}
 .trade {
   background-color: rgba(251, 203, 203, 0.01);
   background-image: linear-gradient(rgba(84, 72, 58, 0.1), rgba(84, 72, 58, 0.1));
