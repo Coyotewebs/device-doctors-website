@@ -329,7 +329,7 @@ body {
 @media screen and (max-width: 1366px) {
   .description {
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     width: 90%;
   }
