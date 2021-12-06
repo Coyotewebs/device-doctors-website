@@ -198,15 +198,16 @@ body {
 .about-map .profile-img {
   display: flex;
   position: relative;
-  margin-top: 12rem;
-  align-self: center;
+  justify-content: center;
+  align-self: end;
+  margin-top: 9rem;
   width: 24rem;
   clip-path: circle(55px at center);
 }
 
 .title {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   font-size: 2rem;
 }
@@ -226,9 +227,8 @@ body {
   font-weight: 400;
   letter-spacing: 0.3px;
   color: #222323;
-  padding: 1rem 1rem;
   font-size: 1.8em;
-  width: 90%;
+  width: 85%;
 }
 
 .card__time {
@@ -314,7 +314,6 @@ body {
 
   .description {
     font-size: 1.8rem;
-    width: 85%;
   }
 
   .card__number {
@@ -325,11 +324,11 @@ body {
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 1335px) {
+@media screen and (max-width: 1366px) {
   .description {
     font-size: 1.7rem;
     font-weight: 400;
-    width: 90%;
+    text-align: center;
   }
 
   .card__number {
@@ -341,11 +340,12 @@ body {
   }
 
   .title {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
 
   .owner {
     font-size: 1.3rem;
+    margin-bottom: rem;
   }
 }
 header {
