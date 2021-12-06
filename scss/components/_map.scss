@@ -70,29 +70,12 @@
   width: 90%;
 }
 
-.card__phone {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-.card__number {
-  // margin-left: 10rem;
-  font-size: 1.8em;
-}
-
-.phone-icon {
-  display: flex;
-  margin-right: 2rem;
-  height: 2.5rem;
-}
-
 .card__time {
   display: flex;
   position: relative;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  padding-bottom: 3rem;
+  margin-top: 1rem;
 }
 .time-icon {
   height: 3rem;
@@ -104,9 +87,24 @@
   display: flex;
   position: relative;
   align-items: center;
-
   font-size: 1.8rem;
   text-align: center;
+}
+.card__phone {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.card__number {
+  font-size: 1.8em;
+}
+
+.phone-icon {
+  display: flex;
+  margin-right: 2rem;
+  height: 2.5rem;
 }
 
 @media screen and (max-width: 1786px) {
@@ -168,6 +166,8 @@
 @media screen and (max-width: 1335px) {
   .description {
     font-size: 1.7rem;
+    font-weight: 400;
+    width: 90%;
   }
   .card__number {
     // margin-left: 10rem;
