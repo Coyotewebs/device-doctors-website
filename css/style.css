@@ -184,7 +184,7 @@ body {
 }
 .about-map .card {
   display: grid;
-  background-color: rgba(239, 238, 237, 0.475);
+  background-color: rgba(239, 238, 237, 0.386);
 }
 .about-map .banner-img {
   display: flex;
