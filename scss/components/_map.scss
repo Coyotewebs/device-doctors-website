@@ -21,21 +21,25 @@
     // box-shadow: 0px 2px 8px 0px rgba(51, 51, 51, 0.297);
   }
   .banner-img {
-    position: absolute;
+    display: flex;
+
     background-image: url(../img/mapstart.png);
     background-repeat: no-repeat;
-    align-self: center;
-    height: 100%;
-    width: 100%;
-    margin-left: 0rem;
+    overflow: hidden;
+    justify-content: center;
+
+    height: auto;
+    // width: 100%;
+
     cursor: pointer;
   }
 
   .profile-img {
     display: flex;
-    justify-self: center;
-    align-self: end;
-    margin-top: 10rem;
+    position: relative;
+    margin-top: 11rem;
+
+    align-self: center;
 
     width: 24rem;
     clip-path: circle(55px at center);
@@ -95,6 +99,8 @@
   padding-bottom: 3rem;
 }
 .time-icon {
+  height: 3rem;
+
   display: flex;
   margin-right: 2rem;
 }
