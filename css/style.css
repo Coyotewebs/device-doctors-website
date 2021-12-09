@@ -625,7 +625,7 @@ nav a:hover {
   clip-path: circle(0% at 100%);
 }
 .about-us .about-us__slider .about-us__slide.active {
-  clip-path: circle(130% at 0 50%);
+  clip-path: circle(150% at 0 50%);
   transition: 2s;
 }
 .about-us .about-us__slider .about-us__slide img {
@@ -640,6 +640,8 @@ nav a:hover {
   background-color: #222222;
   width: 100%;
   padding: 20px;
+  border: solid 0.5px #aaa, 0.5;
+  box-shadow: 0 5px 25px rga(1 1 1/8%);
 }
 .about-us .about-us__slider .about-us__slide .about-us__info i {
   font-size: 2.8rem;
@@ -651,9 +653,9 @@ nav a:hover {
 }
 .about-us .about-us__slider .about-us__slide .about-us__info p {
   font-size: 2.5rem;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   position: relative;
   justify-self: center;
   margin-left: 6rem;
@@ -697,7 +699,7 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.5);
   width: 20px;
   height: 10px;
-  transform: translateY(-50px);
+  transform: translateY(-70px);
   margin: 0 6px;
   border-radius: 5px;
   box-shadow: 0 5px 25px rga(1 1 1/20%);
