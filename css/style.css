@@ -144,20 +144,6 @@ body {
   color: #000;
 }
 
-.cta--1 {
-  display: flex;
-  position: absolute;
-  background-color: #ff1716;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5rem;
-  padding: 5rem 1rem;
-  border-radius: 50%;
-  margin-top: 18rem;
-}
-
 .mb-sm {
   margin-bottom: 2rem;
 }
@@ -814,7 +800,7 @@ nav a:hover {
 
 .retail {
   grid-column: full-start/full-end;
-  background-color: #ff1716;
+  background-color: #ac250d;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(204, 204, 204, 0.1));
   display: grid;
   justify-items: center;
@@ -823,15 +809,12 @@ nav a:hover {
   padding: 5rem;
 }
 .retail__heading {
-  font-size: 6rem;
+  font-size: 8rem;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 .retail__wrapper {
-  display: flex;
-}
-.retail__cards {
   display: flex;
 }
 .retail__cards--left {
@@ -842,222 +825,226 @@ nav a:hover {
   flex: 2;
   position: relative;
 }
-.retail__card--1 {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.retail__card--mobile {
+  display: grid;
+  position: relative;
+  align-items: start;
   justify-content: center;
 }
-.retail__img--1 {
+.retail__img--mobile {
   display: flex;
-  position: relative;
   height: auto;
-  width: 45vw;
-  padding-right: 3rem;
+  width: 46vw;
+  margin-right: 3rem;
 }
-.retail__card--1 h4 {
-  display: flex;
+.retail__mobile--info {
+  display: grid;
   position: absolute;
-  margin-bottom: 41rem;
+  justify-self: center;
+  margin-top: 6rem;
+}
+.retail__mobile--title {
   font-size: 3.3rem;
   font-weight: 800;
   color: #f3fc1f;
   text-transform: uppercase;
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
 }
-.retail__card--1 p {
-  display: flex;
-  position: absolute;
-  margin-bottom: 35rem;
+.retail__mobile--p {
   color: #000;
   text-transform: uppercase;
-  font-weight: 500;
   font-size: 1.5rem;
-  background: linear-gradient(to right bottom, rgba(170, 108, 108, 0.1), rgba(255, 255, 255, 0.1));
 }
-.retail__card--2 {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.retail__mobile--shape {
+  position: absolute;
+  background: #ff1716;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.2em;
+  justify-self: center;
+  align-self: center;
+  margin-top: 10rem;
+}
+.retail__card--drone {
+  display: grid;
+  position: relative;
+  align-items: start;
   justify-content: center;
 }
-.retail__img--2 {
-  display: flex;
+.retail__img--drone {
   padding-right: 3rem;
   padding-top: 2.5rem;
   width: 48vw;
+  height: 111%;
 }
-.retail__card--2 h4 {
-  display: flex;
+.retail__drone--info {
+  display: grid;
   position: absolute;
-  margin-bottom: 42rem;
+  justify-self: center;
+  margin-top: 6rem;
+}
+.retail__drone--title {
   font-size: 3.5rem;
   font-weight: 800;
   color: #f3fc1f;
   text-transform: uppercase;
-  margin-top: 12rem;
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
+  margin-top: -2rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
 }
-.retail__card--2 p {
-  display: flex;
-  position: absolute;
-  margin-bottom: 24rem;
+.retail__drone--p {
   color: #000;
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-weight: 500;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  margin-top: -1rem;
 }
-.retail .cta--2 {
-  display: flex;
+.retail__drone--shape {
   position: absolute;
-  background-color: #ff1716;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5rem;
-  padding: 5rem 1rem;
+  background: #ff1716;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.2em;
+  justify-self: center;
+  align-self: center;
   margin-top: 20rem;
 }
-.retail__card--3 {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.retail__card--headphone {
+  display: grid;
+  position: relative;
+  align-items: start;
   justify-content: center;
 }
-.retail__img--3 {
-  display: flex;
+.retail__img--headphone {
   margin-bottom: 1rem;
   height: auto;
   width: 35vw;
+  opacity: 95%;
 }
-.retail__card--3 h4 {
-  display: flex;
+.retail__headphone--info {
+  display: grid;
   position: absolute;
-  margin-bottom: 45rem;
+  justify-self: center;
+}
+.retail__headphone--title {
   font-size: 3rem;
   font-weight: 800;
   color: #f3fc1f;
   text-transform: uppercase;
-  margin-bottom: 26rem;
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
+  margin-top: -2rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
 }
-.retail .retail__card--3 p {
-  display: flex;
-  position: absolute;
-  margin-bottom: 24rem;
+.retail__headphone--p {
   color: #000;
   text-transform: uppercase;
   font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 21rem;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
-.retail .cta--3 {
-  display: flex;
+.retail__headphone--shape {
   position: absolute;
-  background-color: #ff1716;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.2rem;
-  padding: 4rem 1rem;
+  background: #ff1716;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-top: 14rem;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.2em;
+  justify-self: center;
+  align-self: center;
+  margin-top: 15rem;
 }
-.retail__card--4 {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.retail__card--camera {
+  display: grid;
+  position: relative;
+  align-items: start;
   justify-content: center;
 }
-.retail__img--4 {
-  display: flex;
+.retail__img--camera {
+  position: relative;
   margin-bottom: 1rem;
   height: auto;
   width: 35vw;
 }
-.retail__card--4 h4 {
-  display: flex;
-  position: absolute;
-  margin-bottom: 26rem;
+.retail__camera--info {
+  display: grid;
+}
+.retail__camera--title {
   font-size: 3.2rem;
   font-weight: 800;
   color: #f3fc1f;
   text-transform: uppercase;
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.38);
+  margin-top: -4rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
 }
-.retail__card--4 p {
-  display: flex;
-  position: absolute;
+.retail__camera--p {
   color: #000;
   text-transform: uppercase;
   font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 20rem;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.16);
+  margin-top: -1rem;
 }
-.retail .cta--4 {
-  display: flex;
+.retail__camera--shape {
   position: absolute;
-  background-color: #ff1716;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.2rem;
-  padding: 4rem 1rem;
-  margin-top: 10rem;
+  background: #ff1716;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.2em;
+  justify-self: center;
+  align-self: center;
+  margin-top: 10rem;
 }
-.retail__card--5 {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.retail__card--car {
+  display: grid;
+  position: relative;
+  align-items: start;
   justify-content: center;
 }
-.retail__img--5 {
-  display: flex;
-  height: 100%;
+.retail__img--car {
+  position: relative;
+  height: auto;
   width: 35vw;
-  opacity: 98%;
+  opacity: 90%;
 }
-.retail__card--5 h4 {
-  display: flex;
-  position: absolute;
-  margin-bottom: 40rem;
+.retail__car--info {
+  display: grid;
+  justify-self: center;
+}
+.retail__car--title {
   font-size: 3.2rem;
   font-weight: 800;
   color: #f3fc1f;
   text-transform: uppercase;
-  margin-top: 19rem;
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
+  margin-top: -4rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.119);
 }
-.retail__card--5 p {
-  display: flex;
-  position: absolute;
-  margin-bottom: 16rem;
+.retail__car--p {
   color: #000;
   text-transform: uppercase;
   font-size: 1.4rem;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.29);
+  margin-top: -1rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
 }
-.retail .cta--5 {
-  display: flex;
+.retail__car--shape {
   position: absolute;
-  background-color: #ff1716;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.2rem;
-  padding: 4rem 1rem;
+  background: #ff1716;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.2em;
+  justify-self: center;
+  align-self: center;
   margin-top: 10rem;
 }
 

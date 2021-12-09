@@ -2,7 +2,7 @@
 
 .retail {
   grid-column: full-start / full-end;
-  background-color: $color-primary2;
+  background-color: $color-primary;
   background-image: linear-gradient(rgba($color-black, 0.2), rgba(#ccc, 0.1));
 
   // outline: 0.5rem solid #fff;
@@ -25,8 +25,8 @@
   // gap: 1.5rem;
 
   &__heading {
-    font-size: 6rem;
-    color: #fff;
+    font-size: 8rem;
+    color: $color-white;
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
@@ -37,11 +37,6 @@
 
     // // gap: 1rem;
     // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  }
-
-  &__cards {
-    // border: 10px solid yellow;
-    display: flex;
   }
 
   &__cards--left {
@@ -56,12 +51,15 @@
     position: relative;
   }
 
-  &__card--1 {
+  &__card--mobile {
     // border: 10px solid palevioletred;
-    display: flex;
-    align-items: center;
-    text-align: center;
+
+    display: grid;
+    position: relative;
+    align-items: start;
     justify-content: center;
+
+    // margin: 0 auto;
 
     // background-image: url(../img/phonecases.jpg);
 
@@ -69,307 +67,281 @@
     // background-size: cover;
   }
 
-  &__img--1 {
+  &__img--mobile {
     display: flex;
-    position: relative;
     height: auto;
-    width: 45vw;
-    padding-right: 3rem;
+    width: 46vw;
+    margin-right: 3rem;
+    // padding-right: 3rem;
     // border-radius: 5px;
   }
 
-  &__card--1 h4 {
-    display: flex;
+  &__mobile--info {
+    display: grid;
     position: absolute;
-    margin-bottom: 41rem;
+    // border: 10px solid palevioletred;
+    justify-self: center;
+    margin-top: 6rem;
+
+    // justify-content: center;
+  }
+
+  &__mobile--title {
     font-size: 3.3rem;
     font-weight: 800;
-    color: $color-yellow;
+    color: rgb(243, 252, 31);
     text-transform: uppercase;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
   }
 
-  &__card--1 p {
-    display: flex;
-    position: absolute;
-    margin-bottom: 35rem;
-    color: $color-black;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.5rem;
-
-    background: linear-gradient(
-      to right bottom,
-      rgba(170, 108, 108, 0.1),
-      rgba(255, 255, 255, 0.1)
-    );
-    // text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.647);
-  }
-
-  &__card--2 {
+  &__mobile--p {
     // border: 10px solid palevioletred;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    // position: relative;
+    // margin-top: 10rem;
+
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  &__mobile--shape {
+    position: absolute;
+    background: $color-primary2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 1.2em;
+    justify-self: center;
+    align-self: center;
+
+    margin-top: 10rem;
+  }
+
+  &__card--drone {
+    // border: 10px solid palevioletred;
+
+    display: grid;
+    position: relative;
+    align-items: start;
     justify-content: center;
   }
 
-  &__img--2 {
-    display: flex;
-
-    // border: 10px solid palevioletred;
+  &__img--drone {
     padding-right: 3rem;
     padding-top: 2.5rem;
 
     width: 48vw;
+    height: 111%;
+  }
+  &__drone--info {
+    display: grid;
+    position: absolute;
+    // border: 10px solid palevioletred;
+    justify-self: center;
+    margin-top: 6rem;
   }
 
-  &__card--2 h4 {
-    display: flex;
-    position: absolute;
-    margin-bottom: 42rem;
+  &__drone--title {
+    // border: 10px solid green;
+    // position: relative;
     font-size: 3.5rem;
     font-weight: 800;
-    color: $color-yellow;
+    color: rgb(243, 252, 31);
     text-transform: uppercase;
-    margin-top: 12rem;
+    margin-top: -2rem;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
   }
 
-  &__card--2 p {
-    display: flex;
-    position: absolute;
-    margin-bottom: 24rem;
-    color: $color-black;
+  &__drone--p {
+    // position: relative;
+    color: #000;
     text-transform: uppercase;
     font-size: 1.5rem;
-    font-weight: 500;
-
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.1)
-    );
+    margin-top: -1rem;
   }
 
-  .cta--2 {
-    display: flex;
+  &__drone--shape {
     position: absolute;
-    background-color: $color-primary2;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    font-family: $font-display;
-    font-size: 1.5rem;
-    padding: 5rem 1rem;
+    background: $color-primary2;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 1.2em;
+    justify-self: center;
+    align-self: center;
     margin-top: 20rem;
-    // cursor: pointer;
-    // transition: all 0.2s;
-
-    // &:hover {
-    //   background-color: $color-black;
-    // }
   }
 
-  &__card--3 {
+  &__card--headphone {
     // border: 10px solid palevioletred;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    display: grid;
+
+    position: relative;
+    align-items: start;
     justify-content: center;
   }
 
-  &__img--3 {
-    display: flex;
+  &__img--headphone {
     margin-bottom: 1rem;
     // border: 10px solid palevioletred;
     height: auto;
     width: 35vw;
+    opacity: 95%;
   }
 
-  &__card--3 h4 {
-    display: flex;
+  &__headphone--info {
+    display: grid;
     position: absolute;
-    margin-bottom: 45rem;
+    // border: 10px solid palevioletred;
+    justify-self: center;
+  }
+
+  &__headphone--title {
     font-size: 3rem;
     font-weight: 800;
-    color: $color-yellow;
+    color: rgb(243, 252, 31);
     text-transform: uppercase;
-    margin-bottom: 26rem;
+    margin-top: -2rem;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
   }
 
-  .retail__card--3 p {
-    display: flex;
-    position: absolute;
-    margin-bottom: 24rem;
-    color: $color-black;
+  &__headphone--p {
+    color: #000;
     text-transform: uppercase;
     font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 21rem;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    );
   }
 
-  .cta--3 {
-    display: flex;
+  &__headphone--shape {
     position: absolute;
-    background-color: $color-primary2;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    font-family: $font-display;
-    font-size: 1.2rem;
-    padding: 4rem 1rem;
+    background: $color-primary2;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin-top: 14rem;
-    // cursor: pointer;
-    // transition: all 0.2s;
-
-    // &:hover {
-    //   background-color: $color-black;
-    // }
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 1.2em;
+    justify-self: center;
+    align-self: center;
+    margin-top: 15rem;
   }
 
-  &__card--4 {
+  &__card--camera {
     // border: 10px solid palevioletred;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    position: relative;
+    align-items: start;
     justify-content: center;
   }
 
-  &__img--4 {
-    display: flex;
+  &__img--camera {
+    position: relative;
     margin-bottom: 1rem;
     // border: 10px solid palevioletred;
     height: auto;
     width: 35vw;
   }
 
-  &__card--4 h4 {
-    display: flex;
-    position: absolute;
-    margin-bottom: 26rem;
+  &__camera--info {
+    display: grid;
+    // position: absolute;
+    // border: 10px solid palevioletred;
+    // justify-self: center;
+  }
+
+  &__camera--title {
     font-size: 3.2rem;
     font-weight: 800;
-    color: $color-yellow;
+    color: rgb(243, 252, 31);
     text-transform: uppercase;
+    margin-top: -4rem;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.38);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
   }
 
-  &__card--4 p {
-    display: flex;
-    position: absolute;
-
-    color: $color-black;
+  &__camera--p {
+    color: #000;
     text-transform: uppercase;
     font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 20rem;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    );
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.16);
+    margin-top: -1rem;
   }
 
-  .cta--4 {
-    display: flex;
+  &__camera--shape {
     position: absolute;
-    background-color: $color-primary2;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    font-family: $font-display;
-    font-size: 1.2rem;
-    padding: 4rem 1rem;
-    margin-top: 10rem;
+    background: $color-primary2;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-
-    // cursor: pointer;
-    // transition: all 0.2s;
-
-    // &:hover {
-    //   background-color: $color-black;
-    // }
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 1.2em;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10rem;
   }
 
-  &__card--5 {
+  &__card--car {
     // border: 10px solid palevioletred;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    position: relative;
+    align-items: start;
     justify-content: center;
   }
 
-  &__img--5 {
-    display: flex;
+  &__img--car {
+    position: relative;
+    height: auto;
+    width: 35vw;
+    opacity: 90%;
+  }
+  &__car--info {
+    display: grid;
 
     // border: 10px solid palevioletred;
-
-    height: 100%;
-    width: 35vw;
-
-    opacity: 98%;
+    justify-self: center;
   }
 
-  &__card--5 h4 {
-    display: flex;
-    position: absolute;
-    margin-bottom: 40rem;
+  &__car--title {
     font-size: 3.2rem;
     font-weight: 800;
-    color: $color-yellow;
+    color: rgb(243, 252, 31);
     text-transform: uppercase;
-    margin-top: 19rem;
+    margin-top: -4rem;
 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.38);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.119);
   }
 
-  &__card--5 p {
-    display: flex;
-    position: absolute;
-    margin-bottom: 16rem;
-    color: $color-black;
+  &__car--p {
+    color: #000;
+
     text-transform: uppercase;
     font-size: 1.4rem;
-
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.1)
-    );
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.29);
+    margin-top: -1rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
   }
 
-  .cta--5 {
-    display: flex;
+  &__car--shape {
     position: absolute;
-    background-color: $color-primary2;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    font-family: $font-display;
-    font-size: 1.2rem;
-    padding: 4rem 1rem;
+    background: $color-primary2;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 1.2em;
+    justify-self: center;
+    align-self: center;
     margin-top: 10rem;
-    // cursor: pointer;
-    // transition: all 0.2s;
-
-    // &:hover {
-    //   background-color: $color-black;
-    // }
   }
 }
