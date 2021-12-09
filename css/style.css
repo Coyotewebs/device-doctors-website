@@ -655,7 +655,7 @@ nav a:hover {
   font-size: 2.5rem;
   letter-spacing: 0.4px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   position: relative;
   justify-self: center;
   margin-left: 6rem;
@@ -699,7 +699,7 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.5);
   width: 20px;
   height: 10px;
-  transform: translateY(-70px);
+  transform: translateY(-65px);
   margin: 0 6px;
   border-radius: 5px;
   box-shadow: 0 5px 25px rga(1 1 1/20%);
@@ -803,7 +803,7 @@ nav a:hover {
 .retail {
   grid-column: full-start/full-end;
   background-color: #ff1716;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(204, 204, 204, 0.2));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(204, 204, 204, 0.1));
   display: grid;
   justify-items: center;
   align-items: center;
