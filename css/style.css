@@ -843,7 +843,7 @@ nav a:hover {
 .retail__img--mobile {
   display: flex;
   height: auto;
-  width: 46vw;
+  width: 45vw;
   margin-right: 3rem;
 }
 .retail__mobile--info {
@@ -887,7 +887,7 @@ nav a:hover {
 .retail__img--drone {
   padding-right: 3rem;
   padding-top: 2.5rem;
-  width: 48vw;
+  width: 47vw;
 }
 .retail__drone--info {
   display: grid;
