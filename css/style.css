@@ -503,6 +503,12 @@ nav a:hover::before {
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (max-width: 37.5em) {
+  .stars__overlay {
+    padding: 10px;
+    width: 97%;
+  }
+}
 .stars .stars__heading {
   position: absolute;
   margin-bottom: 20%;
@@ -1060,7 +1066,7 @@ nav a:hover::before {
 @media screen and (max-width: 37.5em) {
   .contact__form {
     width: 50rem;
-    padding: 10px;
+    padding: 20px;
   }
 }
 .contact__form input, .contact__form textarea {
