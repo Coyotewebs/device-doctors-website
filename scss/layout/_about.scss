@@ -47,6 +47,10 @@
       margin-top: 4rem;
       width: 28rem;
     }
+
+    @media screen and (max-width: $bp-small) {
+      margin-top: 16rem;
+    }
   }
 }
 .title {

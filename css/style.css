@@ -352,6 +352,11 @@ nav a:hover::before {
     width: 28rem;
   }
 }
+@media screen and (max-width: 37.5em) {
+  .about-map .profile-img {
+    margin-top: 16rem;
+  }
+}
 
 .title {
   display: flex;
@@ -523,7 +528,7 @@ nav a:hover::before {
 }
 @media screen and (max-width: 63.75em) {
   .about-us .about-us__slider {
-    height: 65vh;
+    height: 65rem;
     display: flex;
   }
 }
