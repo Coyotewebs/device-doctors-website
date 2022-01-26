@@ -306,7 +306,7 @@ nav a:hover::before {
 }
 .about-map .banner-img {
   display: flex;
-  background-image: url(../img/map-long.png);
+  background-image: url(../img/map-long.pn);
   background-repeat: no-repeat;
   overflow: hidden;
   justify-content: center;
@@ -314,7 +314,7 @@ nav a:hover::before {
 }
 @media screen and (max-width: 63.75em) {
   .about-map .banner-img {
-    background-image: url(../img/map-short.png);
+    background-image: url(../img/map-short.pn);
   }
 }
 .about-map .profile-img {

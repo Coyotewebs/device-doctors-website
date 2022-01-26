@@ -25,14 +25,14 @@
   .banner-img {
     display: flex;
 
-    background-image: url(../img/map-long.png);
+    background-image: url(../img/map-long.pn);
     background-repeat: no-repeat;
     overflow: hidden;
     justify-content: center;
     cursor: pointer;
 
     @media screen and (max-width: $bp-ipad) {
-      background-image: url(../img/map-short.png);
+      background-image: url(../img/map-short.pn);
     }
   }
 
