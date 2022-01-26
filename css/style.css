@@ -505,8 +505,7 @@ nav a:hover::before {
 }
 @media screen and (max-width: 37.5em) {
   .stars__overlay {
-    padding: 10px;
-    width: 97%;
+    padding: 5px;
   }
 }
 .stars .stars__heading {
