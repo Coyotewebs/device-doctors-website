@@ -381,7 +381,7 @@ nav a:hover::before {
 }
 @media screen and (max-width: 63.75em) {
   .description {
-    width: 60%;
+    width: 80%;
     font-size: 2.1rem;
   }
 }
@@ -519,7 +519,6 @@ nav a:hover::before {
 @media screen and (max-width: 63.75em) {
   .about-us .about-us__slider {
     height: 50vh;
-    width: 100%;
     display: flex;
   }
 }
@@ -1032,6 +1031,11 @@ nav a:hover::before {
   width: 70rem;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 37.5em) {
+  .contact__form {
+    width: 50rem;
+  }
 }
 .contact__form input, .contact__form textarea {
   padding: 1.5rem;
