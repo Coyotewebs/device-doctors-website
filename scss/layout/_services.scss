@@ -19,6 +19,10 @@
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
 
+  @media screen and (max-width: $bp-ipad) {
+    grid-column: 1 / full-end;
+  }
+
   &__icon {
     color: $color-primary2;
     // width: 4.5rem;

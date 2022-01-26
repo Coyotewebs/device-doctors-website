@@ -1,13 +1,5 @@
 @use "../abstracts/variables" as *;
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /*font-size: 16px;*/
-  line-height: 1.7;
-  // padding: 2rem;
-}
-
 %heading {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
@@ -119,7 +111,7 @@ body {
   }
 }
 
-//move maragin to new file
+//move margin to new file
 
 .mb-sm {
   margin-bottom: 2rem;

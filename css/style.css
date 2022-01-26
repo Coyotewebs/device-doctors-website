@@ -3,7 +3,16 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
 }
 
 html {
@@ -39,13 +48,6 @@ html {
   .container {
     grid-template-rows: 28vh min-content 75vh min-content 60vw min-content min-content min-content repeat(6, min-content);
   }
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /*font-size: 16px;*/
-  line-height: 1.7;
 }
 
 .heading-5, .heading-4, .heading-3, .heading-2, .heading-1 {
@@ -288,7 +290,7 @@ nav a:hover::before {
 .about-map {
   display: grid;
   grid-column: col-start 7/full-end;
-  background-image: url(../img/texture.jpg);
+  background-image: url(../img/texture.jp);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -420,6 +422,11 @@ nav a:hover::before {
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
+}
+@media screen and (max-width: 63.75em) {
+  .service {
+    grid-column: 1/full-end;
+  }
 }
 .service__icon {
   color: #ff1716;

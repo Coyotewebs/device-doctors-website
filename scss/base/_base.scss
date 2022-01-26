@@ -11,7 +11,18 @@ $bp-small: 37.5em; //600px
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  // color: #777;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  // padding: 2rem;
 }
 
 html {
