@@ -290,7 +290,7 @@ nav a:hover::before {
 .about-map {
   display: grid;
   grid-column: col-start 7/full-end;
-  background-image: url(../img/texture.jp);
+  background-image: url(../img/texture.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -306,7 +306,7 @@ nav a:hover::before {
 }
 .about-map .banner-img {
   display: flex;
-  background-image: url(../img/map-long.pn);
+  background-image: url(../img/map-long.png);
   background-repeat: no-repeat;
   overflow: hidden;
   justify-content: center;
@@ -314,7 +314,7 @@ nav a:hover::before {
 }
 @media screen and (max-width: 63.75em) {
   .about-map .banner-img {
-    background-image: url(../img/map-short.pn);
+    background-image: url(../img/map-short.png);
   }
 }
 .about-map .profile-img {
