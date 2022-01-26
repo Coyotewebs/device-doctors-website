@@ -1094,18 +1094,16 @@ nav a:hover::before {
   align-items: center;
   padding: 2rem;
 }
-@media screen and (max-width: 37.5em) {
-  .footer__bar {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .footer__nav {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   list-style: none;
   display: grid;
   align-items: center;
+}
+@media screen and (max-width: 37.5em) {
+  .footer__nav {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
+  }
 }
 
 .footer__link:link,
