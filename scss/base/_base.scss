@@ -11,12 +11,12 @@ $bp-small: 37.5em; //600px
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
+  // width: 100%;
+  // min-height: 100vh;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   // color: #777;
@@ -63,7 +63,7 @@ html {
     );
 
   @media screen and (max-width: $bp-ipad) {
-    grid-template-rows: 28vh min-content 75vh min-content 60vw min-content min-content min-content repeat(
+    grid-template-rows: 28vh min-content 80rem min-content 60rem min-content min-content min-content repeat(
         6,
         min-content
       );

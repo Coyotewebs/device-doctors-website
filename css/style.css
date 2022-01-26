@@ -3,12 +3,10 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
@@ -46,7 +44,7 @@ html {
 }
 @media screen and (max-width: 63.75em) {
   .container {
-    grid-template-rows: 28vh min-content 75vh min-content 60vw min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: 28vh min-content 80rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -423,7 +421,7 @@ nav a:hover::before {
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
 }
-@media screen and (max-width: 63.75em) {
+@media screen and (max-width: 37.5em) {
   .service {
     grid-column: 1/full-end;
   }
@@ -435,9 +433,20 @@ nav a:hover::before {
   transform: translateY(-1rem);
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.044);
 }
+@media screen and (max-width: 37.5em) {
+  .service__icon {
+    margin-left: 10rem;
+  }
+}
 .service__text {
   font-size: 2rem;
   color: #54483a;
+}
+@media screen and (max-width: 37.5em) {
+  .service__text {
+    width: 90%;
+    font-size: 3rem;
+  }
 }
 
 .stars {

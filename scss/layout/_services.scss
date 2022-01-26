@@ -19,7 +19,7 @@
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
 
-  @media screen and (max-width: $bp-ipad) {
+  @media screen and (max-width: $bp-small) {
     grid-column: 1 / full-end;
   }
 
@@ -31,10 +31,19 @@
     grid-row: 1 / span 2;
     transform: translateY(-1rem);
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.044);
+
+    @media screen and (max-width: $bp-small) {
+      margin-left: 10rem;
+    }
   }
 
   &__text {
     font-size: 2rem;
     color: $color-grey-dark-1;
+
+    @media screen and (max-width: $bp-small) {
+      width: 90%;
+      font-size: 3rem;
+    }
   }
 }
