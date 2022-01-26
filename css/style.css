@@ -457,9 +457,14 @@ nav a:hover::before {
   transform: translateY(-1rem);
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.044);
 }
+@media screen and (max-width: 63.75em) {
+  .service__icon {
+    margin-left: 5rem;
+  }
+}
 @media screen and (max-width: 37.5em) {
   .service__icon {
-    margin-left: 10rem;
+    margin-left: 5rem;
   }
 }
 .service__text {
@@ -468,8 +473,8 @@ nav a:hover::before {
 }
 @media screen and (max-width: 37.5em) {
   .service__text {
-    width: 90%;
-    font-size: 3rem;
+    width: 95%;
+    font-size: 2.5rem;
   }
 }
 
@@ -518,7 +523,7 @@ nav a:hover::before {
 }
 @media screen and (max-width: 63.75em) {
   .about-us .about-us__slider {
-    height: 50vh;
+    height: 65vh;
     display: flex;
   }
 }
@@ -641,6 +646,11 @@ nav a:hover::before {
     width: 70%;
   }
 }
+@media screen and (max-width: 37.5em) {
+  .trade__img--1 {
+    margin-top: 10rem;
+  }
+}
 .trade__img--2 {
   width: 125%;
   grid-row: 4/6;
@@ -652,6 +662,11 @@ nav a:hover::before {
 @media screen and (max-width: 63.75em) {
   .trade__img--2 {
     width: 80%;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .trade__img--2 {
+    margin-top: -5rem;
   }
 }
 .trade__icon {
@@ -1019,6 +1034,11 @@ nav a:hover::before {
 .contact__details p {
   font-size: 1.6rem;
   color: #fff;
+}
+@media screen and (max-width: 37.5em) {
+  .contact__details p {
+    display: none;
+  }
 }
 .contact__wrapper h1 {
   font-size: 4rem;

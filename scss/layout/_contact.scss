@@ -59,6 +59,10 @@
   &__details p {
     font-size: 1.6rem;
     color: $color-white;
+
+    @media screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &__wrapper h1 {

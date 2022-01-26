@@ -32,8 +32,12 @@
     transform: translateY(-1rem);
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.044);
 
+    @media screen and (max-width: $bp-ipad) {
+      margin-left: 5rem;
+    }
+
     @media screen and (max-width: $bp-small) {
-      margin-left: 10rem;
+      margin-left: 5rem;
     }
   }
 
@@ -42,8 +46,8 @@
     color: $color-grey-dark-1;
 
     @media screen and (max-width: $bp-small) {
-      width: 90%;
-      font-size: 3rem;
+      width: 95%;
+      font-size: 2.5rem;
     }
   }
 }
