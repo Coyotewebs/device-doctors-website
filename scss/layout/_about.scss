@@ -11,7 +11,7 @@
   overflow: hidden;
 
   @media screen and (max-width: $bp-ipad) {
-    grid-column: 1 / full-end;
+    grid-column: full-start / full-end;
   }
 
   .card {

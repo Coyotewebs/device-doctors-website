@@ -11,7 +11,7 @@ $bp-small: 37.5em; //600px
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -63,7 +63,7 @@ html {
     );
 
   @media screen and (max-width: $bp-ipad) {
-    grid-template-rows: 28vh min-content 80rem min-content 60rem min-content min-content min-content repeat(
+    grid-template-rows: 10vh min-content 90rem min-content 60rem min-content min-content min-content repeat(
         6,
         min-content
       );

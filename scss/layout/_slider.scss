@@ -10,7 +10,7 @@
   border-radius: 0;
 
   @media screen and (max-width: $bp-ipad) {
-    grid-column: 1 / full-end;
+    grid-column: full-start / full-end;
   }
 
   .about-us__slider {
@@ -21,6 +21,12 @@
     height: 75vh;
     overflow: hidden;
     border-radius: 0px;
+
+    @media screen and (max-width: $bp-ipad) {
+      height: 50vh;
+      width: 100%;
+      display: flex;
+    }
   }
 
   .about-us__slider .about-us__slide {
