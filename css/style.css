@@ -1035,6 +1035,7 @@ nav a:hover::before {
 @media screen and (max-width: 37.5em) {
   .contact__form {
     width: 50rem;
+    padding: 10px;
   }
 }
 .contact__form input, .contact__form textarea {
@@ -1072,6 +1073,12 @@ nav a:hover::before {
   grid-gap: 1rem;
   align-items: center;
   padding: 2rem;
+}
+@media screen and (max-width: 37.5em) {
+  .footer__bar {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer__nav {

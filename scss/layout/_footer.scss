@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .footer__bar {
   display: grid;
@@ -9,6 +9,10 @@
   grid-gap: 1rem;
   align-items: center;
   padding: 2rem;
+  @media screen and (max-width: $bp-small) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer__nav {
