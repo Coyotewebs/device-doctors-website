@@ -1,3 +1,11 @@
+// RESPONSIVE BREAKPOINTS
+$bp-giant-wide: 106.25em; //1700px
+$bp-largest-wide: 93.75em; //1500px
+$bp-large: 76.875em; //1230px
+$bp-ipad: 63.75em; //1020px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 *,
 *::after,
 *::before {
@@ -10,6 +18,20 @@ html {
   box-sizing: border-box;
   font-size: 60.5%; //1 rem = 10px; 10px/16px = 62.5%
   scroll-behavior: smooth;
+
+  // @media screen and (min-width: $bp-giant-wide) {
+  //   font-size: 65%;
+  // }
+  @media screen and (max-width: $bp-largest-wide) {
+    font-size: 55%;
+  }
+  @media screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 48%;
+  }
 }
 .container {
   display: grid;
@@ -18,37 +40,21 @@ html {
   background-size: cover;
 
   grid-template-columns:
-    [full-start] 1fr [center-start] repeat(
+    [full-start] auto [center-start] repeat(
       8,
-      [col-start] minmax(min-content, 14rem) [col-end]
+      [col-start] minmax(min-content, 18rem) [col-end]
     )
-    [center-end] 1fr [full-end];
+    [center-end] auto [full-end];
 
-  grid-template-rows: 25vh min-content min-content 35vw min-content min-content min-content repeat(
+  grid-template-rows: 28vh min-content min-content 35vw min-content min-content min-content repeat(
       6,
       min-content
     );
+
+  @media screen and (max-width: $bp-ipad) {
+    grid-template-rows: 28vh min-content 75vh min-content 60vw min-content min-content min-content repeat(
+        6,
+        min-content
+      );
+  }
 }
-
-// justify-content: center;
-// align-content: center;
-
-//90%
-//grid-template-rows: repeat(2, minmax(15rem, min-content));
-// grid-template-columns: minmax(20rem, 30rem) repeat(3, 1fr);
-
-/* for explesive (like for a photo al)  
-  grid-auto-rows: 80px;
-  grid-auto-flow: row dense;
-  grid-auto-columns: .5fr; */
-
-/* this is another was to lay out your grid, empty box add .
-
-grid-template-areas: "nav nav nav nav nav nav nav nav" (can you nav repeat(7)?)
-                      header same as above
-                      map map map map map about about 
-                      etc etc; 
-
-  in css - .nav {
-    grid-area: nav;
-  }*/

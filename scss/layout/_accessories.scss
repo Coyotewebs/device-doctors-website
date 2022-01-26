@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .retail {
   grid-column: full-start / full-end;
@@ -45,6 +45,9 @@
 
     // // gap: 1rem;
     // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    @media screen and (max-width: $bp-ipad) {
+      flex-direction: column;
+    }
   }
 
   &__cards--left {
@@ -201,7 +204,6 @@
     // border: 10px solid palevioletred;
     height: auto;
     width: 35vw;
-    opacity: 95%;
   }
 
   &__headphone--info {
@@ -309,7 +311,7 @@
     position: relative;
     height: auto;
     width: 35vw;
-    opacity: 90%;
+    opacity: 99%;
   }
   &__car--info {
     display: grid;

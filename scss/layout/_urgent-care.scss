@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .urgent {
   // background-color: $color-primary;
@@ -22,6 +22,9 @@
     rgba($color-primary2, 0.2)
   );
 
+  @media screen and (max-width: $bp-ipad) {
+    grid-column: 1 / full-end;
+  }
   &__text {
     font-size: 2rem;
     font-style: italic;
