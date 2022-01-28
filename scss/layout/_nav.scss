@@ -34,8 +34,9 @@ header {
   margin: auto;
 
   @media screen and (max-width: $bp-ipad) {
-    height: 8vh;
-    grid-column: 2 / 2;
+    visibility: hidden;
+    // height: 8vh;
+    // grid-column: 2 / 2;
   }
   // margin-left: 18rem;
 }
@@ -82,9 +83,10 @@ nav {
   // align-items: center;
 
   @media screen and (max-width: $bp-ipad) {
-    margin-top: -6.5rem;
-    margin-right: 5rem;
-    font-size: 0.8rem;
+    visibility: hidden;
+    // margin-top: -6.5rem;
+    // margin-right: 5rem;
+    // font-size: 0.8rem;
   }
 }
 

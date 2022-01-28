@@ -28,11 +28,6 @@ html {
     font-size: 50%;
   }
 }
-@media screen and (max-width: 50em) {
-  html {
-    font-size: 48%;
-  }
-}
 
 .container {
   display: grid;
@@ -44,7 +39,7 @@ html {
 }
 @media screen and (max-width: 63.75em) {
   .container {
-    grid-template-rows: 10vh min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: 10rem min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -192,8 +187,7 @@ header {
 }
 @media screen and (max-width: 63.75em) {
   .logo {
-    height: 8vh;
-    grid-column: 2/2;
+    visibility: hidden;
   }
 }
 
@@ -237,9 +231,7 @@ nav {
 }
 @media screen and (max-width: 63.75em) {
   nav {
-    margin-top: -6.5rem;
-    margin-right: 5rem;
-    font-size: 0.8rem;
+    visibility: hidden;
   }
 }
 
