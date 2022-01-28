@@ -1030,7 +1030,7 @@ nav a:hover::before {
   height: 100%;
   display: flex;
   align-items: center;
-  background-image: url(../img/contact-main.jpeg);
+  background-image: url(../../assets/img/bg-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
