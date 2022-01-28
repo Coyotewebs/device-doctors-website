@@ -49,6 +49,7 @@ header {
   // margin-left: 2rem;
   // cursor: pointer;
   @media screen and (max-width: $bp-ipad) {
+    visibility: hidden;
     height: 50px;
     margin-top: -2rem;
   }

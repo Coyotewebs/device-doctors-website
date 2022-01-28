@@ -206,6 +206,7 @@ header {
 }
 @media screen and (max-width: 63.75em) {
   .call-icon {
+    visibility: hidden;
     height: 50px;
     margin-top: -2rem;
   }
