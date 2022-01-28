@@ -7,8 +7,6 @@
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
@@ -46,7 +44,7 @@ html {
 }
 @media screen and (max-width: 63.75em) {
   .container {
-    grid-template-rows: 50px min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -175,6 +173,12 @@ header {
   grid-template-columns: repeat(9, 2fr);
   grid-template-rows: repeat(4, 2fr);
 }
+@media screen and (max-width: 63.75em) {
+  header {
+    display: none;
+  }
+}
+
 .weather {
   grid-column: 2/4;
   grid-row: 2/3;
@@ -316,7 +320,7 @@ nav a:hover::before {
 .about-map {
   display: grid;
   grid-column: col-start 7/full-end;
-  background-image: url(../img/texture.jpg);
+  background-image: url(../../assets/img/texture-small.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -353,7 +357,7 @@ nav a:hover::before {
 @media screen and (max-width: 63.75em) {
   .about-map .profile-img {
     margin-top: 4rem;
-    width: 28rem;
+    width: 14rem;
   }
 }
 @media screen and (max-width: 37.5em) {
@@ -489,7 +493,7 @@ nav a:hover::before {
 
 .stars {
   grid-column: full-start/full-end;
-  background-image: url(../img/repair-2.jpg);
+  background-image: url(../../assets/img/repair-sm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1038,7 +1042,7 @@ nav a:hover::before {
   height: 100%;
   display: flex;
   align-items: center;
-  background-image: url(../img/contact21.jpg);
+  background-image: url(../../assets/img/contact-sm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
