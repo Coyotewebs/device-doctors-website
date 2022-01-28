@@ -35,11 +35,6 @@ html {
     font-size: 48%;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  html html {
-    -webkit-text-size-adjust: none;
-  }
-}
 
 .container {
   display: grid;
@@ -51,7 +46,7 @@ html {
 }
 @media screen and (max-width: 63.75em) {
   .container {
-    grid-template-rows: min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: 50px min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -180,12 +175,6 @@ header {
   grid-template-columns: repeat(9, 2fr);
   grid-template-rows: repeat(4, 2fr);
 }
-@media screen and (max-width: 63.75em) {
-  header {
-    display: none;
-  }
-}
-
 .weather {
   grid-column: 2/4;
   grid-row: 2/3;
