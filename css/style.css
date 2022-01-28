@@ -1122,7 +1122,7 @@ nav a:hover::before {
   min-height: 5.5rem;
 }
 .contact__form input[type=submit] {
-  background-color: #ff1716;
+  background-color: #c21f2f;
   text-transform: uppercase;
   margin-bottom: 10rem;
   cursor: pointer;
