@@ -320,7 +320,7 @@ nav a:hover::before {
 .about-map {
   display: grid;
   grid-column: col-start 7/full-end;
-  background-image: url(../../assets/img/texture-small.jpeg);
+  background-image: url(../img/texture-sm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
