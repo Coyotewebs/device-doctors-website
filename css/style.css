@@ -493,7 +493,7 @@ nav a:hover::before {
 
 .stars {
   grid-column: full-start/full-end;
-  background-image: url(../../assets/img/repair-sm.jpeg);
+  background-image: url(../img/repair-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
