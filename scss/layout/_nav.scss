@@ -34,7 +34,8 @@ header {
   margin: auto;
 
   @media screen and (max-width: $bp-ipad) {
-    display: none;
+    height: 8vh;
+    grid-column: 2 / 2;
   }
   // margin-left: 18rem;
 }
@@ -48,7 +49,8 @@ header {
   // margin-left: 2rem;
   // cursor: pointer;
   @media screen and (max-width: $bp-ipad) {
-    display: none;
+    height: 50px;
+    margin-top: -2rem;
   }
 }
 .email-icon {
@@ -79,7 +81,9 @@ nav {
   // align-items: center;
 
   @media screen and (max-width: $bp-ipad) {
-    display: none;
+    margin-top: -6.5rem;
+    margin-right: 5rem;
+    font-size: 0.8rem;
   }
 }
 

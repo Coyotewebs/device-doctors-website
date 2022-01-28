@@ -192,7 +192,8 @@ header {
 }
 @media screen and (max-width: 63.75em) {
   .logo {
-    display: none;
+    height: 8vh;
+    grid-column: 2/2;
   }
 }
 
@@ -205,7 +206,8 @@ header {
 }
 @media screen and (max-width: 63.75em) {
   .call-icon {
-    display: none;
+    height: 50px;
+    margin-top: -2rem;
   }
 }
 
@@ -234,7 +236,9 @@ nav {
 }
 @media screen and (max-width: 63.75em) {
   nav {
-    display: none;
+    margin-top: -6.5rem;
+    margin-right: 5rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -765,11 +769,6 @@ nav a:hover::before {
 .retail__wrapper {
   display: flex;
 }
-@media screen and (max-width: 63.75em) {
-  .retail__wrapper {
-    flex-direction: column;
-  }
-}
 .retail__cards--left {
   flex: 3;
   position: relative;
@@ -822,6 +821,12 @@ nav a:hover::before {
   align-self: center;
   margin-top: 10rem;
 }
+@media screen and (max-width: 63.75em) {
+  .retail__mobile--shape {
+    height: 30%;
+    width: 25%;
+  }
+}
 .retail__card--drone {
   display: grid;
   position: relative;
@@ -867,6 +872,13 @@ nav a:hover::before {
   align-self: center;
   margin-top: 20rem;
 }
+@media screen and (max-width: 63.75em) {
+  .retail__drone--shape {
+    height: 40%;
+    width: 25%;
+    margin-bottom: 3rem;
+  }
+}
 .retail__card--headphone {
   display: grid;
   position: relative;
@@ -910,6 +922,13 @@ nav a:hover::before {
   align-self: center;
   margin-top: 15rem;
 }
+@media screen and (max-width: 63.75em) {
+  .retail__headphone--shape {
+    height: 40%;
+    width: 30%;
+    margin-bottom: 3rem;
+  }
+}
 .retail__card--camera {
   display: grid;
   position: relative;
@@ -952,6 +971,13 @@ nav a:hover::before {
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
+}
+@media screen and (max-width: 63.75em) {
+  .retail__camera--shape {
+    height: 40%;
+    width: 30%;
+    margin-bottom: 3rem;
+  }
 }
 .retail__card--car {
   display: grid;
@@ -997,6 +1023,13 @@ nav a:hover::before {
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
+}
+@media screen and (max-width: 63.75em) {
+  .retail__car--shape {
+    height: 40%;
+    width: 30%;
+    margin-bottom: 3rem;
+  }
 }
 
 .contact {
@@ -1173,6 +1206,13 @@ nav a:hover::before {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   color: #ccc;
+}
+
+.facebook {
+  display: flex;
+  height: 8rem;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

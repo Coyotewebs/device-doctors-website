@@ -45,9 +45,9 @@
 
     // // gap: 1rem;
     // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    @media screen and (max-width: $bp-ipad) {
-      flex-direction: column;
-    }
+    // @media screen and (max-width: $bp-ipad) {
+    //   flex-direction: column;
+    // }
   }
 
   &__cards--left {
@@ -130,6 +130,11 @@
     align-self: center;
 
     margin-top: 10rem;
+
+    @media screen and (max-width: $bp-ipad) {
+      height: 30%;
+      width: 25%;
+    }
   }
 
   &__card--drone {
@@ -188,6 +193,12 @@
     justify-self: center;
     align-self: center;
     margin-top: 20rem;
+
+    @media screen and (max-width: $bp-ipad) {
+      height: 40%;
+      width: 25%;
+      margin-bottom: 3rem;
+    }
   }
 
   &__card--headphone {
@@ -242,6 +253,12 @@
     justify-self: center;
     align-self: center;
     margin-top: 15rem;
+
+    @media screen and (max-width: $bp-ipad) {
+      height: 40%;
+      width: 30%;
+      margin-bottom: 3rem;
+    }
   }
 
   &__card--camera {
@@ -297,6 +314,12 @@
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
+
+    @media screen and (max-width: $bp-ipad) {
+      height: 40%;
+      width: 30%;
+      margin-bottom: 3rem;
+    }
   }
 
   &__card--car {
@@ -352,5 +375,10 @@
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
+    @media screen and (max-width: $bp-ipad) {
+      height: 40%;
+      width: 30%;
+      margin-bottom: 3rem;
+    }
   }
 }
