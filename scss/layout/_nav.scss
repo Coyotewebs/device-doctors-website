@@ -3,17 +3,29 @@
 header {
   background: #f5fc1fbf;
   display: grid;
-  grid-column: full-start / -1;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(2, 1fr);
   // grid-template-columns: 2fr minmax(600px, 6fr) 2fr;
 
-  grid-template-columns: repeat(9, 2fr);
-  grid-template-rows: repeat(4, 2fr);
+  @media screen and (min-width: $bp-ipad) {
+    background: #f5fc1fbf;
+    display: grid;
+    grid-column: full-start / -1;
+    // grid-template-columns: 2fr minmax(600px, 6fr) 2fr;
 
-  @media screen and (max-width: $bp-ipad) {
-    display: none;
+    grid-template-columns: repeat(9, 2fr);
+    grid-template-rows: repeat(4, 2fr);
   }
 }
 
+.nav-logo {
+  display: none;
+
+  @media screen and (max-width: $bp-ipad) {
+    display: unset;
+    height: 10rem;
+  }
+}
 .weather {
   // margin: 0;
   // width: auto;
