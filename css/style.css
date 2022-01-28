@@ -7,6 +7,8 @@
 }
 
 body {
+  width: 100%;
+  min-height: 100vh;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
@@ -33,6 +35,11 @@ html {
     font-size: 48%;
   }
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  html html {
+    -webkit-text-size-adjust: none;
+  }
+}
 
 .container {
   display: grid;
@@ -44,7 +51,7 @@ html {
 }
 @media screen and (max-width: 63.75em) {
   .container {
-    grid-template-rows: 12rem min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -169,26 +176,13 @@ html {
 header {
   background: #f5fc1fbf;
   display: grid;
-  grid-column: 1/-1;
-  grid-template-columns: repeat(2, 1fr);
-}
-@media screen and (min-width: 63.75em) {
-  header {
-    background: #f5fc1fbf;
-    display: grid;
-    grid-column: full-start/-1;
-    grid-template-columns: repeat(9, 2fr);
-    grid-template-rows: repeat(4, 2fr);
-  }
-}
-
-.nav-logo {
-  display: none;
+  grid-column: full-start/-1;
+  grid-template-columns: repeat(9, 2fr);
+  grid-template-rows: repeat(4, 2fr);
 }
 @media screen and (max-width: 63.75em) {
-  .nav-logo {
-    display: unset;
-    height: 12rem;
+  header {
+    display: none;
   }
 }
 
