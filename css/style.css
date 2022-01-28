@@ -3,10 +3,12 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
+  width: 100%;
+  min-height: 100vh;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
@@ -28,6 +30,16 @@ html {
     font-size: 50%;
   }
 }
+@media screen and (max-width: 50em) {
+  html {
+    font-size: 48%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  html html {
+    -webkit-text-size-adjust: none;
+  }
+}
 
 .container {
   display: grid;
@@ -39,7 +51,7 @@ html {
 }
 @media screen and (max-width: 63.75em) {
   .container {
-    grid-template-rows: 10rem min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -168,6 +180,12 @@ header {
   grid-template-columns: repeat(9, 2fr);
   grid-template-rows: repeat(4, 2fr);
 }
+@media screen and (max-width: 63.75em) {
+  header {
+    display: none;
+  }
+}
+
 .weather {
   grid-column: 2/4;
   grid-row: 2/3;
@@ -187,7 +205,7 @@ header {
 }
 @media screen and (max-width: 63.75em) {
   .logo {
-    visibility: hidden;
+    display: none;
   }
 }
 

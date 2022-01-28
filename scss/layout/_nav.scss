@@ -10,6 +10,7 @@ header {
   grid-template-rows: repeat(4, 2fr);
 
   @media screen and (max-width: $bp-ipad) {
+    display: none;
   }
 }
 
@@ -34,7 +35,7 @@ header {
   margin: auto;
 
   @media screen and (max-width: $bp-ipad) {
-    visibility: hidden;
+    display: none;
     // height: 8vh;
     // grid-column: 2 / 2;
   }
