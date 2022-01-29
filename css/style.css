@@ -18,6 +18,11 @@ html {
   font-size: 60.5%;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 93.75em) {
+  html {
+    font-size: 55%;
+  }
+}
 @media screen and (max-width: 76.875em) {
   html {
     font-size: 50%;
@@ -30,7 +35,7 @@ html {
   background-blend-mode: multiply;
   background-size: cover;
   grid-template-columns: [full-start] auto [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] auto [full-end];
-  grid-template-rows: min-content 35vw min-content min-content min-content repeat(6, min-content);
+  grid-template-rows: 28vh min-content min-content 35vw min-content min-content min-content repeat(6, min-content);
 }
 @media screen and (max-width: 63.75em) {
   .container {
