@@ -449,11 +449,6 @@ nav a:hover::before {
   transform: translateY(-1rem);
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.044);
 }
-@media screen and (max-width: 63.75em) {
-  .service__icon {
-    margin-left: 5rem;
-  }
-}
 .service__text {
   font-size: 2rem;
   color: #54483a;
