@@ -42,6 +42,11 @@ html {
     grid-template-rows: auto min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
+@media screen and (max-width: 43.75em) {
+  .container {
+    grid-template-rows: auto min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+  }
+}
 
 .heading-5, .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -161,7 +166,7 @@ html {
   margin-bottom: 8rem;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 43.75em) {
   header {
     background: #f5fc1fbf;
     display: grid;
@@ -171,7 +176,7 @@ html {
   }
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 43.75em) {
   .nav-logo {
     display: none;
   }
@@ -182,7 +187,7 @@ html {
   grid-row: 2/3;
   margin: auto;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .weather {
     display: none;
   }
@@ -194,7 +199,7 @@ html {
   grid-row: 1/3;
   margin: auto;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .logo {
     display: none;
   }
@@ -207,7 +212,7 @@ html {
   grid-row: 2/2;
   margin: auto;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .call-icon {
     visibility: hidden;
     height: 50px;
@@ -221,7 +226,7 @@ html {
   grid-row: 2/3;
   margin: auto;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .email-icon {
     display: none;
   }
@@ -236,7 +241,7 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   nav {
     visibility: hidden;
   }
@@ -354,7 +359,7 @@ nav a:hover::before {
     margin-top: 4rem;
   }
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .about-map .profile-img {
     margin-top: 16rem;
   }
@@ -445,9 +450,10 @@ nav a:hover::before {
   grid-gap: 4rem;
   align-items: start;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 63.75em) {
   .services {
-    grid-column: 1/full-end;
+    grid-column: 1/-1;
+    padding: 30px;
   }
 }
 
@@ -464,25 +470,9 @@ nav a:hover::before {
   transform: translateY(-1rem);
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.044);
 }
-@media screen and (max-width: 63.75em) {
-  .service__icon {
-    margin-left: 5rem;
-  }
-}
-@media screen and (max-width: 37.5em) {
-  .service__icon {
-    margin-left: 5rem;
-  }
-}
 .service__text {
   font-size: 2rem;
   color: #54483a;
-}
-@media screen and (max-width: 37.5em) {
-  .service__text {
-    width: 95%;
-    font-size: 2.5rem;
-  }
 }
 
 .stars {
@@ -505,7 +495,7 @@ nav a:hover::before {
   justify-content: center;
   flex-direction: column;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .stars__overlay {
     padding-left: 5px;
   }
@@ -658,7 +648,7 @@ nav a:hover::before {
     width: 80%;
   }
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .trade__img--1 {
     margin-top: 10rem;
   }
@@ -676,7 +666,7 @@ nav a:hover::before {
     width: 80%;
   }
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .trade__img--2 {
     margin-top: -6rem;
   }
@@ -1076,7 +1066,7 @@ nav a:hover::before {
   font-size: 1.6rem;
   color: #fff;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .contact__details p {
     display: none;
   }
@@ -1093,7 +1083,7 @@ nav a:hover::before {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .contact__form {
     width: 50rem;
     padding: 20px;
@@ -1141,7 +1131,7 @@ nav a:hover::before {
   display: grid;
   align-items: center;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .footer__nav {
     grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
   }
