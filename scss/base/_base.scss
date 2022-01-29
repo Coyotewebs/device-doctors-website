@@ -63,7 +63,7 @@ html {
     )
     [center-end] auto [full-end];
 
-  grid-template-rows: 28vh min-content min-content 35vw min-content min-content min-content repeat(
+  grid-template-rows: min-content 35vw min-content min-content min-content repeat(
       6,
       min-content
     );
