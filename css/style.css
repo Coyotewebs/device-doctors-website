@@ -35,19 +35,18 @@ html {
     font-size: 48%;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  html html {
-    -webkit-text-size-adjust: none;
-  }
-}
 
 .container {
-  display: grid;
-  background-color: rgba(255, 255, 255, 0.103);
-  background-blend-mode: multiply;
-  background-size: cover;
-  grid-template-columns: [full-start] auto [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] auto [full-end];
-  grid-template-rows: 28vh min-content min-content 35vw min-content min-content min-content repeat(6, min-content);
+  grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content repeat(6, min-content);
+}
+@media screen and (min-width: 63.75em) {
+  .container {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.103);
+    background-size: cover;
+    grid-template-columns: [full-start] auto [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] auto [full-end];
+    grid-template-rows: auto min-content min-content 35vw min-content min-content min-content repeat(6, min-content);
+  }
 }
 @media screen and (max-width: 63.75em) {
   .container {
@@ -356,7 +355,7 @@ nav a:hover::before {
     margin-top: 4rem;
   }
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .about-map .profile-img {
     margin-top: 16rem;
   }
@@ -454,7 +453,7 @@ nav a:hover::before {
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .service {
     padding: 20px;
   }
@@ -491,7 +490,7 @@ nav a:hover::before {
   justify-content: center;
   flex-direction: column;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .stars__overlay {
     padding-left: 5px;
   }
@@ -644,7 +643,7 @@ nav a:hover::before {
     width: 80%;
   }
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .trade__img--1 {
     margin-top: 10rem;
   }
@@ -662,7 +661,7 @@ nav a:hover::before {
     width: 80%;
   }
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .trade__img--2 {
     margin-top: -6rem;
   }
@@ -1062,7 +1061,7 @@ nav a:hover::before {
   font-size: 1.6rem;
   color: #fff;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .contact__details p {
     display: none;
   }
@@ -1079,7 +1078,7 @@ nav a:hover::before {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .contact__form {
     width: 50rem;
     padding: 20px;
@@ -1127,7 +1126,7 @@ nav a:hover::before {
   display: grid;
   align-items: center;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 43.75em) {
   .footer__nav {
     grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
   }

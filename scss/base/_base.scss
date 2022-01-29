@@ -4,7 +4,7 @@ $bp-largest-wide: 93.75em; //1500px
 $bp-large: 76.875em; //1230px
 $bp-ipad: 63.75em; //1020px
 $bp-medium: 50em; //800px
-$bp-small: 37.5em; //600px
+$bp-small: 43.75em; //700px
 $bp-mobile: 25em; //400px
 
 *,
@@ -44,29 +44,38 @@ html {
   @media screen and (max-width: $bp-medium) {
     font-size: 48%;
   }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-    html {
-      -webkit-text-size-adjust: none;
-    } //idk
-  }
+  // @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  //   html {
+  //     -webkit-text-size-adjust: none;
+  //   } //idk
+  // }
 }
 .container {
-  display: grid;
-  background-color: rgba(255, 255, 255, 0.103);
-  background-blend-mode: multiply;
-  background-size: cover;
-
-  grid-template-columns:
-    [full-start] auto [center-start] repeat(
-      8,
-      [col-start] minmax(min-content, 18rem) [col-end]
-    )
-    [center-end] auto [full-end];
-
-  grid-template-rows: 28vh min-content min-content 35vw min-content min-content min-content repeat(
+  //this should be mobile
+  grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content repeat(
       6,
       min-content
     );
+  //end mobile
+
+  @media screen and (min-width: $bp-ipad) {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.103);
+    // background-blend-mode: multiply;
+    background-size: cover;
+
+    grid-template-columns:
+      [full-start] auto [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 18rem) [col-end]
+      )
+      [center-end] auto [full-end];
+
+    grid-template-rows: auto min-content min-content 35vw min-content min-content min-content repeat(
+        6,
+        min-content
+      );
+  }
 
   @media screen and (max-width: $bp-ipad) {
     grid-template-rows: min-content min-content 90rem min-content 60rem min-content min-content min-content repeat(
