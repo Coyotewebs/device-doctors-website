@@ -3,16 +3,16 @@
 .about-map {
   // border: 2px solid pink;
   display: grid;
-  grid-column: col-start 3 / full-end;
+  grid-column: col-start 7 / full-end;
 
   background-image: url(../img/texture-sm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 
-  // @media screen and (max-width: $bp-ipad) {
-  //   grid-column: full-start / full-end;
-  // }
+  @media screen and (max-width: $bp-ipad) {
+    grid-column: full-start / full-end;
+  }
 
   .card {
     display: grid;

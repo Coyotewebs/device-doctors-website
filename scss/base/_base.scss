@@ -16,8 +16,8 @@ $bp-mobile: 25em; //400px
 }
 
 body {
-  // width: 100%;
-  // min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   // color: #777;
@@ -41,14 +41,14 @@ html {
     font-size: 50%;
   }
 
-  // @media screen and (max-width: $bp-medium) {
-  //   font-size: 48%;
-  // }
-  // @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  //   html {
-  //     -webkit-text-size-adjust: none;
-  //   } //idk
-  // }
+  @media screen and (max-width: $bp-medium) {
+    font-size: 48%;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    html {
+      -webkit-text-size-adjust: none;
+    } //idk
+  }
 }
 .container {
   display: grid;
@@ -63,15 +63,15 @@ html {
     )
     [center-end] auto [full-end];
 
-  grid-template-rows: auto min-content min-content 35vw min-content min-content min-content repeat(
+  grid-template-rows: 28vh min-content min-content 35vw min-content min-content min-content repeat(
       6,
       min-content
     );
 
-  // @media screen and (max-width: $bp-ipad) {
-  //   grid-template-rows: auto min-content 90rem min-content 60rem min-content min-content min-content repeat(
-  //       6,
-  //       min-content
-  //     );
-  // }
+  @media screen and (max-width: $bp-ipad) {
+    grid-template-rows: min-content min-content 90rem min-content 60rem min-content min-content min-content repeat(
+        6,
+        min-content
+      );
+  }
 }

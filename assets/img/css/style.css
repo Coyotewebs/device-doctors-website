@@ -7,8 +7,6 @@
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
@@ -30,16 +28,6 @@ html {
     font-size: 50%;
   }
 }
-@media screen and (max-width: 50em) {
-  html {
-    font-size: 48%;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  html html {
-    -webkit-text-size-adjust: none;
-  }
-}
 
 .container {
   display: grid;
@@ -47,11 +35,11 @@ html {
   background-blend-mode: multiply;
   background-size: cover;
   grid-template-columns: [full-start] auto [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] auto [full-end];
-  grid-template-rows: 28vh min-content min-content 35vw min-content min-content min-content repeat(6, min-content);
+  grid-template-rows: auto min-content min-content 35vw min-content min-content min-content repeat(6, min-content);
 }
 @media screen and (max-width: 63.75em) {
   .container {
-    grid-template-rows: min-content min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -316,7 +304,7 @@ nav a:hover::before {
 
 .about-map {
   display: grid;
-  grid-column: col-start 7/full-end;
+  grid-column: col-start 5/full-end;
   background-image: url(../img/texture-sm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
