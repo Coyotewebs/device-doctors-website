@@ -168,6 +168,12 @@ header {
   grid-template-columns: repeat(10, auto);
   grid-template-rows: repeat(4, auto);
 }
+@media screen and (max-width: 43.75em) {
+  header {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+  }
+}
 
 .weather {
   grid-column: 2/4;
