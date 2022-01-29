@@ -37,11 +37,6 @@ html {
   grid-template-columns: [full-start] auto [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] auto [full-end];
   grid-template-rows: auto min-content min-content 35vw min-content min-content min-content repeat(6, min-content);
 }
-@media screen and (max-width: 63.75em) {
-  .container {
-    grid-template-rows: auto min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
-  }
-}
 
 .heading-5, .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -304,16 +299,11 @@ nav a:hover::before {
 
 .about-map {
   display: grid;
-  grid-column: col-start 7/full-end;
+  grid-column: col-start 3/full-end;
   background-image: url(../img/texture-sm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-}
-@media screen and (max-width: 63.75em) {
-  .about-map {
-    grid-column: full-start/full-end;
-  }
 }
 .about-map .card {
   display: grid;
@@ -491,13 +481,8 @@ nav a:hover::before {
 
 .about-us {
   display: grid;
-  grid-column: full-start/col-end 6;
+  grid-column: full-start/col-end 2;
   border-radius: 0;
-}
-@media screen and (max-width: 63.75em) {
-  .about-us {
-    grid-column: full-start/full-end;
-  }
 }
 .about-us .about-us__slider {
   position: relative;

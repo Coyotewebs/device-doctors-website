@@ -68,10 +68,10 @@ html {
       min-content
     );
 
-  @media screen and (max-width: $bp-ipad) {
-    grid-template-rows: auto min-content 90rem min-content 60rem min-content min-content min-content repeat(
-        6,
-        min-content
-      );
-  }
+  // @media screen and (max-width: $bp-ipad) {
+  //   grid-template-rows: auto min-content 90rem min-content 60rem min-content min-content min-content repeat(
+  //       6,
+  //       min-content
+  //     );
+  // }
 }
