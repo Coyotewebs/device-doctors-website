@@ -11,6 +11,10 @@
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   grid-gap: 4rem;
   align-items: start;
+
+  @media screen and (max-width: $bp-small) {
+    grid-column: 1 / full-end;
+  }
 }
 
 .service {
@@ -19,9 +23,9 @@
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
 
-  @media screen and (max-width: $bp-small) {
-    grid-column: 1 / full-end;
-  }
+  // @media screen and (max-width: $bp-small) {
+  //   grid-column: 1 / full-end;
+  // }
 
   &__icon {
     color: $color-primary2;

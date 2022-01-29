@@ -35,11 +35,11 @@ html {
   background-blend-mode: multiply;
   background-size: cover;
   grid-template-columns: [full-start] auto [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] auto [full-end];
-  grid-template-rows: 28vh min-content min-content 35vw min-content min-content min-content repeat(6, min-content);
+  grid-template-rows: auto min-content min-content 35vw min-content min-content min-content repeat(6, min-content);
 }
 @media screen and (max-width: 63.75em) {
   .container {
-    grid-template-rows: min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: auto min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -161,15 +161,18 @@ html {
   margin-bottom: 8rem;
 }
 
-header {
-  background: #f5fc1fbf;
-  display: grid;
-  grid-column: full-start/-1;
-  grid-template-columns: repeat(9, 2fr);
-  grid-template-rows: repeat(4, 2fr);
-}
-@media screen and (max-width: 63.75em) {
+@media screen and (min-width: 37.5em) {
   header {
+    background: #f5fc1fbf;
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .nav-logo {
     display: none;
   }
 }
@@ -179,19 +182,19 @@ header {
   grid-row: 2/3;
   margin: auto;
 }
-@media screen and (max-width: 63.75em) {
+@media screen and (max-width: 37.5em) {
   .weather {
     display: none;
   }
 }
 
 .logo {
-  height: 19vh;
+  height: 18vh;
   grid-column: 5/6;
   grid-row: 1/3;
   margin: auto;
 }
-@media screen and (max-width: 63.75em) {
+@media screen and (max-width: 37.5em) {
   .logo {
     display: none;
   }
@@ -204,7 +207,7 @@ header {
   grid-row: 2/2;
   margin: auto;
 }
-@media screen and (max-width: 63.75em) {
+@media screen and (max-width: 37.5em) {
   .call-icon {
     visibility: hidden;
     height: 50px;
@@ -218,7 +221,7 @@ header {
   grid-row: 2/3;
   margin: auto;
 }
-@media screen and (max-width: 63.75em) {
+@media screen and (max-width: 37.5em) {
   .email-icon {
     display: none;
   }
@@ -226,16 +229,14 @@ header {
 
 nav {
   all: unset;
-  grid-column: 5/6;
-  grid-row: 4/4;
+  grid-column: 5/5;
+  grid-row: 3/3;
   margin: auto;
-  margin-top: -2rem;
   color: #000;
   text-decoration: none;
-  font-size: 1.2rem;
   text-transform: uppercase;
 }
-@media screen and (max-width: 63.75em) {
+@media screen and (max-width: 37.5em) {
   nav {
     visibility: hidden;
   }
@@ -243,17 +244,16 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
   list-style: none;
 }
 
 nav li {
-  margin-left: 3rem;
+  margin-left: 4rem;
   margin-bottom: 2rem;
 }
 
 nav a {
-  font-size: 2.1rem;
+  font-size: 2rem;
   position: relative;
   font-weight: 400;
   color: #000;
@@ -347,6 +347,7 @@ nav a:hover::before {
   align-self: center;
   margin-top: 8rem;
   width: 12rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 63.75em) {
   .about-map .profile-img {
@@ -444,17 +445,17 @@ nav a:hover::before {
   grid-gap: 4rem;
   align-items: start;
 }
+@media screen and (max-width: 37.5em) {
+  .services {
+    grid-column: 1/full-end;
+  }
+}
 
 .service {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
-}
-@media screen and (max-width: 37.5em) {
-  .service {
-    grid-column: 1/full-end;
-  }
 }
 .service__icon {
   color: #ff1716;

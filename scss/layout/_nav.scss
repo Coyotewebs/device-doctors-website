@@ -1,15 +1,19 @@
 @use "../abstracts" as *;
 
 header {
-  background: #f5fc1fbf;
-  display: grid;
-  grid-column: full-start / -1;
-  // grid-template-columns: 2fr minmax(600px, 6fr) 2fr;
+  @media screen and (min-width: $bp-small) {
+    background: #f5fc1fbf;
+    display: grid;
+    grid-column: 1 / -1;
+    // grid-template-columns: 2fr minmax(600px, 6fr) 2fr;
 
-  grid-template-columns: repeat(9, 2fr);
-  grid-template-rows: repeat(4, 2fr);
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+}
 
-  @media screen and (max-width: $bp-ipad) {
+.nav-logo {
+  @media screen and (min-width: $bp-small) {
     display: none;
   }
 }
@@ -22,19 +26,19 @@ header {
   margin: auto;
   // margin-left: 0rem;
 
-  @media screen and (max-width: $bp-ipad) {
+  @media screen and (max-width: $bp-small) {
     display: none;
   }
 }
 .logo {
   // margin: 0;
-  height: 19vh;
+  height: 18vh;
   // width: 22vw;
   grid-column: 5/ 6;
   grid-row: 1/ 3;
   margin: auto;
 
-  @media screen and (max-width: $bp-ipad) {
+  @media screen and (max-width: $bp-small) {
     display: none;
     // height: 8vh;
     // grid-column: 2 / 2;
@@ -50,7 +54,7 @@ header {
   margin: auto;
   // margin-left: 2rem;
   // cursor: pointer;
-  @media screen and (max-width: $bp-ipad) {
+  @media screen and (max-width: $bp-small) {
     visibility: hidden;
     height: 50px;
     margin-top: -2rem;
@@ -64,26 +68,26 @@ header {
   // margin-top: 2rem;
   // margin-left: 3rem;
   // cursor: pointer;
-  @media screen and (max-width: $bp-ipad) {
+  @media screen and (max-width: $bp-small) {
     display: none;
   }
 }
 nav {
   all: unset;
-  grid-column: 5 / 6;
-  grid-row: 4 / 4;
+  grid-column: 5 / 5;
+  grid-row: 3 / 3;
   margin: auto;
-  margin-top: -2rem;
+  // margin-top: -2rem;
   color: $color-black;
   text-decoration: none;
-  font-size: 1.2rem;
+  // font-size: 1rem;
   text-transform: uppercase;
   // display: flex;
   // margin-right: 2rem;
   // margin-bottom: 1rem;
   // align-items: center;
 
-  @media screen and (max-width: $bp-ipad) {
+  @media screen and (max-width: $bp-small) {
     visibility: hidden;
     // margin-top: -6.5rem;
     // margin-right: 5rem;
@@ -93,18 +97,18 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
   list-style: none;
 }
 
 nav li {
-  margin-left: 3rem;
+  margin-left: 4rem;
   margin-bottom: 2rem;
 }
 
 nav a {
   // opacity: 1;
-  font-size: 2.1rem;
+  font-size: 2rem;
   position: relative;
   font-weight: 400;
 
