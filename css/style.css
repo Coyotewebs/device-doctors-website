@@ -663,7 +663,7 @@ nav a:hover::before {
   }
 }
 .trade__img--2 {
-  width: 125%;
+  width: 110%;
   grid-row: 4/6;
   grid-column: 4/7;
   z-index: 20;
@@ -1115,7 +1115,7 @@ nav a:hover::before {
   min-height: 5.5rem;
 }
 .contact__form input[type=submit] {
-  background-color: #ac250d;
+  background-color: #ff1716;
   text-transform: uppercase;
   margin-bottom: 10rem;
   cursor: pointer;
