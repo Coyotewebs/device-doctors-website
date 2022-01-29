@@ -12,10 +12,10 @@
   grid-gap: 4rem;
   align-items: start;
 
-  @media screen and (max-width: $bp-ipad) {
-    grid-column: 1 / -1;
-    padding: 30px;
-  }
+  // @media screen and (max-width: $bp-ipad) {
+  //   grid-column: 1 / -1;
+  //   padding: 30px;
+  // }
 }
 
 .service {
