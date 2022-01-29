@@ -226,9 +226,9 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
 }
-@media screen and (max-width: 43.75em) {
+@media screen and (max-width: 63.75em) {
   nav {
-    visibility: hidden;
+    display: none;
   }
 }
 

@@ -81,8 +81,8 @@ nav {
   // margin-bottom: 1rem;
   // align-items: center;
 
-  @media screen and (max-width: $bp-small) {
-    visibility: hidden;
+  @media screen and (max-width: $bp-ipad) {
+    display: none;
     // margin-top: -6.5rem;
     // margin-right: 5rem;
     // font-size: 0.8rem;
