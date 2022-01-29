@@ -166,9 +166,6 @@ html {
   margin-bottom: 8rem;
 }
 
-header {
-  background: #f5fc1fbf;
-}
 @media screen and (min-width: 43.75em) {
   header {
     background: #f5fc1fbf;

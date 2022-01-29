@@ -1,7 +1,8 @@
 @use "../abstracts" as *;
 
 header {
-  background: #f5fc1fbf;
+  // background: #f5fc1fbf;
+
   @media screen and (min-width: $bp-small) {
     background: #f5fc1fbf;
     display: grid;
