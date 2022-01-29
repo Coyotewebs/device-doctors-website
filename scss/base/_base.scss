@@ -52,10 +52,7 @@ html {
 }
 .container {
   //this should be mobile
-  grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content repeat(
-      6,
-      min-content
-    );
+
   //end mobile
 
   @media screen and (min-width: $bp-ipad) {
@@ -71,16 +68,16 @@ html {
       )
       [center-end] auto [full-end];
 
-    grid-template-rows: auto min-content min-content 35vw min-content min-content min-content repeat(
+    grid-template-rows: 30vh min-content min-content 38vw min-content min-content min-content repeat(
         6,
         min-content
       );
   }
 
-  @media screen and (max-width: $bp-ipad) {
-    grid-template-rows: min-content min-content 90rem min-content 60rem min-content min-content min-content repeat(
-        6,
-        min-content
-      );
-  }
+  // @media screen and (max-width: $bp-ipad) {
+  //   grid-template-rows: min-content min-content 90rem min-content 60rem min-content min-content min-content repeat(
+  //       6,
+  //       min-content
+  //     );
+  // }
 }

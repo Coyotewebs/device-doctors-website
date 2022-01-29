@@ -1,18 +1,12 @@
 @use "../abstracts" as *;
 
 .about-map {
-  // border: 2px solid pink;
-  display: grid;
-  grid-column: col-start 7 / full-end;
+  height: 100%;
 
   background-image: url(../img/texture-sm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-
-  @media screen and (max-width: $bp-ipad) {
-    grid-column: full-start / full-end;
-  }
 
   .card {
     display: grid;
@@ -30,97 +24,175 @@
     overflow: hidden;
     justify-content: center;
     cursor: pointer;
-
-    @media screen and (max-width: $bp-ipad) {
-      background-image: url(../img/map-short.png);
-    }
   }
 
   .profile-img {
     position: relative;
     align-self: center;
-    margin-top: 8rem;
-    width: 12rem;
+    margin-top: 18rem;
+    width: 16rem;
     cursor: pointer;
     // clip-path: circle(50px at center);
+  }
 
-    @media screen and (max-width: $bp-ipad) {
-      margin-top: 4rem;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    margin-top: -2rem;
+  }
+
+  .owner {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-size: 1.4em;
+  }
+
+  .description {
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
+    text-align: start;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #222323;
+    // padding: 1rem 1rem;
+    font-size: 1.8em;
+    width: 85%;
+  }
+
+  .card__time {
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: 5rem;
+  }
+
+  .time-icon {
+    height: 3rem;
+
+    display: flex;
+    margin-right: 2rem;
+  }
+  .card__time--hours {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .card__phone {
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    padding-bottom: 3rem;
+    margin-right: 5rem;
+  }
+  .card__number {
+    font-size: 1.8em;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .phone-icon {
+    display: flex;
+    margin-right: 2rem;
+    height: 2.5rem;
+  }
+  //start
+  @media screen and (min-width: $bp-ipad) {
+    // border: 2px solid pink;
+    display: grid;
+    grid-column: col-start 7 / full-end;
+
+    background-image: url(../img/texture-sm.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    // @media screen and (max-width: $bp-ipad) {
+    //   grid-column: full-start / full-end;
+    // }
+
+    .banner-img {
+      @media screen and (max-width: $bp-ipad) {
+        background-image: url(../img/map-short.png);
+      }
     }
 
-    @media screen and (max-width: $bp-small) {
-      margin-top: 16rem;
+    .profile-img {
+      margin-top: 8rem;
+      width: 12rem;
+      cursor: pointer;
+      // clip-path: circle(50px at center);
+    }
+
+    .title {
+      font-size: 3em;
+      margin-top: -2rem;
+    }
+
+    .owner {
+      font-size: 1.4em;
+    }
+
+    .description {
+      display: flex;
+      align-self: flex-start;
+      justify-self: center;
+      text-align: start;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      color: #222323;
+      // padding: 1rem 1rem;
+      font-size: 1.8em;
+      width: 85%;
+    }
+
+    .card__time {
+      display: flex;
+      position: relative;
+      align-items: start;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-right: 5rem;
+    }
+    .time-icon {
+      height: 3rem;
+
+      display: flex;
+      margin-right: 2rem;
+    }
+    .card__time--hours {
+      display: flex;
+      position: relative;
+      align-items: center;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .card__phone {
+      display: flex;
+      position: relative;
+      align-items: start;
+      justify-content: center;
+      padding-bottom: 3rem;
+      margin-right: 5rem;
+    }
+    .card__number {
+      font-size: 1.8em;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .phone-icon {
+      display: flex;
+      margin-right: 2rem;
+      height: 2.5rem;
     }
   }
-}
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3em;
-  margin-top: -2rem;
-}
-.owner {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  font-size: 1.4em;
-}
-.description {
-  display: flex;
-  align-self: flex-start;
-  justify-self: center;
-  text-align: start;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  color: #222323;
-  // padding: 1rem 1rem;
-  font-size: 1.8em;
-  width: 85%;
-
-  @media screen and (max-width: $bp-ipad) {
-    width: 80%;
-    font-size: 2.1rem;
-  }
-}
-
-.card__time {
-  display: flex;
-  position: relative;
-  align-items: start;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-right: 5rem;
-}
-.time-icon {
-  height: 3rem;
-
-  display: flex;
-  margin-right: 2rem;
-}
-.card__time--hours {
-  display: flex;
-  position: relative;
-  align-items: center;
-  font-size: 1.8rem;
-  text-align: center;
-}
-.card__phone {
-  display: flex;
-  position: relative;
-  align-items: start;
-  justify-content: center;
-  padding-bottom: 3rem;
-  margin-right: 5rem;
-}
-.card__number {
-  font-size: 1.8em;
-  color: inherit;
-  text-decoration: none;
-}
-
-.phone-icon {
-  display: flex;
-  margin-right: 2rem;
-  height: 2.5rem;
 }

@@ -1,32 +1,11 @@
 @use "../abstracts" as *;
 
 .services {
-  // border: 10px solid yellow;
-  // background-color: gray;
   display: grid;
-  grid-column: center-start / center-end;
-  margin: 12rem 0;
-
-  // grid-template-columns: repeat(3, 1fr);
+  margin: 10rem 4rem;
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   grid-gap: 4rem;
   align-items: start;
-
-  // @media screen and (max-width: $bp-ipad) {
-  //   grid-column: 1 / -1;
-  //   padding: 30px;
-  // }
-}
-
-.service {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 1.5rem;
-
-  @media screen and (max-width: $bp-small) {
-    padding: 20px;
-  }
 
   &__icon {
     color: $color-primary2;
@@ -36,23 +15,46 @@
     grid-row: 1 / span 2;
     transform: translateY(-1rem);
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.044);
-
-    // @media screen and (max-width: $bp-ipad) {
-    //   margin-left: 5rem;
-    // }
-
-    // @media screen and (max-width: $bp-small) {
-    //   // margin-left: 5rem;
-    // }
   }
 
   &__text {
     font-size: 2rem;
     color: $color-grey-dark-1;
+  }
 
-    // @media screen and (max-width: $bp-small) {
-    //   width: 95%;
-    //   font-size: 2.5rem;
-    // }
+  //start
+
+  @media screen and (min-width: $bp-ipad) {
+    // border: 10px solid yellow;
+    // background-color: gray;
+    grid-column: center-start / center-end;
+    margin: 12rem 0;
+
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    grid-gap: 4rem;
+    align-items: start;
+  }
+
+  .service {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
+
+    &__icon {
+      color: $color-primary2;
+      // width: 4.5rem;
+      // height: 4.5rem;
+      font-size: 2.8rem;
+      grid-row: 1 / span 2;
+      transform: translateY(-1rem);
+      text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.044);
+    }
+
+    &__text {
+      font-size: 2rem;
+      color: $color-grey-dark-1;
+    }
   }
 }
