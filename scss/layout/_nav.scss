@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 header {
+  background: #f5fc1fbf;
   @media screen and (min-width: $bp-small) {
     background: #f5fc1fbf;
     display: grid;
@@ -13,6 +14,8 @@ header {
 }
 
 .nav-logo {
+  height: 8rem;
+
   @media screen and (min-width: $bp-small) {
     display: none;
   }

@@ -44,7 +44,7 @@ html {
 }
 @media screen and (max-width: 43.75em) {
   .container {
-    grid-template-rows: auto min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
+    grid-template-rows: 10rem min-content 90rem min-content 60rem min-content min-content min-content repeat(6, min-content);
   }
 }
 
@@ -166,6 +166,9 @@ html {
   margin-bottom: 8rem;
 }
 
+header {
+  background: #f5fc1fbf;
+}
 @media screen and (min-width: 43.75em) {
   header {
     background: #f5fc1fbf;
@@ -176,6 +179,9 @@ html {
   }
 }
 
+.nav-logo {
+  height: 8rem;
+}
 @media screen and (min-width: 43.75em) {
   .nav-logo {
     display: none;
