@@ -2,9 +2,15 @@
 
 header {
   background: #f5fc1fbf;
-  height: 10rem;
+  height: 12rem;
+  .nav-logo {
+    height: 12rem;
+  }
 
   @media screen and (min-width: $bp-ipad) {
+    .nav-logo {
+      display: none;
+    }
     background: #f5fc1fbf;
     display: grid;
     grid-column: 1 / -1;

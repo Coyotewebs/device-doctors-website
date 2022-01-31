@@ -166,7 +166,10 @@ html {
 
 header {
   background: #f5fc1fbf;
-  height: 10rem;
+  height: 12rem;
+}
+header .nav-logo {
+  height: 12rem;
 }
 @media screen and (min-width: 63.75em) {
   header {
@@ -176,6 +179,9 @@ header {
     height: auto;
     grid-template-columns: repeat(10, auto);
     grid-template-rows: repeat(4, auto);
+  }
+  header .nav-logo {
+    display: none;
   }
 }
 
