@@ -375,12 +375,12 @@ nav {
   letter-spacing: 0.2px;
   color: #222323;
   font-size: 2em;
-  width: 85%;
-  padding: 10px;
+  width: 75%;
+  padding: 5px 5px;
 }
 @media screen and (max-width: 390px) {
   .about-map .description {
-    width: 96%;
+    width: 95%;
   }
 }
 .about-map .card__time {
