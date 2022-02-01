@@ -74,12 +74,12 @@
     }
 
     @media screen and (max-width: 390px) {
-      width: 45rem;
+      width: 20rem;
     }
 
-    @media screen and (max-width: 350px) {
-      width: 40rem;
-    }
+    // @media screen and (max-width: 350px) {
+    //   width: 40rem;
+    // }
   }
 
   &__form input,
@@ -190,11 +190,6 @@
       display: flex;
       flex-direction: column;
       // margin-left: 15rem;
-
-      // @media screen and (max-width: $bp-small) {
-      //   width: 50rem;
-      //   padding: 20px;
-      // }
     }
   }
 }
