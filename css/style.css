@@ -25,9 +25,19 @@ html {
     font-size: 55%;
   }
 }
+@media screen and (max-width: 76.875em) {
+  html {
+    font-size: 50%;
+  }
+}
 @media screen and (max-width: 50em) {
   html {
     font-size: 48%;
+  }
+}
+@media screen and (max-width: 25em) {
+  html {
+    font-size: 46%;
   }
 }
 
@@ -417,7 +427,6 @@ nav {
   .about-map .img-map {
     display: unset;
     display: flex;
-    top: 10%;
     cursor: pointer;
   }
   .about-map .profile-img {
@@ -1060,7 +1069,6 @@ nav {
 }
 
 .contact {
-  grid-column: full-start/full-end;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1068,8 +1076,6 @@ nav {
   background-image: url(../img/bg-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  opacity: 100%;
 }
 .contact__wrapper {
   display: flex;
@@ -1079,36 +1085,31 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 13rem;
   background-color: rgba(186, 177, 177, 0);
   margin-bottom: 0rem;
 }
 .contact__details {
   display: flex;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 .contact__details div {
   text-align: center;
   margin: 4rem;
 }
 .contact__details i {
-  font-size: 5rem;
+  font-size: 6rem;
   color: #ff1716;
 }
 .contact__details h4 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.5rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
   color: #ccc;
 }
 .contact__details p {
+  display: none;
   font-size: 1.6rem;
   color: #fff;
-}
-@media screen and (max-width: 43.75em) {
-  .contact__details p {
-    display: none;
-  }
 }
 .contact__wrapper h1 {
   font-size: 4rem;
@@ -1118,14 +1119,23 @@ nav {
   margin-right: 4rem;
 }
 .contact__form {
-  width: 70rem;
+  width: 60rem;
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 43.75em) {
+@media screen and (max-width: 500px) {
   .contact__form {
     width: 50rem;
-    padding: 20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .contact__form {
+    width: 45rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .contact__form {
+    width: 40rem;
   }
 }
 .contact__form input, .contact__form textarea {
@@ -1154,6 +1164,67 @@ nav {
 .contact__form input[type=submit]:hover {
   background-color: #f3fc1f;
   color: #000;
+}
+@media screen and (min-width: 580px) {
+  .contact {
+    grid-column: full-start/full-end;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/bg-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 100%;
+  }
+  .contact__wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13rem;
+    background-color: rgba(186, 177, 177, 0);
+    margin-bottom: 0rem;
+  }
+  .contact__details {
+    display: flex;
+    margin-bottom: 8rem;
+  }
+  .contact__details div {
+    text-align: center;
+    margin: 4rem;
+  }
+  .contact__details i {
+    font-size: 5rem;
+    color: #ff1716;
+  }
+  .contact__details h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: #ccc;
+  }
+  .contact__details p {
+    display: unset;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  .contact__wrapper h1 {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.941);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    margin-right: 4rem;
+  }
+  .contact__form {
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer__bar {

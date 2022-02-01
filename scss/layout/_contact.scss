@@ -1,12 +1,6 @@
 @use "../abstracts" as *;
 
 .contact {
-  // background-color: $color-grey-light-2;
-  // background-color: rgba(0, 0, 0, 0.914);
-  // background-image: linear-gradient(rgba(#ccc, 0.3), rgba($color-primary, 0.5));
-
-  grid-column: full-start / full-end;
-
   width: 100%;
   height: 100%;
 
@@ -16,8 +10,6 @@
   background-image: url(../img/bg-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  opacity: 100%;
 
   &__wrapper {
     // border: solid green;
@@ -28,14 +20,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 13rem;
+    // margin-bottom: 13rem;
     background-color: rgba(186, 177, 177, 0);
     margin-bottom: 0rem;
   }
 
   &__details {
     display: flex;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 
   &__details div {
@@ -45,24 +37,21 @@
   }
 
   &__details i {
-    font-size: 5rem;
+    font-size: 6rem;
     color: $color-primary2;
   }
 
   &__details h4 {
     font-family: $font-display;
     font-size: 2.5rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
     color: #ccc;
   }
 
   &__details p {
+    display: none;
     font-size: 1.6rem;
     color: $color-white;
-
-    @media screen and (max-width: $bp-small) {
-      display: none;
-    }
   }
 
   &__wrapper h1 {
@@ -75,14 +64,21 @@
 
   &__form {
     // border: 2px solid yellow;
-    width: 70rem;
+    width: 60rem;
     display: flex;
     flex-direction: column;
     // margin-left: 15rem;
 
-    @media screen and (max-width: $bp-small) {
+    @media screen and (max-width: 500px) {
       width: 50rem;
-      padding: 20px;
+    }
+
+    @media screen and (max-width: 390px) {
+      width: 45rem;
+    }
+
+    @media screen and (max-width: 350px) {
+      width: 40rem;
     }
   }
 
@@ -116,5 +112,89 @@
   &__form input[type="submit"]:hover {
     background-color: $color-yellow;
     color: $color-black;
+  }
+  //start
+  @media screen and (min-width: 580px) {
+    grid-column: full-start / full-end;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url(../img/bg-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 100%;
+
+    &__wrapper {
+      // border: solid green;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 13rem;
+      background-color: rgba(186, 177, 177, 0);
+      margin-bottom: 0rem;
+    }
+
+    &__details {
+      display: flex;
+      margin-bottom: 8rem;
+    }
+
+    &__details div {
+      // width: 25rem;
+      text-align: center;
+      margin: 4rem;
+    }
+
+    &__details i {
+      font-size: 5rem;
+      color: $color-primary2;
+    }
+
+    &__details h4 {
+      font-family: $font-display;
+      font-size: 2.5rem;
+      margin: 2rem 0;
+      color: #ccc;
+    }
+
+    &__details p {
+      display: unset;
+      font-size: 1.6rem;
+      color: $color-white;
+
+      // @media screen and (max-width: $bp-small) {
+      //   display: none;
+      // }
+    }
+
+    &__wrapper h1 {
+      font-size: 4rem;
+      color: rgba(255, 255, 255, 0.941);
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      margin-right: 4rem;
+    }
+
+    &__form {
+      // border: 2px solid yellow;
+      width: 70rem;
+      display: flex;
+      flex-direction: column;
+      // margin-left: 15rem;
+
+      // @media screen and (max-width: $bp-small) {
+      //   width: 50rem;
+      //   padding: 20px;
+      // }
+    }
   }
 }
