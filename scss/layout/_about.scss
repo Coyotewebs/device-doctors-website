@@ -32,7 +32,7 @@
   .title {
     display: flex;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
   }
 
   .owner {
@@ -55,7 +55,9 @@
     padding: 5px 5px;
 
     @media screen and (max-width: 390px) {
-      width: 95%;
+      width: 100%;
+      padding: 10px;
+      font-size: 1.8rem;
     }
   }
 
@@ -63,6 +65,7 @@
     display: flex;
     position: relative;
     margin: auto;
+    padding: 10px;
     // align-items: start;
     // justify-content: center;
     // margin-top: 1rem;
@@ -79,7 +82,7 @@
     position: relative;
     align-items: center;
     font-size: 1.8rem;
-    padding: 10px 10px;
+    padding: 10px;
     // text-align: center;
   }
   .card__phone {

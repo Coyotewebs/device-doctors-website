@@ -359,7 +359,7 @@ nav {
 .about-map .title {
   display: flex;
   margin: auto;
-  padding: 10px;
+  padding: 5px;
 }
 .about-map .owner {
   display: flex;
@@ -380,13 +380,16 @@ nav {
 }
 @media screen and (max-width: 390px) {
   .about-map .description {
-    width: 95%;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.8rem;
   }
 }
 .about-map .card__time {
   display: flex;
   position: relative;
   margin: auto;
+  padding: 10px;
 }
 .about-map .time-icon {
   height: 3rem;
@@ -398,7 +401,7 @@ nav {
   position: relative;
   align-items: center;
   font-size: 1.8rem;
-  padding: 10px 10px;
+  padding: 10px;
 }
 .about-map .card__phone {
   display: flex;
