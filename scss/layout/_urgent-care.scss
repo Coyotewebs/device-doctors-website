@@ -1,8 +1,11 @@
 @use "../abstracts" as *;
 
 .urgent {
-  // background-color: $color-primary;
-  grid-column: col-start 5 / full-end;
+  @media screen and (max-width: 1200px) {
+    grid-column: 1 / -1;
+  }
+
+  grid-column: col-start 6 / full-end;
 
   padding: 6rem 8vw;
 
@@ -21,10 +24,6 @@
     rgba($color-primary, 0.1),
     rgba($color-primary2, 0.2)
   );
-
-  @media screen and (max-width: $bp-ipad) {
-    grid-column: 1 / full-end;
-  }
 
   &__text {
     font-size: 2rem;
