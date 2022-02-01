@@ -1135,7 +1135,7 @@ nav {
 }
 @media screen and (max-width: 390px) {
   .contact__form {
-    width: 40rem;
+    width: 38rem;
   }
 }
 .contact__form input, .contact__form textarea {
