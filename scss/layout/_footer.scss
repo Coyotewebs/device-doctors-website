@@ -9,10 +9,6 @@
   grid-gap: 1rem;
   align-items: center;
   padding: 2rem;
-  @media screen and (max-width: $bp-small) {
-    // display: flex;
-    // flex-direction: column;
-  }
 }
 
 .footer__nav {
@@ -23,7 +19,7 @@
   align-items: center;
 
   @media screen and (max-width: $bp-small) {
-    grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
+    grid-template-columns: repeat(auto-fit, minmax(6rem, auto));
   }
 }
 

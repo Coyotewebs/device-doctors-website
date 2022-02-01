@@ -1230,6 +1230,7 @@ nav {
   align-items: center;
   padding: 2rem;
 }
+
 .footer__nav {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   list-style: none;
@@ -1238,7 +1239,7 @@ nav {
 }
 @media screen and (max-width: 43.75em) {
   .footer__nav {
-    grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
+    grid-template-columns: repeat(auto-fit, minmax(6rem, auto));
   }
 }
 
