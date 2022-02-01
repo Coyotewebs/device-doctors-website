@@ -31,9 +31,14 @@
     margin: 12rem 0;
 
     // grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 4rem;
     align-items: start;
+
+    // @media screen and (max-width: $bp-ipad) {
+    //   grid-column: 1 / -1;
+    //   padding: 30px;
+    // }
   }
 
   .service {

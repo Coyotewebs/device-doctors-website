@@ -1,6 +1,6 @@
 // RESPONSIVE BREAKPOINTS
 $bp-giant-wide: 106.25em; //1700px
-$bp-largest-wide: 93.75em; //1500px
+$bp-largest-wide: 100em; //1600px
 $bp-large: 76.875em; //1230px
 $bp-ipad: 63.75em; //1020px
 $bp-medium: 50em; //800px
@@ -31,15 +31,16 @@ html {
   font-size: 60.5%; //1 rem = 10px; 10px/16px = 62.5%
   scroll-behavior: smooth;
 
-  // @media screen and (min-width: $bp-giant-wide) {
-  //   font-size: 65%;
+  // @media screen and (max-width: $bp-giant-wide) {
+  //   font-size: 55%;
   // }
+
   @media screen and (max-width: $bp-largest-wide) {
     font-size: 55%;
   }
-  @media screen and (max-width: $bp-large) {
-    font-size: 50%;
-  }
+  // @media screen and (max-width: $bp-large) {
+  //   font-size: 50%;
+  // }
 
   @media screen and (max-width: $bp-medium) {
     font-size: 48%;
@@ -68,7 +69,7 @@ html {
       )
       [center-end] auto [full-end];
 
-    grid-template-rows: 30vh min-content min-content 38vw min-content min-content min-content repeat(
+    grid-template-rows: 26rem min-content min-content 38vw min-content min-content min-content repeat(
         6,
         min-content
       );
