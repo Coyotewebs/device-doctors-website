@@ -53,6 +53,10 @@
     font-size: 2em;
     width: 85%;
     padding: 10px;
+
+    @media screen and (max-width: 390px) {
+      width: 96%;
+    }
   }
 
   .card__time {

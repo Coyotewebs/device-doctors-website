@@ -378,6 +378,11 @@ nav {
   width: 85%;
   padding: 10px;
 }
+@media screen and (max-width: 390px) {
+  .about-map .description {
+    width: 96%;
+  }
+}
 .about-map .card__time {
   display: flex;
   position: relative;
