@@ -25,7 +25,7 @@
     // position: relative;
     margin: auto;
     // align-self: center;
-    margin-top: 0rem;
+
     width: 15rem;
   }
 
@@ -119,14 +119,12 @@
     .img-map {
       display: unset;
       display: flex;
-      // height: 50%;
-      // width: 100%;
+      top: 10%;
+      cursor: pointer;
     }
 
     .profile-img {
-      display: flex;
-      width: 10rem;
-      margin-top: 4rem;
+      width: 12rem;
 
       // clip-path: circle(50px at center);
     }
@@ -143,8 +141,8 @@
     .description {
       // align-self: flex-start;
       // justify-self: center;
-      display: flex;
-      text-align: left;
+      // display: flex;
+      text-align: center;
       font-weight: 500;
       letter-spacing: 0.3px;
       color: #222323;
@@ -164,7 +162,7 @@
     }
     .card__time--hours {
       font-size: 2rem;
-      text-align: center;
+      // text-align: center;
     }
     .card__phone {
       // display: flex;

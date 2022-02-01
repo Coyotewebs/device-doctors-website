@@ -344,7 +344,6 @@ nav {
 .about-map .profile-img {
   display: flex;
   margin: auto;
-  margin-top: 0rem;
   width: 15rem;
 }
 .about-map .title {
@@ -418,11 +417,11 @@ nav {
   .about-map .img-map {
     display: unset;
     display: flex;
+    top: 10%;
+    cursor: pointer;
   }
   .about-map .profile-img {
-    display: flex;
-    width: 10rem;
-    margin-top: 4rem;
+    width: 12rem;
   }
   .about-map .title {
     font-size: 3em;
@@ -432,8 +431,7 @@ nav {
     margin-top: -1rem;
   }
   .about-map .description {
-    display: flex;
-    text-align: left;
+    text-align: center;
     font-weight: 500;
     letter-spacing: 0.3px;
     color: #222323;
@@ -450,7 +448,6 @@ nav {
   }
   .about-map .card__time--hours {
     font-size: 2rem;
-    text-align: center;
   }
   .about-map .card__phone {
     align-items: center;
