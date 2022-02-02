@@ -29,6 +29,10 @@
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 644px) {
+      font-size: 7rem;
+    }
   }
 
   &__heading {
@@ -37,6 +41,9 @@
     text-transform: uppercase;
     margin-top: -2rem;
     margin-bottom: 4rem;
+    @media screen and (max-width: 644px) {
+      font-size: 3rem;
+    }
   }
 
   &__wrapper {
@@ -45,9 +52,9 @@
 
     // // gap: 1rem;
     // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    // @media screen and (max-width: $bp-ipad) {
-    //   flex-direction: column;
-    // }
+    @media screen and (max-width: 644px) {
+      flex-direction: column;
+    }
   }
 
   &__cards--left {
@@ -85,6 +92,9 @@
     margin-right: 3rem;
     // padding-right: 3rem;
     // border-radius: 5px;
+    @media screen and (max-width: 644px) {
+      width: 100%;
+    }
   }
 
   &__mobile--info {
@@ -130,11 +140,6 @@
     align-self: center;
 
     margin-top: 10rem;
-
-    @media screen and (max-width: $bp-ipad) {
-      height: 30%;
-      width: 25%;
-    }
   }
 
   &__card--drone {
@@ -151,6 +156,11 @@
     padding-top: 2.5rem;
 
     width: 47vw;
+
+    @media screen and (max-width: 644px) {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
   }
   &__drone--info {
     display: grid;
@@ -193,12 +203,6 @@
     justify-self: center;
     align-self: center;
     margin-top: 20rem;
-
-    @media screen and (max-width: $bp-ipad) {
-      height: 40%;
-      width: 25%;
-      margin-bottom: 3rem;
-    }
   }
 
   &__card--headphone {
@@ -215,6 +219,11 @@
     // border: 10px solid palevioletred;
     height: auto;
     width: 35vw;
+
+    @media screen and (max-width: 644px) {
+      width: 95%;
+      margin-bottom: 4rem;
+    }
   }
 
   &__headphone--info {
@@ -253,12 +262,6 @@
     justify-self: center;
     align-self: center;
     margin-top: 15rem;
-
-    @media screen and (max-width: $bp-ipad) {
-      height: 40%;
-      width: 30%;
-      margin-bottom: 3rem;
-    }
   }
 
   &__card--camera {
@@ -275,6 +278,11 @@
     // border: 10px solid palevioletred;
     height: auto;
     width: 35vw;
+
+    @media screen and (max-width: 644px) {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
   }
 
   &__camera--info {
@@ -314,12 +322,6 @@
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
-
-    @media screen and (max-width: $bp-ipad) {
-      height: 40%;
-      width: 30%;
-      margin-bottom: 3rem;
-    }
   }
 
   &__card--car {
@@ -335,6 +337,10 @@
     height: auto;
     width: 35vw;
     opacity: 99%;
+
+    @media screen and (max-width: 644px) {
+      width: 100%;
+    }
   }
   &__car--info {
     display: grid;
@@ -375,10 +381,5 @@
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
-    @media screen and (max-width: $bp-ipad) {
-      height: 40%;
-      width: 30%;
-      margin-bottom: 3rem;
-    }
   }
 }

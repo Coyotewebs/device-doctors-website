@@ -175,8 +175,6 @@ html {
 }
 
 header {
-  display: grid;
-  grid-column: col-start 1/4;
   background: #f5fc1fbf;
   height: 10rem;
 }
@@ -447,20 +445,15 @@ nav {
   }
 }
 @media screen and (min-width: 63.75em) {
-  .about-map .img-map {
-    display: unset;
-    display: flex;
-    cursor: pointer;
-  }
-}
-@media screen and (min-width: 63.75em) {
   .about-map .profile-img {
     width: 12rem;
   }
 }
 @media screen and (min-width: 63.75em) {
   .about-map .title {
+    display: flex;
     font-size: 3em;
+    margin-bottom: 0rem;
   }
 }
 @media screen and (min-width: 63.75em) {
@@ -986,6 +979,11 @@ nav {
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 644px) {
+  .retail__heading--title {
+    font-size: 7rem;
+  }
+}
 .retail__heading {
   font-size: 3.5rem;
   color: #fff;
@@ -993,8 +991,18 @@ nav {
   margin-top: -2rem;
   margin-bottom: 4rem;
 }
+@media screen and (max-width: 644px) {
+  .retail__heading {
+    font-size: 3rem;
+  }
+}
 .retail__wrapper {
   display: flex;
+}
+@media screen and (max-width: 644px) {
+  .retail__wrapper {
+    flex-direction: column;
+  }
 }
 .retail__cards--left {
   flex: 3;
@@ -1015,6 +1023,11 @@ nav {
   height: auto;
   width: 45vw;
   margin-right: 3rem;
+}
+@media screen and (max-width: 644px) {
+  .retail__img--mobile {
+    width: 100%;
+  }
 }
 .retail__mobile--info {
   display: grid;
@@ -1048,12 +1061,6 @@ nav {
   align-self: center;
   margin-top: 10rem;
 }
-@media screen and (max-width: 63.75em) {
-  .retail__mobile--shape {
-    height: 30%;
-    width: 25%;
-  }
-}
 .retail__card--drone {
   display: grid;
   position: relative;
@@ -1064,6 +1071,12 @@ nav {
   padding-right: 3rem;
   padding-top: 2.5rem;
   width: 47vw;
+}
+@media screen and (max-width: 644px) {
+  .retail__img--drone {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
 }
 .retail__drone--info {
   display: grid;
@@ -1099,13 +1112,6 @@ nav {
   align-self: center;
   margin-top: 20rem;
 }
-@media screen and (max-width: 63.75em) {
-  .retail__drone--shape {
-    height: 40%;
-    width: 25%;
-    margin-bottom: 3rem;
-  }
-}
 .retail__card--headphone {
   display: grid;
   position: relative;
@@ -1116,6 +1122,12 @@ nav {
   margin-bottom: 1rem;
   height: auto;
   width: 35vw;
+}
+@media screen and (max-width: 644px) {
+  .retail__img--headphone {
+    width: 95%;
+    margin-bottom: 4rem;
+  }
 }
 .retail__headphone--info {
   display: grid;
@@ -1149,13 +1161,6 @@ nav {
   align-self: center;
   margin-top: 15rem;
 }
-@media screen and (max-width: 63.75em) {
-  .retail__headphone--shape {
-    height: 40%;
-    width: 30%;
-    margin-bottom: 3rem;
-  }
-}
 .retail__card--camera {
   display: grid;
   position: relative;
@@ -1167,6 +1172,12 @@ nav {
   margin-bottom: 1rem;
   height: auto;
   width: 35vw;
+}
+@media screen and (max-width: 644px) {
+  .retail__img--camera {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
 }
 .retail__camera--info {
   display: grid;
@@ -1199,13 +1210,6 @@ nav {
   align-self: center;
   margin-top: 10rem;
 }
-@media screen and (max-width: 63.75em) {
-  .retail__camera--shape {
-    height: 40%;
-    width: 30%;
-    margin-bottom: 3rem;
-  }
-}
 .retail__card--car {
   display: grid;
   position: relative;
@@ -1217,6 +1221,11 @@ nav {
   height: auto;
   width: 35vw;
   opacity: 99%;
+}
+@media screen and (max-width: 644px) {
+  .retail__img--car {
+    width: 100%;
+  }
 }
 .retail__car--info {
   display: grid;
@@ -1250,13 +1259,6 @@ nav {
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
-}
-@media screen and (max-width: 63.75em) {
-  .retail__car--shape {
-    height: 40%;
-    width: 30%;
-    margin-bottom: 3rem;
-  }
 }
 
 .contact {
