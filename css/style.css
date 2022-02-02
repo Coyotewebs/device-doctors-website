@@ -1067,24 +1067,15 @@ nav {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
-.retail__mobile--shape {
+.retail .shape--cases {
+  height: 50%;
+  display: flex;
   position: absolute;
-  background: #ff1716;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   display: grid;
   place-items: center;
-  color: white;
-  font-size: 1.2em;
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
-}
-@media screen and (max-width: 450px) {
-  .retail__mobile--shape {
-    display: none;
-  }
 }
 .retail__card--drone {
   display: grid;
@@ -1123,24 +1114,15 @@ nav {
   font-size: 1.5rem;
   margin-top: -1rem;
 }
-.retail__drone--shape {
+.retail .shape--drone {
+  height: 50%;
+  display: flex;
   position: absolute;
-  background: #ff1716;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   display: grid;
   place-items: center;
-  color: white;
-  font-size: 1.2em;
   justify-self: center;
   align-self: center;
-  margin-top: 20rem;
-}
-@media screen and (max-width: 450px) {
-  .retail__drone--shape {
-    display: none;
-  }
+  margin-top: 10rem;
 }
 .retail__card--headphone {
   display: grid;
@@ -1177,24 +1159,15 @@ nav {
   text-transform: uppercase;
   font-size: 1.4rem;
 }
-.retail__headphone--shape {
+.retail .shape--headp {
+  height: 50%;
+  display: flex;
   position: absolute;
-  background: #ff1716;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   display: grid;
   place-items: center;
-  color: white;
-  font-size: 1.2em;
   justify-self: center;
   align-self: center;
-  margin-top: 15rem;
-}
-@media screen and (max-width: 450px) {
-  .retail__headphone--shape {
-    display: none;
-  }
+  margin-top: 10rem;
 }
 .retail__card--camera {
   display: grid;
@@ -1231,24 +1204,15 @@ nav {
   font-size: 1.4rem;
   margin-top: -1rem;
 }
-.retail__camera--shape {
+.retail .shape--camera {
+  height: 50%;
+  display: flex;
   position: absolute;
-  background: #ff1716;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   display: grid;
   place-items: center;
-  color: white;
-  font-size: 1.2em;
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
-}
-@media screen and (max-width: 450px) {
-  .retail__camera--shape {
-    display: none;
-  }
 }
 .retail__card--car {
   display: grid;
@@ -1286,24 +1250,15 @@ nav {
   margin-top: -1rem;
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
 }
-.retail__car--shape {
+.retail .shape--car {
+  height: 50%;
+  display: flex;
   position: absolute;
-  background: #ff1716;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   display: grid;
   place-items: center;
-  color: white;
-  font-size: 1.2em;
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
-}
-@media screen and (max-width: 450px) {
-  .retail__car--shape {
-    display: none;
-  }
 }
 
 .contact {
