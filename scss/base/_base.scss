@@ -68,14 +68,14 @@ html {
       )
       [center-end] auto [full-end];
 
-    grid-template-rows: 26rem min-content min-content 38vw min-content min-content min-content repeat(
+    grid-template-rows: auto min-content min-content 38vw min-content min-content min-content repeat(
         6,
         min-content
       );
   }
 
   @media screen and (max-width: 1200px) {
-    grid-template-rows: auto min-content min-content 38 min-content min-content min-content min-content repeat(
+    grid-template-rows: auto auto min-content min-content 38 min-content min-content min-content min-content repeat(
         6,
         min-content
       );
