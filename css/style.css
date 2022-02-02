@@ -1124,6 +1124,11 @@ nav {
   align-self: center;
   margin-bottom: -20rem;
 }
+@media screen and (max-width: 450px) {
+  .retail .shape--drone {
+    margin-bottom: -10rem;
+  }
+}
 .retail__card--headphone {
   display: grid;
   position: relative;
@@ -1168,6 +1173,11 @@ nav {
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
+}
+@media screen and (max-width: 450px) {
+  .retail .shape--headp {
+    margin-bottom: 5rem;
+  }
 }
 .retail__card--camera {
   display: grid;
@@ -1214,6 +1224,11 @@ nav {
   align-self: center;
   margin-top: 10rem;
 }
+@media screen and (max-width: 450px) {
+  .retail .shape--camera {
+    margin-bottom: 5rem;
+  }
+}
 .retail__card--car {
   display: grid;
   position: relative;
@@ -1259,6 +1274,11 @@ nav {
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
+}
+@media screen and (max-width: 450px) {
+  .retail .shape--car {
+    margin-bottom: 5rem;
+  }
 }
 
 .contact {

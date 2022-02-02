@@ -209,6 +209,9 @@
     align-self: center;
 
     margin-bottom: -20rem;
+    @media screen and (max-width: 450px) {
+      margin-bottom: -10rem;
+    }
   }
 
   &__card--headphone {
@@ -264,6 +267,9 @@
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
+    @media screen and (max-width: 450px) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__card--camera {
@@ -320,6 +326,10 @@
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
+
+    @media screen and (max-width: 450px) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__card--car {
@@ -375,5 +385,8 @@
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
+    @media screen and (max-width: 450px) {
+      margin-bottom: 5rem;
+    }
   }
 }
