@@ -1068,7 +1068,7 @@ nav {
   font-size: 1.5rem;
 }
 .retail .shape--cases {
-  height: 50%;
+  height: 45%;
   display: flex;
   position: absolute;
   display: grid;
@@ -1122,7 +1122,7 @@ nav {
   place-items: center;
   justify-self: center;
   align-self: center;
-  margin-top: 10rem;
+  margin-bottom: -20rem;
 }
 .retail__card--headphone {
   display: grid;

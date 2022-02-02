@@ -141,7 +141,7 @@
   }
 
   .shape--cases {
-    height: 50%;
+    height: 45%;
     display: flex;
     position: absolute;
     display: grid;
@@ -150,25 +150,6 @@
     align-self: center;
     margin-top: 10rem;
   }
-
-  // &__mobile--shape {
-  //   position: absolute;
-  //   background: $color-primary2;
-  //   width: 100px;
-  //   height: 100px;
-  //   border-radius: 50%;
-  //   display: grid;
-  //   place-items: center;
-  //   color: white;
-  //   font-size: 1.2em;
-  //   justify-self: center;
-  //   align-self: center;
-
-  //   margin-top: 10rem;
-  //   @media screen and (max-width: 450px) {
-  //     display: none;
-  //   }
-  // }
 
   &__card--drone {
     // border: 10px solid palevioletred;
@@ -226,27 +207,9 @@
     place-items: center;
     justify-self: center;
     align-self: center;
-    margin-top: 10rem;
+
+    margin-bottom: -20rem;
   }
-
-  // &__drone--shape {
-  //   position: absolute;
-  //   background: $color-primary2;
-  //   width: 100px;
-  //   height: 100px;
-  //   border-radius: 50%;
-  //   display: grid;
-  //   place-items: center;
-  //   color: white;
-  //   font-size: 1.2em;
-  //   justify-self: center;
-  //   align-self: center;
-  //   margin-top: 20rem;
-
-  //   @media screen and (max-width: 450px) {
-  //     display: none;
-  //   }
-  // }
 
   &__card--headphone {
     // border: 10px solid palevioletred;
@@ -302,24 +265,6 @@
     align-self: center;
     margin-top: 10rem;
   }
-
-  // &__headphone--shape {
-  //   position: absolute;
-  //   background: $color-primary2;
-  //   width: 100px;
-  //   height: 100px;
-  //   border-radius: 50%;
-  //   display: grid;
-  //   place-items: center;
-  //   color: white;
-  //   font-size: 1.2em;
-  //   justify-self: center;
-  //   align-self: center;
-  //   margin-top: 15rem;
-  //   @media screen and (max-width: 450px) {
-  //     display: none;
-  //   }
-  // }
 
   &__card--camera {
     // border: 10px solid palevioletred;
@@ -377,25 +322,6 @@
     margin-top: 10rem;
   }
 
-  // &__camera--shape {
-  //   position: absolute;
-  //   background: $color-primary2;
-  //   width: 100px;
-  //   height: 100px;
-  //   border-radius: 50%;
-  //   display: grid;
-  //   place-items: center;
-  //   color: white;
-  //   font-size: 1.2em;
-  //   justify-self: center;
-  //   align-self: center;
-  //   margin-top: 10rem;
-
-  //   @media screen and (max-width: 450px) {
-  //     display: none;
-  //   }
-  // }
-
   &__card--car {
     // border: 10px solid palevioletred;
     display: grid;
@@ -450,22 +376,4 @@
     align-self: center;
     margin-top: 10rem;
   }
-
-  // &__car--shape {
-  //   position: absolute;
-  //   background: $color-primary2;
-  //   width: 100px;
-  //   height: 100px;
-  //   border-radius: 50%;
-  //   display: grid;
-  //   place-items: center;
-  //   color: white;
-  //   font-size: 1.2em;
-  //   justify-self: center;
-  //   align-self: center;
-  //   margin-top: 10rem;
-  //   @media screen and (max-width: 450px) {
-  //     display: none;
-  //   }
-  // }
 }
