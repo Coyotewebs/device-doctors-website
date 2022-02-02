@@ -1081,7 +1081,7 @@ nav {
   align-self: center;
   margin-top: 10rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .retail__mobile--shape {
     display: none;
   }
@@ -1137,7 +1137,7 @@ nav {
   align-self: center;
   margin-top: 20rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .retail__drone--shape {
     display: none;
   }
@@ -1191,7 +1191,7 @@ nav {
   align-self: center;
   margin-top: 15rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .retail__headphone--shape {
     display: none;
   }
@@ -1245,7 +1245,7 @@ nav {
   align-self: center;
   margin-top: 10rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .retail__camera--shape {
     display: none;
   }
@@ -1300,7 +1300,7 @@ nav {
   align-self: center;
   margin-top: 10rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .retail__car--shape {
     display: none;
   }
