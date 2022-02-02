@@ -1,6 +1,8 @@
 @use "../abstracts" as *;
 
 header {
+  display: grid;
+  grid-column: col-start 1 / 4;
   background: #f5fc1fbf;
   height: 10rem;
   .nav-logo {

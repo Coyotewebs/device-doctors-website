@@ -3,14 +3,17 @@
 .about-us {
   // border: 2px solid blue;
   display: grid;
+  grid-column: full-start / full-end;
   //   border: 1px solid $color-black;
-  grid-column: full-start / col-end 6;
 
   // box-shadow: 0px 2px 8px 0px rgba(34, 34, 34, 0.489);
   border-radius: 0;
 
-  @media screen and (max-width: $bp-ipad) {
-    grid-column: full-start / full-end;
+  @media screen and (min-width: $bp-ipad) {
+    grid-column: full-start / col-end 6;
+  }
+  @media screen and (max-width: 1500px) {
+    grid-column: full-start / col-end 6;
   }
 
   .about-us__slider {

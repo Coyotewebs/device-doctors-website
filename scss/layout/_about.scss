@@ -2,6 +2,7 @@
 
 .about-map {
   height: 100%;
+  grid-column: full-start / full-end;
 
   background-image: url(../img/texture-sm.jpeg);
   background-repeat: no-repeat;
@@ -119,6 +120,10 @@
     background-size: cover;
     overflow: hidden;
 
+    @media screen and (max-width: 1500px) {
+      grid-column: col-start 7 / full-end;
+    }
+
     // @media screen and (max-width: $bp-ipad) {
     //   grid-column: full-start / full-end;
     // }
@@ -126,6 +131,9 @@
     .img-map {
       display: unset;
       display: flex;
+      // margin: auto;
+      // margin-top: -38rem;
+      // margin-left: 2rem;
 
       cursor: pointer;
     }
