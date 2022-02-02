@@ -984,6 +984,16 @@ nav {
     font-size: 7rem;
   }
 }
+@media screen and (max-width: 560px) {
+  .retail__heading--title {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .retail__heading--title {
+    font-size: 4rem;
+  }
+}
 .retail__heading {
   font-size: 3.5rem;
   color: #fff;
@@ -994,6 +1004,16 @@ nav {
 @media screen and (max-width: 644px) {
   .retail__heading {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .retail__heading {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 644px) {
+  .retail__heading {
+    font-size: 2.1rem;
   }
 }
 .retail__wrapper {
@@ -1061,6 +1081,11 @@ nav {
   align-self: center;
   margin-top: 10rem;
 }
+@media screen and (max-width: 375px) {
+  .retail__mobile--shape {
+    display: none;
+  }
+}
 .retail__card--drone {
   display: grid;
   position: relative;
@@ -1074,8 +1099,8 @@ nav {
 }
 @media screen and (max-width: 644px) {
   .retail__img--drone {
-    width: 100%;
-    margin-bottom: 4rem;
+    width: 105%;
+    margin-bottom: 2rem;
   }
 }
 .retail__drone--info {
@@ -1111,6 +1136,11 @@ nav {
   justify-self: center;
   align-self: center;
   margin-top: 20rem;
+}
+@media screen and (max-width: 375px) {
+  .retail__drone--shape {
+    display: none;
+  }
 }
 .retail__card--headphone {
   display: grid;
@@ -1161,6 +1191,11 @@ nav {
   align-self: center;
   margin-top: 15rem;
 }
+@media screen and (max-width: 375px) {
+  .retail__headphone--shape {
+    display: none;
+  }
+}
 .retail__card--camera {
   display: grid;
   position: relative;
@@ -1209,6 +1244,11 @@ nav {
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
+}
+@media screen and (max-width: 375px) {
+  .retail__camera--shape {
+    display: none;
+  }
 }
 .retail__card--car {
   display: grid;
@@ -1259,6 +1299,11 @@ nav {
   justify-self: center;
   align-self: center;
   margin-top: 10rem;
+}
+@media screen and (max-width: 375px) {
+  .retail__car--shape {
+    display: none;
+  }
 }
 
 .contact {
