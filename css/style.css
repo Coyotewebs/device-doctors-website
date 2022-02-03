@@ -267,7 +267,7 @@ header nav ul {
 }
 header nav li {
   margin-bottom: 2em;
-  margin-left: 2em;
+  margin-left: 1.5em;
 }
 @media screen and (min-width: 63.75em) {
   header nav li {
