@@ -86,10 +86,10 @@ header {
 
   nav ul {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     // margin-right: 3em;
     // margin: auto;
-    // padding: 0;
+    // padding: 2px;
     list-style: none;
     @media screen and (min-width: $bp-ipad) {
       display: flex;
@@ -99,8 +99,9 @@ header {
   }
 
   nav li {
-    margin-bottom: 2em;
-    margin-left: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    font-weight: 600;
     @media screen and (min-width: $bp-ipad) {
       margin-left: 4rem;
       margin-bottom: 2rem;

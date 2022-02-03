@@ -256,7 +256,7 @@ header nav {
 }
 header nav ul {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   list-style: none;
 }
 @media screen and (min-width: 63.75em) {
@@ -266,8 +266,9 @@ header nav ul {
   }
 }
 header nav li {
-  margin-bottom: 2em;
-  margin-left: 1.5em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-weight: 600;
 }
 @media screen and (min-width: 63.75em) {
   header nav li {
