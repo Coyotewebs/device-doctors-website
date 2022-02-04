@@ -280,6 +280,8 @@ header nav li {
 }
 header nav a {
   color: black;
+  border-left: 0.5px solid black;
+  padding: 0.5px 6px;
   text-decoration: none;
   font-size: 2em;
   text-decoration: uppercase;
@@ -289,6 +291,8 @@ header nav a {
 @media screen and (min-width: 63.75em) {
   header nav a {
     opacity: 1;
+    border: none;
+    padding: 0;
     font-size: 2rem;
     position: relative;
     font-weight: 400;
