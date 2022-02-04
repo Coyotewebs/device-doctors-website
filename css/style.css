@@ -442,6 +442,11 @@ header .nav-toggle:checked ~ nav a {
   margin-top: -2rem;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .about-map .profile-pic {
+    margin-top: -3rem;
+  }
+}
 .about-map .heading {
   text-transform: uppercase;
   font-size: 2.8rem;
