@@ -1496,6 +1496,7 @@ header .nav-toggle:checked ~ nav a {
 .contact__details div {
   text-align: center;
   margin: 4rem;
+  width: 90%;
 }
 .contact__details i {
   font-size: 6rem;
