@@ -450,6 +450,11 @@ header .nav-toggle:checked ~ nav a {
   position: relative;
   margin-bottom: 5px;
 }
+@media screen and (max-width: 600px) {
+  .about-map .heading {
+    margin-top: -2rem;
+  }
+}
 .about-map .heading::after {
   content: "";
   width: 5rem;
@@ -491,7 +496,7 @@ header .nav-toggle:checked ~ nav a {
   letter-spacing: 0.2px;
   color: #222323;
   font-size: 1.8rem;
-  width: 70%;
+  width: 80%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -608,12 +613,12 @@ header .nav-toggle:checked ~ nav a {
   .about-map .about-text {
     display: flex;
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     letter-spacing: 0.2px;
     color: #222323;
     font-size: 1.8rem;
-    width: 80%;
+    width: 85%;
     margin-top: 5px;
   }
   .about-map .about-info {

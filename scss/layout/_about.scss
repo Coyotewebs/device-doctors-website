@@ -28,6 +28,9 @@
     // text-align: center;
     position: relative;
     margin-bottom: 5px;
+    @media screen and (max-width: 600px) {
+      margin-top: -2rem;
+    }
   }
   .heading::after {
     content: "";
@@ -39,6 +42,10 @@
     left: 50%;
     transform: translate(-50%);
     border-radius: 10px;
+
+    // @media screen and (max-width: 600px) {
+    //   margin-top: 5rem;
+    // }
   }
 
   .card-wrapper {
@@ -80,7 +87,7 @@
     color: #222323;
     // padding: 1rem 1rem;
     font-size: 1.8rem;
-    width: 70%;
+    width: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
     @media screen and (max-width: 600px) {
@@ -225,14 +232,14 @@
     .about-text {
       display: flex;
       margin: auto;
-      text-align: center;
+      text-align: left;
       // font-style: italic;
       font-weight: 500;
       letter-spacing: 0.2px;
       color: #222323;
       // padding: 1rem 1rem;
       font-size: 1.8rem;
-      width: 80%;
+      width: 85%;
       margin-top: 5px;
     }
 
