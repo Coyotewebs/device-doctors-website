@@ -351,6 +351,7 @@ header .nav-toggle:checked ~ nav a {
 @media screen and (min-width: 63.75em) {
   .call-icon {
     display: unset;
+    display: grid;
     margin: 0;
     height: 8rem;
     grid-column: 7/7;

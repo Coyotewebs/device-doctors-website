@@ -192,6 +192,7 @@ header {
   display: none;
   @media screen and (min-width: $bp-ipad) {
     display: unset;
+    display: grid;
     margin: 0;
     height: 8rem;
     grid-column: 7 / 7;
