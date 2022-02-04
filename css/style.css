@@ -495,7 +495,7 @@ header .nav-toggle:checked ~ nav a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
   .about-map .about-text {
     width: 95%;
     padding: 10px;
