@@ -466,6 +466,11 @@ header .nav-toggle:checked ~ nav a {
   transform: translate(-50%);
   border-radius: 10px;
 }
+@media screen and (max-width: 600px) {
+  .about-map .heading::after {
+    margin-top: 4rem;
+  }
+}
 .about-map .card-wrapper {
   display: flex;
   align-items: center;

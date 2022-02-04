@@ -43,9 +43,9 @@
     transform: translate(-50%);
     border-radius: 10px;
 
-    // @media screen and (max-width: 600px) {
-    //   margin-top: 5rem;
-    // }
+    @media screen and (max-width: 600px) {
+      margin-top: 4rem;
+    }
   }
 
   .card-wrapper {
