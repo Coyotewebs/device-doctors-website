@@ -446,6 +446,7 @@ header .nav-toggle:checked ~ nav a {
 @media screen and (max-width: 600px) {
   .about-map .profile-pic {
     margin-top: -3rem;
+    padding: 10px;
   }
 }
 .about-map .heading {
@@ -464,7 +465,7 @@ header .nav-toggle:checked ~ nav a {
 }
 .about-map .heading::after {
   content: "";
-  width: 5rem;
+  width: 8rem;
   height: 0.5rem;
   background-color: #ff1716;
   position: absolute;
@@ -475,8 +476,8 @@ header .nav-toggle:checked ~ nav a {
 }
 @media screen and (max-width: 600px) {
   .about-map .heading::after {
-    margin-top: 4rem;
-    padding: 2px;
+    margin-top: 5rem;
+    padding: 1px;
   }
 }
 .about-map .card-wrapper {
@@ -595,7 +596,7 @@ header .nav-toggle:checked ~ nav a {
   }
   .about-map .heading::after {
     content: "";
-    width: 4rem;
+    width: 6rem;
     height: 0.3rem;
     background-color: #c21f2f;
     position: absolute;
@@ -1135,9 +1136,14 @@ header .nav-toggle:checked ~ nav a {
 .urgent__text {
   font-size: 2rem;
   font-style: italic;
-  width: 75%;
+  width: 80%;
   margin-bottom: 4rem;
   color: #000;
+}
+@media screen and (max-width: 600px) {
+  .urgent__text {
+    width: 85%;
+  }
 }
 @media screen and (min-width: 1100px) {
   .urgent {
@@ -1506,7 +1512,7 @@ header .nav-toggle:checked ~ nav a {
 .contact__details h4 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.5rem;
-  margin: 3rem 0;
+  margin: 3em 0;
   color: #ccc;
 }
 .contact__details p {
@@ -1517,7 +1523,7 @@ header .nav-toggle:checked ~ nav a {
   color: rgba(255, 255, 255, 0.941);
   text-transform: uppercase;
   margin-bottom: 3rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 .contact__form {
   width: 60rem;
