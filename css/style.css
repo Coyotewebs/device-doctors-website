@@ -519,7 +519,7 @@ header .nav-toggle:checked ~ nav a {
 }
 @media screen and (max-width: 600px) {
   .about-map .about-text {
-    width: 100%;
+    width: 98%;
     padding: 10px;
     font-size: 2rem;
   }
