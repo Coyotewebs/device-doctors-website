@@ -475,7 +475,7 @@ header .nav-toggle:checked ~ nav a {
 @media screen and (max-width: 600px) {
   .about-map .heading::after {
     margin-top: 4rem;
-    padding: 3px;
+    padding: 2px;
   }
 }
 .about-map .card-wrapper {
