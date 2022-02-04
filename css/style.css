@@ -435,28 +435,220 @@ header .nav-toggle:checked ~ nav a {
   background-size: cover;
   overflow: hidden;
 }
-.about-map .img-map {
-  display: none;
+.about-map .profile-pic {
+  display: flex;
+  height: 15rem;
+  margin: auto;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+.about-map .heading {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 3.5px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 5px;
+}
+.about-map .heading::after {
+  content: "";
+  width: 5rem;
+  height: 0.5rem;
+  background-color: #c21f2f;
+  position: absolute;
+  margin-top: 5rem;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+}
+.about-map .card-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
 }
 .about-map .card {
-  display: grid;
-  background-color: rgba(244, 242, 240, 0.071);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
 }
-.about-map .profile-img {
+.about-map .card-map {
+  display: none;
+}
+.about-map .owner-title {
+  margin: auto;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.about-map .about-text {
   display: flex;
   margin: auto;
-  width: 15rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #222323;
+  font-size: 1.8rem;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.about-map .title {
+.about-map .about-info {
+  list-style: none;
   display: flex;
   margin: auto;
-  padding: 5px;
+  flex-direction: column;
+  align-items: center;
 }
-.about-map .owner {
+.about-map .about-info i {
+  font-size: 2.5rem;
   display: flex;
-  margin: auto;
-  padding: 10px;
-  font-size: 1.4em;
+  margin-right: 2rem;
+}
+.about-map .open {
+  display: flex;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+.about-map .open-text {
+  font-family: "Nunito", sans-serif;
+}
+.about-map .closed {
+  display: flex;
+  margin: 0;
+  font-size: 1.5em;
+  margin-left: 2rem;
+}
+.about-map .phone {
+  display: flex;
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+.about-map .phone-text {
+  display: flex;
+}
+.about-map .email {
+  display: flex;
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+.about-map .email-text {
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+}
+@media screen and (min-width: 63.75em) {
+  .about-map {
+    display: grid;
+    grid-column: col-start 7/full-end;
+    background-image: url(../img/texture-sm.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .about-map .map {
+    display: none;
+  }
+  .about-map .profile-pic {
+    display: flex;
+    height: 10rem;
+    margin: auto;
+    margin-top: -10rem;
+  }
+  .about-map .heading {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 3.5px;
+    margin: auto;
+    position: relative;
+  }
+  .about-map .heading::after {
+    content: "";
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #c21f2f;
+    position: absolute;
+    margin-top: 3.6rem;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+  }
+  .about-map .card-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .about-map .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .about-map .card-map {
+    display: unset;
+    width: 100%;
+    margin: 0;
+  }
+  .about-map .owner-title {
+    margin: auto;
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-top: 5px;
+  }
+  .about-map .about-text {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #222323;
+    font-size: 1.8rem;
+    width: 80%;
+    margin-top: 5px;
+  }
+  .about-map .about-info {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-map .about-info i {
+    font-size: 2rem;
+    display: flex;
+    margin-right: 2rem;
+  }
+  .about-map .open {
+    display: flex;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  .about-map .open-text {
+    font-family: "Nunito", sans-serif;
+  }
+  .about-map .closed {
+    display: flex;
+    margin: 0;
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+  .about-map .phone {
+    display: flex;
+    margin: 5px 0;
+    font-size: 1.2rem;
+  }
+  .about-map .email {
+    display: flex;
+    margin: 5px 0;
+  }
+  .about-map .email-text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+  }
 }
 .about-map .description {
   display: flex;
@@ -476,120 +668,9 @@ header .nav-toggle:checked ~ nav a {
     font-size: 1.8rem;
   }
 }
-.about-map .card__time {
-  display: flex;
-  position: relative;
-  margin: auto;
-  padding: 10px;
-}
-.about-map .time-icon {
-  height: 3rem;
-  display: flex;
-  margin-right: 1rem;
-}
-.about-map .card__time--hours {
-  display: flex;
-  position: relative;
-  align-items: center;
-  font-size: 1.8rem;
-  padding: 10px;
-}
-.about-map .card__phone {
-  display: flex;
-  margin: auto;
-  padding-bottom: 3rem;
-}
-.about-map .card__number {
-  display: flex;
-  font-size: 1.8em;
-  margin: 0;
-  margin-right: 4rem;
-  text-decoration: none;
-}
-.about-map .phone-icon {
-  display: flex;
-  margin-right: 4rem;
-  height: 2.5rem;
-}
-@media screen and (min-width: 63.75em) {
-  .about-map {
-    display: grid;
-    grid-column: col-start 7/full-end;
-    background-image: url(../img/texture-sm.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-  }
-  .about-map .map {
-    display: none;
-  }
-}
-@media screen and (min-width: 63.75em) and (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   .about-map {
     grid-column: col-start 7/full-end;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .profile-img {
-    width: 12rem;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .title {
-    display: flex;
-    font-size: 3em;
-    margin-bottom: 0rem;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .owner {
-    font-size: 1.2em;
-    margin-top: -1rem;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .description {
-    text-align: center;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    color: #222323;
-    font-size: 1.8em;
-    width: 80%;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .card__time {
-    display: flex;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .time-icon {
-    height: 3rem;
-    display: flex;
-    margin-right: 2rem;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .card__time--hours {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .card__phone {
-    align-items: center;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .card__number {
-    font-size: 1.8em;
-    text-decoration: none;
-  }
-}
-@media screen and (min-width: 63.75em) {
-  .about-map .phone-icon {
-    display: flex;
-    margin-right: 2rem;
-    height: 2.5rem;
   }
 }
 
