@@ -267,7 +267,7 @@ header nav ul {
 }
 header nav li {
   margin-bottom: 1em;
-  margin-left: 1.5em;
+  margin-left: 1em;
   font-weight: 300;
 }
 @media screen and (min-width: 63.75em) {
@@ -465,7 +465,7 @@ header .nav-toggle:checked ~ nav a {
   content: "";
   width: 5rem;
   height: 0.5rem;
-  background-color: #c21f2f;
+  background-color: #ff1716;
   position: absolute;
   margin-top: 5rem;
   left: 50%;
