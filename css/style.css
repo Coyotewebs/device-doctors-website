@@ -281,7 +281,7 @@ header nav li {
 header nav a {
   color: black;
   border-left: 0.5px solid black;
-  padding: 0.5px 6px;
+  padding: 0.5px 3px;
   text-decoration: none;
   font-size: 2em;
   text-decoration: uppercase;
