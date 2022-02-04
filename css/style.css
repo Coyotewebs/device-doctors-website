@@ -495,6 +495,13 @@ header .nav-toggle:checked ~ nav a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 390px) {
+  .about-map .about-text {
+    width: 95%;
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+}
 .about-map .about-info {
   list-style: none;
   display: flex;
@@ -660,13 +667,6 @@ header .nav-toggle:checked ~ nav a {
   font-size: 2em;
   width: 75%;
   padding: 5px 5px;
-}
-@media screen and (max-width: 390px) {
-  .about-map .description {
-    width: 95%;
-    padding: 10px;
-    font-size: 1.8rem;
-  }
 }
 @media screen and (max-width: 1500px) {
   .about-map {
