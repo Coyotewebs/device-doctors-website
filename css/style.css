@@ -504,7 +504,7 @@ header .nav-toggle:checked ~ nav a {
   .about-map .about-text {
     width: 95%;
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 .about-map .about-info {
