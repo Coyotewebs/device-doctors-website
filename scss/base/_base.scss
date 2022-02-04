@@ -27,9 +27,9 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 60.5%; //1 rem = 10px; 10px/16px = 62.5%
-  scroll-behavior: smooth;
 
   // @media screen and (max-width: $bp-giant-wide) {
   //   font-size: 55%;
