@@ -172,6 +172,8 @@ header {
     display: unset;
     grid-column: 2/ 4;
     grid-row: 2/ 3;
+    // grid-column: 7 / 7;
+    // grid-row: 2/ 2;
     margin: auto;
   }
 }
@@ -188,23 +190,24 @@ header {
   }
 }
 
-.call-icon {
+.nav-call {
   display: none;
   @media screen and (min-width: $bp-ipad) {
     display: unset;
-    display: grid;
-    margin: 0;
-    height: 8rem;
+    display: flex;
+
+    // margin: 0;
+    height: 9rem;
     grid-column: 7 / 7;
     grid-row: 2/ 2;
     margin: auto;
   }
 }
-.email-icon {
+.nav-email {
   display: none;
   @media screen and (min-width: $bp-ipad) {
     display: unset;
-    height: 4.5rem;
+    height: 6rem;
     grid-column: 8/ 8;
     grid-row: 2 / 3;
     margin: auto;
