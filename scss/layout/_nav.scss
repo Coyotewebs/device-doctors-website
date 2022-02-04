@@ -93,6 +93,9 @@ header {
     list-style: none;
     @media screen and (min-width: $bp-ipad) {
       display: flex;
+      // margin-top: 2.5em;
+      // margin-left: 2em;
+      margin: auto;
       // justify-content: flex-end;
       list-style: none;
     }
@@ -201,6 +204,7 @@ header {
     grid-column: 7 / 7;
     grid-row: 2/ 2;
     margin: auto;
+    cursor: pointer;
   }
 }
 .nav-email {
@@ -211,6 +215,7 @@ header {
     grid-column: 8/ 8;
     grid-row: 2 / 3;
     margin: auto;
+    cursor: pointer;
   }
 }
 

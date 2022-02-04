@@ -263,6 +263,7 @@ header nav ul {
 @media screen and (min-width: 63.75em) {
   header nav ul {
     display: flex;
+    margin: auto;
     list-style: none;
   }
 }
@@ -356,6 +357,7 @@ header .nav-toggle:checked ~ nav a {
     grid-column: 7/7;
     grid-row: 2/2;
     margin: auto;
+    cursor: pointer;
   }
 }
 
@@ -369,6 +371,7 @@ header .nav-toggle:checked ~ nav a {
     grid-column: 8/8;
     grid-row: 2/3;
     margin: auto;
+    cursor: pointer;
   }
 }
 
@@ -452,6 +455,7 @@ header .nav-toggle:checked ~ nav a {
 .about-map .heading {
   text-transform: uppercase;
   font-size: 2.8rem;
+  font-family: "Nunito", sans-serif;
   letter-spacing: 3.5px;
   margin: auto;
   position: relative;
@@ -622,6 +626,7 @@ header .nav-toggle:checked ~ nav a {
     display: unset;
     width: 100%;
     margin: 0;
+    cursor: pointer;
   }
   .about-map .owner-title {
     margin: auto;
