@@ -1576,7 +1576,7 @@ header .nav-toggle:checked ~ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    opacity: 100%;
+    opacity: 98%;
   }
   .contact__details i {
     font-size: 5rem;
