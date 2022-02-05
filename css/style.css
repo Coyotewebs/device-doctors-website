@@ -539,7 +539,7 @@ header .nav-toggle:checked ~ nav a {
   .about-map .about-text {
     width: 85%;
     padding: 2px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: left;
   }
 }
