@@ -439,6 +439,7 @@ header .nav-toggle:checked ~ nav a {
   height: 100%;
   grid-column: full-start/full-end;
   background-image: url(../img/texture-sm.jpeg);
+  opacity: 95%;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -518,7 +519,6 @@ header .nav-toggle:checked ~ nav a {
 .about-map .about-text {
   display: flex;
   margin: auto;
-  text-align: center;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -532,14 +532,15 @@ header .nav-toggle:checked ~ nav a {
   .about-map .about-text {
     width: 70%;
     font-size: 2.2rem;
-    text-align: left;
+    text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
   .about-map .about-text {
-    width: 95%;
-    padding: 8px;
+    width: 85%;
+    padding: 2px;
     font-size: 2.2rem;
+    text-align: left;
   }
 }
 .about-map .about-info {
