@@ -530,7 +530,7 @@ header .nav-toggle:checked ~ nav a {
 @media screen and (max-width: 600px) {
   .about-map .about-text {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 2rem;
   }
 }
@@ -796,7 +796,7 @@ header .nav-toggle:checked ~ nav a {
 }
 @media screen and (max-width: 500px) {
   .about-us .about-us__slider {
-    height: 50rem;
+    height: 46rem;
     width: 100%;
   }
 }
@@ -828,7 +828,7 @@ header .nav-toggle:checked ~ nav a {
 @media screen and (max-width: 600px) {
   .about-us .about-us__slider .about-us__slide .about-us__info {
     padding: 15px;
-    opacity: 98%;
+    opacity: 96%;
   }
 }
 .about-us .about-us__slider .about-us__slide .about-us__info i {
