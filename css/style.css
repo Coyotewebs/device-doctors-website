@@ -855,15 +855,15 @@ header .nav-toggle:checked ~ nav a {
   margin-left: 6rem;
   color: white;
 }
+@media screen and (max-width: 815px) {
+  .about-us .about-us__slider .about-us__slide .about-us__info p {
+    font-size: 2.2em;
+  }
+}
 @media screen and (max-width: 600px) {
   .about-us .about-us__slider .about-us__slide .about-us__info p {
     font-size: 2em;
     margin-left: 4rem;
-  }
-}
-@media screen and (max-width: 815px) {
-  .about-us .about-us__slider .about-us__slide .about-us__info p {
-    font-size: 2.2em;
   }
 }
 .about-us .navigation {

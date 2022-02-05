@@ -91,14 +91,14 @@
     margin-left: 6rem;
     color: white;
 
-    @media screen and (max-width: 600px) {
-      font-size: 2em;
-      margin-left: 4rem;
-    }
-
     @media screen and (max-width: 815px) {
       font-size: 2.2em;
       // display: flex;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 2em;
+      margin-left: 4rem;
     }
   }
 
