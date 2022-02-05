@@ -799,7 +799,6 @@ header .nav-toggle:checked ~ nav a {
   .about-us .about-us__slider {
     height: 55rem;
     width: 100%;
-    display: flex;
   }
 }
 .about-us .about-us__slider .about-us__slide {
