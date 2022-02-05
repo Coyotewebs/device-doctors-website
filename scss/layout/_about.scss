@@ -5,7 +5,7 @@
   grid-column: full-start / full-end;
 
   background-image: url(../img/texture-sm.jpeg);
-  opacity: 90%;
+  // opacity: 90%;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -42,7 +42,7 @@
   }
   .heading::after {
     content: "";
-    width: 8rem;
+    width: 6rem;
     height: 0.5rem;
     background-color: $color-primary2;
     position: absolute;
@@ -103,7 +103,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     @media screen and (max-width: 600px) {
-      width: 98%;
+      width: 99%;
       padding: 10px;
       font-size: 2rem;
     }
@@ -138,7 +138,7 @@
   .closed {
     display: flex;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-left: 2rem;
   }
 
