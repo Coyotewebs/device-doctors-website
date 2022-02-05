@@ -529,7 +529,7 @@ header .nav-toggle:checked ~ nav a {
 }
 @media screen and (max-width: 600px) {
   .about-map .about-text {
-    width: 99%;
+    width: 100%;
     padding: 10px;
     font-size: 2rem;
   }
@@ -558,7 +558,7 @@ header .nav-toggle:checked ~ nav a {
   display: flex;
   margin: 0;
   font-size: 1.3em;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .about-map .phone {
   display: flex;
