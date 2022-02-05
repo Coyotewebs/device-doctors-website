@@ -507,7 +507,7 @@ header .nav-toggle:checked ~ nav a {
 .about-map .owner-title {
   margin: auto;
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 2rem;
 }
 @media screen and (max-width: 600px) {
@@ -527,6 +527,12 @@ header .nav-toggle:checked ~ nav a {
   width: 80%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 1019px) {
+  .about-map .about-text {
+    width: 70%;
+    font-size: 2.2rem;
+  }
 }
 @media screen and (max-width: 600px) {
   .about-map .about-text {
@@ -590,7 +596,7 @@ header .nav-toggle:checked ~ nav a {
     display: flex;
     height: 10rem;
     margin: auto;
-    margin-top: -10rem;
+    margin-top: -3rem;
   }
   .about-map .heading {
     text-transform: uppercase;
@@ -644,63 +650,79 @@ header .nav-toggle:checked ~ nav a {
     color: #222323;
     font-size: 1.8rem;
     width: 85%;
-    margin-top: 5px;
+    margin-top: 15px;
   }
+}
+@media screen and (min-width: 63.75em) and (max-width: 1360px) {
+  .about-map .about-text {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .about-info {
     list-style: none;
     display: flex;
     margin: auto;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
   }
+}
+@media screen and (min-width: 63.75em) and (max-width: 1360px) {
+  .about-map .about-info {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 63.75em) and (max-width: 1099px) {
+  .about-map .about-info {
+    margin-bottom: -10px;
+  }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .about-info i {
     font-size: 2rem;
     display: flex;
     margin-right: 2rem;
   }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .open {
     display: flex;
     margin-top: 10px;
     font-size: 1.2rem;
   }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .open-text {
     font-family: "Nunito", sans-serif;
   }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .closed {
     display: flex;
     margin: 0;
     margin-left: 2rem;
     font-size: 1rem;
   }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .phone {
     display: flex;
     margin: 5px 0;
     font-size: 1.2rem;
   }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .email {
     display: flex;
     margin: 5px 0;
   }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .email-text {
     font-size: 1.8rem;
     font-weight: 400;
     font-family: "Nunito", sans-serif;
-  }
-}
-.about-map .description {
-  display: flex;
-  margin: auto;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 0.2px;
-  color: #222323;
-  font-size: 2em;
-  width: 75%;
-  padding: 5px 5px;
-}
-@media screen and (max-width: 1500px) {
-  .about-map {
-    grid-column: col-start 7/full-end;
   }
 }
 
