@@ -91,6 +91,11 @@
     margin-left: 6rem;
     color: white;
 
+    @media screen and (max-width: 650px) {
+      font-size: 2.2rem;
+      // display: flex;
+    }
+
     @media screen and (max-width: 600px) {
       font-size: 2em;
       margin-left: 4rem;
