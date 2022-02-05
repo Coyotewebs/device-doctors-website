@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  opacity: 100%;
+  opacity: 99%;
   padding-bottom: 20px;
 
   @media screen and (min-width: $bp-ipad) {
@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    opacity: 100%;
+    opacity: 99%;
 
     // margin: 20px 20px;
 
@@ -26,7 +26,7 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      border-radius: 10px;
+      // border-radius: 10px;
       background: rgba(0, 0, 0, 0.5);
       color: #ccc;
       display: flex;
@@ -35,9 +35,9 @@
       flex-direction: column;
     }
 
-    .stars__heading {
-      position: absolute;
-      margin-bottom: 20%;
-    }
+    // .stars__heading {
+    //   position: absolute;
+    //   margin-bottom: 20%;
+    // }
   }
 }

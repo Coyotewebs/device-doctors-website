@@ -8,6 +8,11 @@ const slideIcons = document.querySelectorAll(".slide-icon")
 const numberOfSlides = slides.length
 var slideNumber = 0 
 
+
+
+
+
+
 //image slider next button
 
 nextBtn.addEventListener("click", () => {

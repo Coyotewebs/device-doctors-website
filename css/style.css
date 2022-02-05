@@ -439,6 +439,7 @@ header .nav-toggle:checked ~ nav a {
   height: 100%;
   grid-column: full-start/full-end;
   background-image: url(../img/texture-sm.jpeg);
+  opacity: 90%;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -582,6 +583,7 @@ header .nav-toggle:checked ~ nav a {
     display: grid;
     grid-column: col-start 7/full-end;
     background-image: url(../img/texture-sm.jpeg);
+    opacity: 95%;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -750,7 +752,7 @@ header .nav-toggle:checked ~ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  opacity: 100%;
+  opacity: 99%;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 63.75em) {
@@ -760,23 +762,18 @@ header .nav-toggle:checked ~ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    opacity: 100%;
+    opacity: 99%;
   }
   .stars__overlay {
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 10px;
     background: rgba(0, 0, 0, 0.5);
     color: #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  .stars .stars__heading {
-    position: absolute;
-    margin-bottom: 20%;
   }
 }
 
@@ -1494,6 +1491,15 @@ header .nav-toggle:checked ~ nav a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 700px) {
+  .contact {
+    background-image: url(../assets/img/bg-contact-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 98%;
+  }
+}
 .contact__wrapper {
   display: flex;
   width: 100%;
@@ -1588,11 +1594,6 @@ header .nav-toggle:checked ~ nav a {
     height: 100%;
     display: flex;
     align-items: center;
-    background-image: url(../img/bg-contact.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    opacity: 98%;
   }
   .contact__details i {
     font-size: 5rem;

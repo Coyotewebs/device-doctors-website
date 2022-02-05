@@ -5,6 +5,7 @@
   grid-column: full-start / full-end;
 
   background-image: url(../img/texture-sm.jpeg);
+  opacity: 90%;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -174,6 +175,7 @@
     grid-column: col-start 7 / full-end;
 
     background-image: url(../img/texture-sm.jpeg);
+    opacity: 95%;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
