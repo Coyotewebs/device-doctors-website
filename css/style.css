@@ -532,6 +532,7 @@ header .nav-toggle:checked ~ nav a {
   .about-map .about-text {
     width: 70%;
     font-size: 2.2rem;
+    text-align: left;
   }
 }
 @media screen and (max-width: 600px) {
