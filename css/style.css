@@ -672,10 +672,10 @@ header .nav-toggle:checked ~ nav a {
     margin: auto;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
-@media screen and (min-width: 63.75em) and (max-width: 1360px) {
+@media screen and (min-width: 63.75em) and (max-width: 1366px) {
   .about-map .about-info {
     margin-top: 0;
   }
