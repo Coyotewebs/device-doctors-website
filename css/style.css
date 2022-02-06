@@ -1576,7 +1576,7 @@ header .nav-toggle:checked ~ nav a {
 .contact__details {
   display: flex;
   margin-bottom: 4rem;
-  color: black;
+  color: #202122;
 }
 .contact__details div {
   text-align: center;
