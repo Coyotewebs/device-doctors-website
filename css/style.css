@@ -675,7 +675,7 @@ header .nav-toggle:checked ~ nav a {
     margin-top: 2rem;
   }
 }
-@media screen and (min-width: 63.75em) and (max-width: 1366px) {
+@media screen and (min-width: 63.75em) and (max-width: 1370px) {
   .about-map .about-info {
     margin-top: 0;
   }
