@@ -1677,7 +1677,7 @@ header .nav-toggle:checked ~ nav a {
   .contact__details p {
     display: unset;
     font-weight: 500;
-    color: #333;
+    color: #202122;
     font-size: 1.6rem;
   }
   .contact__form {
