@@ -109,6 +109,10 @@
     justify-content: space-between;
     opacity: 0;
     transition: opacity 0.5s ease;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 15px;
+    }
   }
 
   .about-us__slider:hover .navigation {

@@ -1,13 +1,13 @@
 @use "../abstracts" as *;
 
 .stars {
-  margin-bottom: 0;
   background-image: url(../img/repair-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 10px;
   position: relative;
   opacity: 99%;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 
   @media screen and (min-width: $bp-ipad) {
     // background-color: $color-map;
