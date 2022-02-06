@@ -439,7 +439,6 @@ header .nav-toggle:checked ~ nav a {
   height: 100%;
   grid-column: full-start/full-end;
   background-image: url(../img/texture-sm.jpeg);
-  opacity: 95%;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -530,8 +529,9 @@ header .nav-toggle:checked ~ nav a {
 }
 @media screen and (max-width: 1019px) {
   .about-map .about-text {
-    width: 70%;
-    font-size: 2.2rem;
+    width: 90%;
+    font-size: 2.4rem;
+    font-weight: 500;
     text-align: center;
   }
 }
@@ -1550,7 +1550,7 @@ header .nav-toggle:checked ~ nav a {
   height: 100%;
   display: flex;
   align-items: center;
-  background-image: url(../assets/img/bg-contact.jpg);
+  background-image: url(../assets/img/bg-contact1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1560,7 +1560,6 @@ header .nav-toggle:checked ~ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    opacity: 98%;
   }
 }
 .contact__wrapper {
@@ -1577,6 +1576,7 @@ header .nav-toggle:checked ~ nav a {
 .contact__details {
   display: flex;
   margin-bottom: 4rem;
+  color: black;
 }
 .contact__details div {
   text-align: center;
@@ -1591,14 +1591,14 @@ header .nav-toggle:checked ~ nav a {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.5rem;
   margin: 3em 0;
-  color: #ccc;
+  color: white;
 }
 .contact__details p {
   display: none;
 }
 .contact__wrapper h1 {
   font-size: 4rem;
-  color: rgba(255, 255, 255, 0.941);
+  color: white;
   text-transform: uppercase;
   margin-bottom: 3rem;
   margin-right: 2rem;
@@ -1647,10 +1647,10 @@ header .nav-toggle:checked ~ nav a {
   transition: background-color 0.3s;
 }
 .contact__form input[type=submit]:hover {
-  background-color: #f3fc1f;
-  color: #000;
+  background-color: white;
+  color: #333;
 }
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 700px) {
   .contact {
     grid-column: full-start/full-end;
     width: 100%;
@@ -1662,15 +1662,22 @@ header .nav-toggle:checked ~ nav a {
     font-size: 5rem;
     color: #ff1716;
   }
+  .contact__details {
+    display: flex;
+    margin-bottom: 4rem;
+    color: #ff161694;
+    font-weight: 100;
+  }
   .contact__details h4 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 2.5rem;
     margin: 0rem 0rem;
-    color: #ccc;
+    color: white;
   }
   .contact__details p {
     display: unset;
-    color: #fff;
+    font-weight: 500;
+    color: black;
     font-size: 1.6rem;
   }
   .contact__form {
