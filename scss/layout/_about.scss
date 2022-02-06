@@ -147,8 +147,13 @@
   .closed {
     display: flex;
     margin: 0;
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-left: 1rem;
+  }
+
+  .closed-text {
+    font-weight: 600;
+    font-style: italic;
   }
 
   .phone {
@@ -159,6 +164,8 @@
 
   .phone-text {
     display: flex;
+    font-weight: 600;
+    // margin-right: 3rem;
 
     // font-size: 2rem;
   }
@@ -309,6 +316,12 @@
       margin: 0;
       margin-left: 2rem;
       font-size: 1rem;
+    }
+
+    .closed-text {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 1.6rem;
     }
 
     .phone {

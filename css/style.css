@@ -566,8 +566,12 @@ header .nav-toggle:checked ~ nav a {
 .about-map .closed {
   display: flex;
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.4em;
   margin-left: 1rem;
+}
+.about-map .closed-text {
+  font-weight: 600;
+  font-style: italic;
 }
 .about-map .phone {
   display: flex;
@@ -576,6 +580,7 @@ header .nav-toggle:checked ~ nav a {
 }
 .about-map .phone-text {
   display: flex;
+  font-weight: 600;
 }
 .about-map .email {
   display: flex;
@@ -708,6 +713,13 @@ header .nav-toggle:checked ~ nav a {
   }
 }
 @media screen and (min-width: 63.75em) {
+  .about-map .closed-text {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 63.75em) {
   .about-map .phone {
     display: flex;
     margin: 5px 0;
@@ -769,10 +781,14 @@ header .nav-toggle:checked ~ nav a {
   background-image: url(../img/repair-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10px;
   position: relative;
   opacity: 99%;
   padding-bottom: 25px;
+}
+@media screen and (max-width: 800px) {
+  .stars {
+    padding-top: 10px;
+  }
 }
 @media screen and (min-width: 63.75em) {
   .stars {
