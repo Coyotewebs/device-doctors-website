@@ -872,6 +872,12 @@ header .nav-toggle:checked ~ nav a {
     opacity: 96%;
   }
 }
+@media screen and (max-width: 450px) {
+  .about-us .about-us__slider .about-us__slide .about-us__info {
+    padding: 2px;
+    opacity: 96%;
+  }
+}
 .about-us .about-us__slider .about-us__slide .about-us__info i {
   font-size: 2.8rem;
   display: flex;
@@ -1613,12 +1619,17 @@ header .nav-toggle:checked ~ nav a {
     width: 55rem;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 470px) {
   .contact__form {
     width: 50rem;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 430px) {
+  .contact__form {
+    width: 44rem;
+  }
+}
+@media screen and (max-width: 395px) {
   .contact__form {
     width: 38rem;
   }

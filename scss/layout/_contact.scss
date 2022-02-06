@@ -79,11 +79,13 @@
       width: 55rem;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 470px) {
       width: 50rem;
     }
-
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 430px) {
+      width: 44rem;
+    }
+    @media screen and (max-width: 395px) {
       width: 38rem;
     }
   }
