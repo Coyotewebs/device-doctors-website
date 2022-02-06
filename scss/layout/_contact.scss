@@ -116,8 +116,8 @@
   }
 
   &__form input[type="submit"]:hover {
-    background-color: white;
-    color: #333;
+    background-color: black;
+    color: white;
   }
   //start
   @media screen and (min-width: 700px) {
@@ -157,7 +157,7 @@
       display: unset;
       font-weight: 500;
 
-      color: black;
+      color: #333;
       font-size: 1.6rem;
 
       // @media screen and (max-width: $bp-small) {
