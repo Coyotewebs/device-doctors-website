@@ -1626,12 +1626,17 @@ header .nav-toggle:checked ~ nav a {
 }
 @media screen and (max-width: 430px) {
   .contact__form {
-    width: 44rem;
+    width: 42rem;
   }
 }
 @media screen and (max-width: 395px) {
   .contact__form {
     width: 38rem;
+  }
+}
+@media screen and (max-width: 325px) {
+  .contact__form {
+    width: 30rem;
   }
 }
 .contact__form input, .contact__form textarea {
@@ -1689,7 +1694,7 @@ header .nav-toggle:checked ~ nav a {
   .contact__details p {
     display: unset;
     font-weight: 600;
-    color: #202122;
+    color: #202122a2;
     font-size: 1.5rem;
   }
   .contact__form {
