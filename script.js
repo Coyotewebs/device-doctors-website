@@ -8,7 +8,9 @@ const slideIcons = document.querySelectorAll(".slide-icon")
 const numberOfSlides = slides.length
 var slideNumber = 0 
 
-
+const yearSpan = document.querySelector('#currentYear')
+const currentYear = new Date();
+yearSpan.innerText = currentYear.getFullYear()
 
 
 
