@@ -450,10 +450,6 @@ header {
   .nav__link:hover:after {
     width: 100%;
   }
-
-  .active {
-    color: #be1e2d;
-  }
 }
 .about-map {
   height: 100%;
