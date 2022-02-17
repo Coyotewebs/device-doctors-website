@@ -10,7 +10,7 @@ header {
   position: static;
   top: 0;
   left: 0;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 
   justify-content: space-between;
   align-items: center;
@@ -212,6 +212,7 @@ header {
     position: sticky;
     top: 0;
     height: 10rem;
+    padding: 0 1.5rem;
 
     // height: calc(var(10rem) + 1rem);
   }

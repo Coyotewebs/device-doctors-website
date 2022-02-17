@@ -182,7 +182,7 @@ header {
   position: static;
   top: 0;
   left: 0;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -364,6 +364,7 @@ header {
     position: sticky;
     top: 0;
     height: 10rem;
+    padding: 0 1.5rem;
   }
 
   .header__toggle {
@@ -864,7 +865,7 @@ header {
 }
 @media screen and (max-width: 500px) {
   .about-us .about-us__slider {
-    height: 55rem;
+    height: 60rem;
     width: 100%;
   }
 }
