@@ -865,7 +865,7 @@ header {
 }
 @media screen and (max-width: 500px) {
   .about-us .about-us__slider {
-    height: 60rem;
+    height: 50rem;
     width: 100%;
   }
 }
