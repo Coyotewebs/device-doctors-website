@@ -869,7 +869,7 @@ header {
     width: 100%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .about-us .about-us__slider {
     height: 50rem;
     width: 100%;
