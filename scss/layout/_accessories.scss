@@ -258,6 +258,9 @@
   &__card--headphone {
     // border: 10px solid palevioletred;
     display: grid;
+    position: relative;
+    align-items: start;
+    justify-content: center;
 
     // position: relative;
     // align-items: start;
@@ -272,7 +275,7 @@
   &__img--headphone {
     // margin-bottom: 1rem;
     // border: 10px solid palevioletred;
-    height: auto;
+    // height: auto;
     width: 45vw;
 
     opacity: 85%;
@@ -289,7 +292,9 @@
     position: absolute;
     // border: 10px solid palevioletred;
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
+    margin-top: 12rem;
+
     // margin-top: 3rem;
 
     @media screen and (max-width: 700px) {
@@ -299,7 +304,7 @@
   }
 
   &__headphone--title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     color: rgb(243, 252, 31);
     text-transform: uppercase;
