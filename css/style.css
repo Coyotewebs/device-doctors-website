@@ -1273,6 +1273,7 @@ header {
 }
 @media screen and (max-width: 644px) {
   .retail__heading--title {
+    margin-top: 1rem;
     font-size: 7rem;
   }
 }
@@ -1300,6 +1301,8 @@ header {
 @media screen and (max-width: 644px) {
   .retail__heading {
     font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 560px) {
