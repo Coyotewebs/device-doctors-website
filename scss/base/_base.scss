@@ -75,7 +75,7 @@ html {
   }
 
   @media screen and (max-width: 1200px) {
-    grid-template-rows: auto auto min-content min-content 38 min-content min-content min-content min-content repeat(
+    grid-template-rows: 12rem auto min-content min-content 38 min-content min-content min-content min-content repeat(
         6,
         min-content
       );

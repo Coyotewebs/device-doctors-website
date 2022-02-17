@@ -8,6 +8,7 @@
   align-items: center;
 
   background-image: url(../assets/img/bg-contact1.jpg);
+  opacity: 98%;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -27,7 +28,7 @@
     align-items: center;
     justify-content: center;
     // margin-bottom: 13rem;
-    background-color: rgba(186, 177, 177, 0);
+    background-color: rgba(43, 41, 41, 0.062);
     margin-bottom: 0rem;
   }
 
@@ -165,7 +166,8 @@
       display: unset;
       font-weight: 600;
 
-      color: #202122a2;
+      color: #202122c9;
+
       font-size: 1.5rem;
 
       // @media screen and (max-width: $bp-small) {

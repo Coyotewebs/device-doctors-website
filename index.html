@@ -11,47 +11,101 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <script src="https://kit.fontawesome.com/f7c145e9a0.js" crossorigin="anonymous"></script>
+    
 
     <title> Cell Phone & Tablet Repair | Device Doctors of Grand County</title>
 </head>
 
 <body class="container">
 
-   
-    <header class="Home" id="home">
-        
-        <div class="weather">
-            
-            <div class="elfsight-app-92af0360-f367-464c-9f9f-6b0a32752008"></div>
-        </div>
 
-        <img src="assets/img/nav-logo.png" alt="Device Doctors of Grand County" class="nav-logo">
-        <img src="assets/img/main-logo.png" alt="Device Doctors of Grand County Logo" class="logo">
-        <input type="checkbox"  id="nav-toggle" class="nav-toggle">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#retail">Retail</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://goo.gl/maps/6JdinoEUHV3Bwm2c8" target="_blank">Directions</a></li>
-            </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
-        
+    <header class="header" id="home">
+        <div class="header__logo">
+            <a href="#"><img src="assets/img/nav-logo-original.png" alt="Device-Doctors-logo"></a>
+            </div>
+
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bg-grid">
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+                    <div class="nav__perfil">
+                        <div>
+                            <a href="#" class="nav__name heading-2 ">We fix all brands of cellphone & tablets!</a>
+                        </div>
+                        <div class="nav__img">
+                            <a href="tel:9705311416">
+                            <img src="assets/img/nav-call.png" alt="call 24/7">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                            <li class="nav__item"><a href="#retail" class="nav__link">Retail</a></li>
+                            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                            <li class="nav__item"><a href="https://goo.gl/maps/6JdinoEUHV3Bwm2c8" target="_blank" class="nav__link">Directions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+
+            </nav>
+
+    </header>
+
+
+    <!-- <div class="nav-call">
         <a href="tel:9705311416" class="nav-call">
             <img src="assets/img/nav-call.png" alt="call 24/7" class=nav-call>
         </a>
-        
-        <a href="mailto:pisano.steve@gmail.com" class="nav-email">
-            <img src="assets/img/nav-email.png" alt="email" class="nav-email">
-        </a>         
-       
+    </div>  -->
 
-    </header>
+    <!-- <header class="header" id="home">
+        <div class="nav-logo">
+            <a href="#"><img src="assets/img/nav-logo-original.png" alt="Device-Doctors-logo"></a>
+            </div>
+            <nav class="navigation" id="nav-menu">
+                <ul>
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#retail">Retail</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://goo.gl/maps/6JdinoEUHV3Bwm2c8" target="_blank">Directions</a>
+                </ul>
+            </nav>
+            <div class="toggleBox">
+                <a onclick="showMenu()" href="#"><img class="menu" src="assets/img/menu.png"> <img class="close" src="assets/img/menu-close.png"></a>
+            </div>
+            <div class="nav-call">
+                <a href="tel:9705311416" class="nav-call">
+                    <img src="assets/img/nav-call.png" alt="call 24/7" class=nav-call>
+                </a>
+            </div> 
+        
+
+    </header> -->
    
+   
+
+
+<!-- <a href="mailto:pisano.steve@gmail.com" class="nav-email">
+            <img src="assets/img/nav-email.png" alt="email" class="nav-email">
+        </a>          -->
+
+
+         <!-- <div class="weather">
+            
+            <div class="elfsight-app-92af0360-f367-464c-9f9f-6b0a32752008"></div>
+        </div> -->
+        
+        <!-- <img src="assets/img/main-logo.png" alt="Device Doctors of Grand County Logo" class="logo"> -->
+        <!-- <input type="checkbox"  id="nav-toggle" class="nav-toggle"> -->
+
 
     <section class="about-us" id="about-us">
 
@@ -171,7 +225,7 @@
         
     </section>
 
-    <section class="about-map" id="">
+    <section class="about-map" id="about">
         <p><iframe class=map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.061009008122!2d-105.78769118429045!3d39.917650879426134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876a34d49cd0f879%3A0x5897cc18c3099a98!2sDevice%20Doctors!5e0!3m2!1sen!2sca!4v1630780495015!5m2!1sen!2sca" width="1020" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </p>
        
@@ -306,7 +360,7 @@
     <!-- Start of Retail  Section 10 -->
     <section class="retail" id="retail">
         <h1 class="retail__heading--title">Device Doctors</h1>
-        <h2 class="heading-2 heading-2--light retail__heading">Your One Stop Technology Shop</h2>
+        <h2 class="retail__heading">Your One Stop Technology Shop</h2>
         <div class="retail__wrapper"> 
             
             <div class="retail__cards--left">
@@ -321,29 +375,37 @@
             
                 </div>
 
-                <div class="retail__card--drone">
-                    <img src="img/drone-2.jpeg" alt="" class="retail__img--drone">
-                    <div class="retail__drone--info">
-                    <h4 class="retail__drone--title">The Drone Zone</h4>
-                    <p class="retail__drone--p"> Next gen drones ready for a spin </p>
+
+                <div class="retail__card--headphone">
+                    <img src="assets/img/retail-headphones-900w.jpg" alt="" class="retail__img--headphone">
+                    <div class="retail__headphone--info">
+                    <h4 class="retail__headphone--title">Amplified Living</h4>
+                    <p class="retail__headphone--p">Live life at full volume</p>
                 </div>
-                <img src="assets/img/shape-drone.png" alt="" class="shape--drone">
-                </div>
+                <img src="assets/img/shape-headp.png" alt="" class="shape--headp">
+                    </div>
+
+
+                
                 </div>
 
                 <div class="retail__cards--right">
-                    <div class="retail__card--headphone">
-                        <img src="assets/img/retail-headphones.jpg" alt="" class="retail__img--headphone">
-                        <div class="retail__drone--info">
-                        <h4 class="retail__headphone--title">Amplified Living</h4>
-                        <p class="retail__headphone--p">Live life at full volume</p>
-                    </div>
-                    <img src="assets/img/shape-headp.png" alt="" class="shape--headp">
-                        </div>
+                    
 
+
+                    <div class="retail__card--drone">
+                        <img src="assets/img/reatail-drone-900w.jpg" alt="" class="retail__img--drone">
+                        <div class="retail__drone--info">
+                        <h4 class="retail__drone--title">The Drone Zone</h4>
+                        <p class="retail__drone--p"> Next gen drones ready for a spin </p>
+                    </div>
+                    <img src="assets/img/shape-drone.png" alt="" class="shape--drone">
+                    </div>
+
+                    
                         <div class="retail__card--camera">
-                            <img src="img/camera-2.jpeg" alt="" class="retail__img--camera">
-                            <div class="retail__drone--info">
+                            <img src="assets/img/retail-camera-900w.jpg" alt="" class="retail__img--camera">
+                            <div class="retail__camera--info">
                             <h4 class="retail__camera--title">Take Focus</h4>
                             <p class="retail__camera--p"> Best cameras best shots.</p>
                         </div>
@@ -352,8 +414,8 @@
 
 
                     <div class="retail__card--car">
-                        <img src="assets/img/retail-car.jpg" alt="" class="retail__img--car">
-                        <div class="retail__drone--info">
+                        <img src="assets/img/retail-car-900w.jpg" alt="" class="retail__img--car">
+                        <div class="retail__car--info">
                         <h4 class="retail__car--title"> Need for Speed</h4>
                         <p class="retail__car--p">Fast remote control cars </p>
                     </div>
@@ -450,9 +512,13 @@
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
-    <script async
+    <!-- <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGjYARwOFTzZzhYmRZ0pKjJ0Wk0zbnHQE&callback=initMap">
-        </script>
+        </script> -->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script src="script.js"></script>
 </body>
 

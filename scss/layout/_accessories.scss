@@ -20,15 +20,15 @@
   align-items: center;
   text-align: center;
 
-  padding: 5rem;
-
-  // gap: 1.5rem;
+  padding: 0rem;
 
   &__heading--title {
     font-size: 8.2rem;
     color: $color-white;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: -2rem;
+
+    // margin-top: 2rem;
 
     @media screen and (max-width: 644px) {
       font-size: 7rem;
@@ -44,11 +44,17 @@
   }
 
   &__heading {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
     color: $color-white;
     text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 400;
     margin-top: -2rem;
-    margin-bottom: 4rem;
+    // line-height: 1;
+
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     @media screen and (max-width: 644px) {
       font-size: 3rem;
     }
@@ -63,10 +69,12 @@
   &__wrapper {
     // border: 10px solid blue;
     display: flex;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
 
-    // // gap: 1rem;
-    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    @media screen and (max-width: 644px) {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    @media screen and (max-width: 700px) {
       flex-direction: column;
     }
   }
@@ -74,12 +82,14 @@
   &__cards--left {
     // border: 10px solid green;
     flex: 3;
+
     position: relative;
   }
 
   &__cards--right {
     // border: 10px solid yellowgreen;
     flex: 2;
+
     position: relative;
   }
 
@@ -90,8 +100,13 @@
     position: relative;
     align-items: start;
     justify-content: center;
+    margin-bottom: 2rem;
+    background-color: rgba($color-black, 0.9);
+    @media screen and (max-width: 700px) {
+      background-color: rgba($color-black, 0);
+    }
 
-    // margin: 0 auto;
+    // margin-top: 5rem;
 
     // background-image: url(../img/phonecases.jpg);
 
@@ -101,28 +116,35 @@
 
   &__img--mobile {
     display: flex;
-    height: auto;
+    // height: auto;
     width: 45vw;
-    margin-right: 3rem;
+
+    opacity: 90%;
+    // margin-right: 3rem;
     // padding-right: 3rem;
     // border-radius: 5px;
-    @media screen and (max-width: 644px) {
-      width: 100%;
+    @media screen and (max-width: 700px) {
+      width: 75vw;
+      opacity: 95%;
+      margin-bottom: 2rem;
     }
   }
 
   &__mobile--info {
     display: grid;
     position: absolute;
-    // border: 10px solid palevioletred;
-    justify-self: center;
-    margin-top: 6rem;
 
-    // justify-content: center;
+    justify-self: center;
+    align-self: center;
+    // margin-top: 3rem;
+    @media screen and (max-width: 700px) {
+      align-self: flex-start;
+      margin-top: 2rem;
+    }
   }
 
   &__mobile--title {
-    font-size: 3.3rem;
+    font-size: 4em;
     font-weight: 800;
     color: rgb(243, 252, 31);
     text-transform: uppercase;
@@ -134,21 +156,27 @@
     // border: 10px solid palevioletred;
     // position: relative;
     // margin-top: 10rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.12);
+    margin-top: -1rem;
 
-    color: #000;
+    color: white;
     text-transform: uppercase;
     font-size: 1.5rem;
   }
 
   .shape--cases {
-    height: 45%;
+    height: 0%;
     display: flex;
     position: absolute;
-    display: grid;
-    place-items: center;
+    // top: 60%;
+    // left: 40%;
+
+    // display: grid;
+    // place-items: center;
     justify-self: center;
     align-self: center;
-    margin-top: 10rem;
+
+    margin-top: 25rem;
   }
 
   &__card--drone {
@@ -158,17 +186,27 @@
     position: relative;
     align-items: start;
     justify-content: center;
+    // margin-top: 5rem;
+    // margin-bottom: 2rem;
+    background-color: rgba($color-black, 0.9);
+
+    margin-bottom: 2rem;
+    @media screen and (max-width: 700px) {
+      background-color: rgba($color-black, 0);
+    }
   }
 
   &__img--drone {
-    padding-right: 3rem;
-    padding-top: 2.5rem;
+    // padding-right: 3rem;
+    // padding-top: 2.5rem;
+    opacity: 90%;
 
-    width: 47vw;
+    width: 40vw;
 
-    @media screen and (max-width: 644px) {
-      width: 105%;
+    @media screen and (max-width: 700px) {
+      width: 75vw;
       margin-bottom: 2rem;
+      opacity: 95%;
     }
   }
   &__drone--info {
@@ -176,7 +214,10 @@
     position: absolute;
     // border: 10px solid palevioletred;
     justify-self: center;
-    margin-top: 6rem;
+    // align-self: center;
+    // margin-top: 8rem;
+
+    margin-top: 1.5rem;
   }
 
   &__drone--title {
@@ -186,21 +227,21 @@
     font-weight: 800;
     color: rgb(243, 252, 31);
     text-transform: uppercase;
-    margin-top: -2rem;
+    margin-top: -1rem;
 
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
   }
 
   &__drone--p {
     // position: relative;
-    color: #000;
+    color: white;
     text-transform: uppercase;
     font-size: 1.5rem;
     margin-top: -1rem;
   }
 
   .shape--drone {
-    height: 50%;
+    height: 0%;
     display: flex;
     position: absolute;
     display: grid;
@@ -209,29 +250,37 @@
     align-self: center;
 
     margin-bottom: -20rem;
-    @media screen and (max-width: 450px) {
-      margin-bottom: -10rem;
-    }
+    // @media screen and (max-width: 450px) {
+    //   margin-bottom: -10rem;
+    // }
   }
 
   &__card--headphone {
     // border: 10px solid palevioletred;
     display: grid;
 
-    position: relative;
-    align-items: start;
-    justify-content: center;
+    // position: relative;
+    // align-items: start;
+    // justify-content: center;
+    background-color: rgba($color-black, 0.9);
+
+    @media screen and (max-width: 700px) {
+      background-color: rgba($color-black, 0);
+    }
   }
 
   &__img--headphone {
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     // border: 10px solid palevioletred;
     height: auto;
-    width: 35vw;
+    width: 45vw;
 
-    @media screen and (max-width: 644px) {
-      width: 95%;
-      margin-bottom: 4rem;
+    opacity: 85%;
+
+    @media screen and (max-width: 700px) {
+      width: 75vw;
+      margin-bottom: 2rem;
+      opacity: 90%;
     }
   }
 
@@ -240,36 +289,44 @@
     position: absolute;
     // border: 10px solid palevioletred;
     justify-self: center;
+    align-self: center;
+    // margin-top: 3rem;
+
+    @media screen and (max-width: 700px) {
+      align-self: flex-start;
+      margin-top: 2rem;
+    }
   }
 
   &__headphone--title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     color: rgb(243, 252, 31);
     text-transform: uppercase;
-    margin-top: -2rem;
+    // margin-top: -2rem;
 
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.023);
   }
 
   &__headphone--p {
-    color: #000;
+    color: white;
     text-transform: uppercase;
     font-size: 1.4rem;
+    margin-top: -1rem;
   }
 
   .shape--headp {
-    height: 50%;
+    height: 0%;
     display: flex;
     position: absolute;
-    display: grid;
+    // display: grid;
     place-items: center;
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
-    @media screen and (max-width: 450px) {
-      margin-bottom: 5rem;
-    }
+    // @media screen and (max-width: 450px) {
+    //   margin-bottom: 5rem;
+    // }
   }
 
   &__card--camera {
@@ -278,47 +335,55 @@
     position: relative;
     align-items: start;
     justify-content: center;
+    margin-bottom: 2rem;
+    background-color: rgba($color-black, 0.9);
+    @media screen and (max-width: 700px) {
+      background-color: rgba($color-black, 0);
+    }
   }
 
   &__img--camera {
     position: relative;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     // border: 10px solid palevioletred;
-    height: auto;
-    width: 35vw;
+    // height: auto;
+    width: 40vw;
+    opacity: 90%;
 
-    @media screen and (max-width: 644px) {
-      width: 100%;
-      margin-bottom: 4rem;
+    @media screen and (max-width: 700px) {
+      width: 75vw;
+      margin-bottom: 2rem;
+      opacity: 95%;
     }
   }
 
   &__camera--info {
     display: grid;
-    // position: absolute;
-    // border: 10px solid palevioletred;
-    // justify-self: center;
+    position: absolute;
+    justify-self: center;
+    // align-self: center;
+    margin-top: 2rem;
   }
 
   &__camera--title {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     font-weight: 800;
     color: rgb(243, 252, 31);
     text-transform: uppercase;
-    margin-top: -4rem;
+    // margin-top: -4rem;
 
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
   }
 
   &__camera--p {
-    color: #000;
+    color: white;
     text-transform: uppercase;
     font-size: 1.4rem;
     margin-top: -1rem;
   }
 
   .shape--camera {
-    height: 50%;
+    height: 0%;
     display: flex;
     position: absolute;
     display: grid;
@@ -327,9 +392,9 @@
     align-self: center;
     margin-top: 10rem;
 
-    @media screen and (max-width: 450px) {
-      margin-bottom: 5rem;
-    }
+    // @media screen and (max-width: 450px) {
+    //   margin-bottom: 5rem;
+    // }
   }
 
   &__card--car {
@@ -338,23 +403,32 @@
     position: relative;
     align-items: start;
     justify-content: center;
+    background-color: rgba($color-black, 0.9);
+    @media screen and (max-width: 700px) {
+      background-color: rgba($color-black, 0);
+    }
   }
 
   &__img--car {
     position: relative;
-    height: auto;
-    width: 35vw;
-    opacity: 99%;
+    // height: auto;
 
-    @media screen and (max-width: 644px) {
-      width: 100%;
+    width: 40vw;
+    opacity: 90%;
+
+    @media screen and (max-width: 700px) {
+      width: 75vw;
+      opacity: 95%;
     }
   }
   &__car--info {
     display: grid;
+    position: absolute;
 
-    // border: 10px solid palevioletred;
     justify-self: center;
+    // align-self: center;
+
+    margin-top: 1.5rem;
   }
 
   &__car--title {
@@ -362,13 +436,13 @@
     font-weight: 800;
     color: rgb(243, 252, 31);
     text-transform: uppercase;
-    margin-top: -4rem;
+    // margin-top: -4rem;
 
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.119);
   }
 
   &__car--p {
-    color: #000;
+    color: white;
 
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -377,7 +451,7 @@
   }
 
   .shape--car {
-    height: 50%;
+    height: 0%;
     display: flex;
     position: absolute;
     display: grid;
@@ -385,8 +459,8 @@
     justify-self: center;
     align-self: center;
     margin-top: 10rem;
-    @media screen and (max-width: 450px) {
-      margin-bottom: 5rem;
-    }
+    // @media screen and (max-width: 450px) {
+    //   margin-bottom: 5rem;
+    // }
   }
 }

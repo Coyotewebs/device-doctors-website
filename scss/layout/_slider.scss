@@ -26,7 +26,7 @@
     border-radius: 0px;
 
     @media screen and (max-width: 500px) {
-      height: 46rem;
+      height: 60rem;
       width: 100%;
       // display: flex;
     }
@@ -125,7 +125,7 @@
 
   .prev-btn,
   .next-btn {
-    z-index: 999;
+    z-index: 40;
     font-size: 2rem;
     color: #222;
     background-color: rgba(255, 255, 255, 0.8);
@@ -150,7 +150,7 @@
   }
 
   .navigation-visibility .slide-icon {
-    z-index: 999;
+    z-index: 40;
     background: rgba(255, 255, 255, 0.5);
     width: 20px;
     height: 10px;
