@@ -84,7 +84,8 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
-    // height: 15rem;
+    height: 15rem;
+
     // padding-top: 2rem;
 
     // display: flex;
@@ -95,6 +96,13 @@ header {
     // height: 56px;
     // border-radius: 50%;
     // overflow: hidden;
+  }
+  .nav__img img {
+    // width: 8rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 12rem;
   }
 
   .nav__name {

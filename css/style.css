@@ -235,6 +235,14 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
+    height: 15rem;
+  }
+
+  .nav__img img {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 12rem;
   }
 
   .nav__name {
