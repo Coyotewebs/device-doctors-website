@@ -39,6 +39,7 @@ header {
   font-size: 4rem;
   color: black;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -75,12 +76,16 @@ header {
     border-radius: 50%;
   }
 
+  // .nav__img img {
+  //   width: 8rem;
+  // }
+
   .nav__img a {
     display: flex;
     align-self: center;
     justify-content: center;
-    height: 15rem;
-    padding-top: 2rem;
+    // height: 15rem;
+    // padding-top: 2rem;
 
     // display: flex;
     // justify-content: center;
@@ -231,10 +236,10 @@ header {
     top: 0.5rem;
   }
 
-  .nav__img {
+  .nav__img a {
     // border: 1px solid black;
-    width: 60px;
-    height: 60px;
+    // width: 60px;
+    // height: 60px;
     margin-right: 0.5rem;
     margin-bottom: 0;
     align-items: center;

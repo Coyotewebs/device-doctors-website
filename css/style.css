@@ -197,6 +197,7 @@ header {
   font-size: 4rem;
   color: black;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -234,8 +235,6 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
-    height: 15rem;
-    padding-top: 2rem;
   }
 
   .nav__name {
@@ -384,9 +383,7 @@ header {
     top: 0.5rem;
   }
 
-  .nav__img {
-    width: 60px;
-    height: 60px;
+  .nav__img a {
     margin-right: 0.5rem;
     margin-bottom: 0;
     align-items: center;
