@@ -187,6 +187,12 @@ header {
   align-items: center;
   z-index: 100;
 }
+@media screen and (max-width: 1000px) {
+  header {
+    height: 10rem;
+    padding: 0 1rem;
+  }
+}
 
 .header__logo a img {
   height: 10rem;
@@ -853,7 +859,7 @@ header {
 }
 @media screen and (max-width: 500px) {
   .about-us .about-us__slider {
-    height: 70rem;
+    height: 65rem;
     width: 100%;
   }
 }

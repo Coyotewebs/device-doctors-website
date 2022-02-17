@@ -16,6 +16,11 @@ header {
   align-items: center;
   z-index: 100;
 
+  @media screen and (max-width: 1000px) {
+    height: 10rem;
+    padding: 0 1rem;
+  }
+
   // position: relative;
 }
 
