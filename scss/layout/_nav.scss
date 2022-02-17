@@ -16,7 +16,7 @@ header {
   align-items: center;
   z-index: 100;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 700px) {
     height: 10rem;
     padding: 0 1rem;
   }
@@ -38,6 +38,10 @@ header {
   height: 10rem;
 
   margin: 0;
+
+  @media screen and (max-width: 700px) {
+    height: 8rem;
+  }
 }
 
 .header__toggle {
