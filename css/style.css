@@ -342,11 +342,6 @@ header {
     left: 0;
   }
 }
-@media screen and (max-width: 1000px) {
-  .active {
-    color: #202122;
-  }
-}
 @media screen and (min-width: 1001px) {
   body {
     margin: 0;
