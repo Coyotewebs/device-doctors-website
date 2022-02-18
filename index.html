@@ -394,11 +394,27 @@
 
 
                     <div class="retail__card--drone">
-                        <img src="assets/img/reatail-drone-900w.jpg" alt="" class="retail__img--drone">
+
+                        <picture>
+                            <source
+                            srcset="assets/img/retail-drone-lg.jpg"
+                            type="image/jpg"
+                            media="all and (max-width:600px)"
+                            />
+                            <source
+                            srcset="assets/img/reatail-drone-900w.jpg"
+                            type="image/jpg"
+                            media="all and (min-width:801px)"
+                            />
+                            <img src="assets/img/retail-drone-lg.jpg" alt="" class="retail__img--drone">
+                         </picture>
+
+                        
                         <div class="retail__drone--info">
                         <h4 class="retail__drone--title">The Drone Zone</h4>
                         <p class="retail__drone--p"> Next gen drones ready for a spin </p>
                     </div>
+
                     <img src="assets/img/shape-drone.png" alt="" class="shape--drone">
                     </div>
 
@@ -414,7 +430,23 @@
 
 
                     <div class="retail__card--car">
-                        <img src="assets/img/retail-car-900w.jpg" alt="" class="retail__img--car">
+                        
+                        <picture>
+                            <source
+                            srcset="assets/img/car photo-lg.jpg"
+                            type="image/jpg"
+                            media="all and (max-width:600px)"
+                            />
+                            <source
+                            srcset="assets/img/retail-car-900w.jpg"
+                            type="image/jpg"
+                            media="all and (min-width:801px)"
+                            />
+                            <img src="assets/img/car photo-lg.jpg" alt="" class="retail__img--car">
+                         </picture>
+
+                        
+                        
                         <div class="retail__car--info">
                         <h4 class="retail__car--title"> Need for Speed</h4>
                         <p class="retail__car--p">Fast remote control cars </p>
