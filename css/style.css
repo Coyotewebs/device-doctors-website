@@ -248,7 +248,8 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
-    height: 10rem;
+    height: 12rem;
+    margin-top: 2.5rem;
   }
 
   .nav__name {
@@ -1336,7 +1337,7 @@ header {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__wrapper {
     flex-direction: column;
   }
@@ -1354,10 +1355,20 @@ header {
   position: relative;
   align-items: start;
   justify-content: center;
-  margin-bottom: 2.3rem;
+  margin-bottom: 2rem;
   background-color: rgba(0, 0, 0, 0.9);
 }
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 800px) and (max-width: 1312px) {
+  .retail__card--mobile {
+    margin-bottom: 2.5rem;
+  }
+}
+@media screen and (min-width: 1648px) {
+  .retail__card--mobile {
+    margin-bottom: 1.8rem;
+  }
+}
+@media screen and (max-width: 800px) {
   .retail__card--mobile {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -1367,7 +1378,7 @@ header {
   width: 45vw;
   opacity: 90%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__img--mobile {
     width: 80vw;
     opacity: 95%;
@@ -1380,7 +1391,7 @@ header {
   justify-self: center;
   align-self: center;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__mobile--info {
     align-self: flex-start;
     margin-top: 2rem;
@@ -1416,7 +1427,7 @@ header {
   background-color: rgba(0, 0, 0, 0.9);
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__card--drone {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -1425,7 +1436,7 @@ header {
   opacity: 95%;
   width: 40vw;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__img--drone {
     width: 80vw;
     margin-bottom: 2rem;
@@ -1469,7 +1480,7 @@ header {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.9);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__card--headphone {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -1478,7 +1489,7 @@ header {
   width: 45vw;
   opacity: 85%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__img--headphone {
     width: 80vw;
     margin-bottom: 2rem;
@@ -1491,7 +1502,7 @@ header {
   justify-self: center;
   align-self: center;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__headphone--info {
     align-self: flex-start;
     margin-top: 2rem;
@@ -1527,7 +1538,7 @@ header {
   margin-bottom: 2rem;
   background-color: rgba(0, 0, 0, 0.9);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__card--camera {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -1537,7 +1548,7 @@ header {
   width: 40vw;
   opacity: 90%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__img--camera {
     width: 80vw;
     margin-bottom: 2rem;
@@ -1590,7 +1601,7 @@ header {
   width: 40vw;
   opacity: 90%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .retail__img--car {
     width: 80vw;
     opacity: 95%;

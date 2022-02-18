@@ -28,7 +28,6 @@ header {
 //   margin-right: 1.5rem;
 // }
 
-// old starts here
 .header__logo a img {
   height: 10rem;
 
@@ -90,6 +89,7 @@ header {
     align-self: center;
     justify-content: center;
     height: 15rem;
+    // margin-bottom: 2.5rem;
 
     // padding-top: 2rem;
 
@@ -107,7 +107,8 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
-    height: 10rem;
+    height: 12rem;
+    margin-top: 2.5rem;
   }
 
   .nav__name {
