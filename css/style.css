@@ -240,9 +240,14 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
-    height: 5rem;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+
+  .nav__img a {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 8rem;
   }
 
   .nav__img img {
@@ -250,7 +255,6 @@ header {
     align-self: center;
     justify-content: center;
     height: 12rem;
-    margin-top: 2.5rem;
   }
 
   .nav__name {

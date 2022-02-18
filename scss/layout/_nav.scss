@@ -83,16 +83,21 @@ header {
   // .nav__img img {
   //   width: 8rem;
   // }
-
   .nav__img {
     display: flex;
     align-self: center;
     justify-content: center;
-    height: 5rem;
+    padding-top: 5rem;
+  }
+  .nav__img a {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 8rem;
     // margin-top: 2.5rem;
-
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    // border: 1px solid black;
+    // padding-top: 5rem;
+    // padding-bottom: 5rem;
 
     // display: flex;
     // justify-content: center;
@@ -109,7 +114,7 @@ header {
     align-self: center;
     justify-content: center;
     height: 12rem;
-    margin-top: 2.5rem;
+    // margin-top: 10rem;
   }
 
   .nav__name {
