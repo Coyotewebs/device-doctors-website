@@ -332,6 +332,7 @@ header {
     margin-left: 0rem;
     text-align: center;
     letter-spacing: 1px;
+    border-bottom: 1px solid black;
   }
 }
 @media screen and (max-width: 1000px) and (max-width: 450px) {
