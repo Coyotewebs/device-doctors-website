@@ -36,11 +36,15 @@
     }
 
     @media screen and (max-width: 560px) {
-      font-size: 5rem;
+      font-size: 5.5rem;
     }
 
-    @media screen and (max-width: 425px) {
-      font-size: 4rem;
+    @media screen and (max-width: 430px) {
+      font-size: 5rem;
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 4.8rem;
       margin-top: 2rem;
     }
   }
@@ -65,7 +69,7 @@
     @media screen and (max-width: 560px) {
       font-size: 2.5rem;
     }
-    @media screen and (max-width: 644px) {
+    @media screen and (max-width: 559px) {
       font-size: 2.1rem;
     }
   }
