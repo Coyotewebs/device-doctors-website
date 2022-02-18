@@ -1383,7 +1383,7 @@ header {
 .retail__img--mobile {
   display: flex;
   width: 45vw;
-  opacity: 90%;
+  opacity: 95%;
 }
 @media screen and (max-width: 800px) {
   .retail__img--mobile {
@@ -1431,7 +1431,6 @@ header {
   position: relative;
   align-items: start;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.9);
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 800px) {
@@ -1440,7 +1439,6 @@ header {
   }
 }
 .retail__img--drone {
-  opacity: 95%;
   width: 40vw;
 }
 @media screen and (max-width: 800px) {
@@ -1516,7 +1514,7 @@ header {
   }
 }
 .retail__headphone--title {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 800;
   color: #f3fc1f;
   text-transform: uppercase;
@@ -1527,6 +1525,7 @@ header {
   text-transform: uppercase;
   font-size: 1.4rem;
   margin-top: -1rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
 }
 .retail .shape--headp {
   height: 0%;
@@ -1580,6 +1579,7 @@ header {
   text-transform: uppercase;
   font-size: 1.4rem;
   margin-top: -1rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(82, 46, 46, 0.037);
 }
 .retail .shape--camera {
   height: 0%;
