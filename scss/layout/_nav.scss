@@ -10,7 +10,7 @@ header {
   position: static;
   top: 0;
   left: 0;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 
   justify-content: space-between;
   align-items: center;
@@ -89,9 +89,9 @@ header {
     align-self: center;
     justify-content: center;
     height: 15rem;
-    // margin-bottom: 2.5rem;
+    // margin-top: 2.5rem;
 
-    // padding-top: 2rem;
+    padding-top: 5rem;
 
     // display: flex;
     // justify-content: center;
@@ -156,7 +156,7 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
-    padding-top: 0rem;
+    padding-top: 2rem;
   }
 
   .nav__item {
@@ -166,6 +166,7 @@ header {
     font-style: bold;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 1rem;
   }
 
   .nav__link {
@@ -176,6 +177,7 @@ header {
     margin-left: 0rem;
     text-align: center;
     letter-spacing: 1px;
+
     @media screen and (max-width: 450px) {
       font-size: 2.5rem;
     }

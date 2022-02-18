@@ -182,7 +182,7 @@ header {
   position: static;
   top: 0;
   left: 0;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -241,6 +241,7 @@ header {
     align-self: center;
     justify-content: center;
     height: 15rem;
+    padding-top: 5rem;
   }
 
   .nav__img img {
@@ -303,7 +304,7 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
-    padding-top: 0rem;
+    padding-top: 2rem;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -314,6 +315,7 @@ header {
     font-style: bold;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 1rem;
   }
 }
 @media screen and (max-width: 1000px) {
