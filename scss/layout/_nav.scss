@@ -119,7 +119,7 @@ header {
 
   .nav__name {
     display: flex;
-    color: white;
+    color: black;
     margin: auto;
     align-self: center;
     justify-content: center;
@@ -272,6 +272,42 @@ header {
 
   .nav__img img {
     width: 8rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+  }
+
+  .nav__img:before,
+  .nav__img:after {
+    content: " ";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 1px solid rgba(128, 128, 128, 0.408);
+    border-radius: 50%;
+    animation: pulsing 1.5s linear infinite;
+    cursor: pointer;
+  }
+  .nav__img:after {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes pulsing {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
   }
 
   .nav__menu ul {
@@ -280,7 +316,7 @@ header {
     // margin-left: 10rem;
     padding-left: 15rem;
 
-    margin-bottom: 1.5rem;
+    // margin-bottom: 1.5rem;
   }
 
   .nav__menu li {
