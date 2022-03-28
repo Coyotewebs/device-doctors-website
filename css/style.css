@@ -220,12 +220,6 @@ header {
     transition: 0.5s;
   }
 
-  .nav__content {
-    height: 100%;
-    grid-template-columns: max-content 1fr max-content;
-    row-gap: 2rem;
-  }
-
   .nav__close {
     position: absolute;
     right: 2rem;
@@ -264,50 +258,19 @@ header {
     align-self: center;
     justify-content: center;
     padding-top: 2rem;
+    font-family: "Josefin Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     list-style: none;
   }
-}
-@media screen and (max-width: 1000px) and (max-width: 680px) {
-  .nav__name {
-    font-size: 2.5rem;
-    letter-spacing: 0.5px;
-  }
-}
-@media screen and (max-width: 1000px) and (max-width: 530px) {
-  .nav__name {
-    font-size: 2.2rem;
-    letter-spacing: 0.5px;
-  }
-}
-@media screen and (max-width: 1000px) and (max-width: 470px) {
-  .nav__name {
-    font-size: 2rem;
-    letter-spacing: 0.5px;
-  }
-}
-@media screen and (max-width: 1000px) and (max-width: 420px) {
-  .nav__name {
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
-  }
-}
-@media screen and (max-width: 1000px) and (max-width: 360px) {
-  .nav__name {
-    font-size: 1.6rem;
-    letter-spacing: 0.1px;
-  }
-}
-@media screen and (max-width: 1000px) {
+
   .nav__menu {
     display: flex;
     align-self: center;
     justify-content: center;
     padding-top: 2rem;
   }
-}
-@media screen and (max-width: 1000px) {
+
   .nav__item {
     margin: 2rem 2rem;
     text-decoration: none;
@@ -317,8 +280,7 @@ header {
     text-transform: uppercase;
     padding-top: 0.25rem;
   }
-}
-@media screen and (max-width: 1000px) {
+
   .nav__link {
     color: black;
     text-decoration: none;
@@ -409,45 +371,29 @@ header {
   }
 
   .nav__img img {
-    width: 8rem;
-    border-radius: 50%;
+    width: 9rem;
     text-align: center;
     line-height: 100px;
     position: relative;
   }
 
-  .nav__img:before,
-.nav__img:after {
-    content: " ";
+  .nav__img img:hover {
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+  }
+
+  .nav__img:hover:before {
+    content: "(970) 531-1416";
     position: absolute;
-    left: -1px;
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    border: 1px solid rgba(128, 128, 128, 0.408);
-    border-radius: 50%;
-    animation: pulsing 1.5s linear infinite;
-    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    width: 140%;
+    margin-top: 2.8rem;
+    margin-left: -6rem;
   }
 
-  .nav__img:after {
-    animation-delay: 0.6s;
-  }
-
-  @keyframes pulsing {
-    0% {
-      transform: scale(0.5);
-      opacity: 0;
-    }
-    50% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1.2);
-      opacity: 0;
-    }
-  }
   .nav__menu ul {
     display: flex;
     padding-left: 15rem;

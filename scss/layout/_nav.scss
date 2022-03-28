@@ -63,13 +63,6 @@ header {
     transition: 0.5s;
   }
 
-  .nav__content {
-    height: 100%;
-    grid-template-columns: max-content 1fr max-content;
-    row-gap: 2rem;
-    // margin-left: 30rem;
-  }
-
   .nav__close {
     position: absolute;
     right: 2rem;
@@ -124,35 +117,12 @@ header {
     align-self: center;
     justify-content: center;
     padding-top: 2rem;
-
+    font-family: $font-display;
     text-align: center;
 
     // margin-left: 1rem;
     text-decoration: none;
     list-style: none;
-
-    @media screen and (max-width: 680px) {
-      font-size: 2.5rem;
-      letter-spacing: 0.5px;
-    }
-    @media screen and (max-width: 530px) {
-      font-size: 2.2rem;
-      letter-spacing: 0.5px;
-    }
-
-    @media screen and (max-width: 470px) {
-      font-size: 2rem;
-      letter-spacing: 0.5px;
-    }
-
-    @media screen and (max-width: 420px) {
-      font-size: 1.8rem;
-      letter-spacing: 0.5px;
-    }
-    @media screen and (max-width: 360px) {
-      font-size: 1.6rem;
-      letter-spacing: 0.1px;
-    }
   }
 
   .nav__menu {
@@ -268,44 +238,64 @@ header {
   }
 
   .nav__img img {
-    width: 8rem;
-    border-radius: 50%;
+    width: 9rem;
+
     text-align: center;
     line-height: 100px;
     position: relative;
   }
 
-  .nav__img:before,
-  .nav__img:after {
-    content: " ";
-    position: absolute;
-    left: -1px;
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    border: 1px solid rgba(128, 128, 128, 0.408);
-    border-radius: 50%;
-    animation: pulsing 1.5s linear infinite;
-    cursor: pointer;
+  .nav__img img:hover {
+    opacity: 0;
+    transition: 0.1s ease-in-out;
   }
-  .nav__img:after {
-    animation-delay: 0.6s;
+  .nav__img:hover:before {
+    content: "(970) 531-1416";
+    // opacity: 1;
+    position: absolute;
+    font-family: $font-display;
+    width: 100%;
+    // text-decoration: underline;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    width: 140%;
+    margin-top: 2.8rem;
+    margin-left: -6rem;
   }
 
-  @keyframes pulsing {
-    0% {
-      transform: scale(0.5);
-      opacity: 0;
-    }
-    50% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1.2);
-      opacity: 0;
-    }
-  }
+  // .nav__img:before,
+  // .nav__img:after {
+  //   content: " ";
+  //   position: absolute;
+  //   left: -1px;
+  //   top: -1px;
+  //   right: -1px;
+  //   bottom: -1px;
+  //   border: 1px solid rgba(128, 128, 128, 0.408);
+  //   border-radius: 50%;
+  //   animation: pulsing 1.5s linear infinite;
+  //   cursor: pointer;
+  // }
+  // .nav__img:after {
+  //   animation-delay: 0.6s;
+  // }
+
+  // @keyframes pulsing {
+  //   0% {
+  //     transform: scale(0.5);
+  //     opacity: 0;
+  //   }
+  //   50% {
+  //     transform: scale(1);
+  //     opacity: 1;
+  //   }
+  //   100% {
+  //     transform: scale(1.2);
+  //     opacity: 0;
+  //   }
+  // }
 
   .nav__menu ul {
     // border: 1px solid black;
