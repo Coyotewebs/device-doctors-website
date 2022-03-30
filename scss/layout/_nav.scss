@@ -224,8 +224,8 @@ header {
     // border: 1px solid black;
     position: absolute;
     align-items: center;
-    right: 2%;
-    top: 0.5rem;
+    right: 4%;
+    top: 2rem;
   }
 
   .nav__img a {
@@ -238,31 +238,32 @@ header {
   }
 
   .nav__img img {
-    width: 9rem;
+    width: 7rem;
 
     text-align: center;
     line-height: 100px;
     position: relative;
   }
 
-  .nav__img img:hover {
-    opacity: 0;
-    transition: 0.1s ease-in-out;
-  }
-  .nav__img:hover:before {
+  // .nav__img img:hover {
+  //   opacity: 0;
+  //   transition: 0.1s ease-in-out;
+  // }
+  .nav__img:before {
     content: "(970) 531-1416";
     // opacity: 1;
     position: absolute;
     font-family: $font-display;
+
     width: 100%;
     // text-decoration: underline;
 
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 400;
 
-    width: 140%;
-    margin-top: 2.8rem;
-    margin-left: -6rem;
+    width: 200%;
+    margin-top: -1rem;
+    margin-left: -0.5rem;
   }
 
   // .nav__img:before,
