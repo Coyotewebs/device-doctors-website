@@ -392,7 +392,7 @@ header {
 
   .nav__menu ul {
     display: flex;
-    padding-left: 15rem;
+    padding-left: 10rem;
   }
 
   .nav__menu li {
