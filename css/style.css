@@ -380,7 +380,7 @@ header {
   .nav__img:before {
     content: "(970) 531-1416";
     position: absolute;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Nunito", sans-serif;
     width: 100%;
     font-size: 10px;
     font-weight: 400;
